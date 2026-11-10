@@ -13,3 +13,4 @@ aa54756d3d5bed61e271aea5e3f5e74bb5f2dbe5bb23099049eb4301caf73f88  ./activity-res
 76def9e17002f60e862e19e2efad89f01f99cda764ea0afb15b6533f75315d8f  ./activity-resources/grade-7/punched-cards-video-context.md
 f0f89fe78f73a0347683a549f290db2c7d018943b70131b162ca9fb1d3d4951b  ./activity-resources/grade-7/punched-cards-video.description
 1dda199c02b49561977cc63bf1148312309acdecce608eea890efd43adc1406e  ./activity-resources/grade-7/punched-cards-video.info.json
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  -
