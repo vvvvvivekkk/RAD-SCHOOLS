@@ -1,0 +1,1541 @@
+
+<!DOCTYPE html>
+<html class="" lang="en" dir="ltr" data-timezone="America/New_York">
+<head>
+
+<script>
+  window.Intellum = {
+    ...window.Intellum,
+    accountName: 'Google for Education',
+    accountFullDomain: 'https://edu.exceedlms.com/',
+    datepickerI18n: {
+      previousMonth: "Previous Month",
+      nextMonth: "Next Month",
+      weekdays: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      weekdaysShort: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"],
+      months: ["January","February","March","April","May","June","July","August","September","October","November","December"],
+    },
+    i18nStrings: {
+      add_text_here: "Add text here",
+      in_days: "in {{COUNT}} days",
+      in_hours: "in {{COUNT}} hours",
+      in_minutes: "in {{COUNT}} minutes",
+      in_one_hour: "in 1 hour",
+      in_one_minute: "in 1 minute",
+      item_dropped: "\"{{ITEM NAME}}\" dropped at position {{POSITION}} of {{TOTAL ITEMS}}.",
+      item_grabbed: "\"{{ITEM NAME}}\" grabbed. Current position: {{POSITION}} of {{TOTAL ITEMS}}. Use up and down keys to move the item, space bar to drop it, Escape to cancel.",
+      item_move_canceled: "Move of \"{{ITEM NAME}}\" canceled.",
+      item_moved_to_position: "\"{{ITEM NAME}}\" moved to position {{POSITION}} of {{TOTAL ITEMS}}.",
+      item_moved_to_position_in_list: "\"{{ITEM NAME}}\" moved to position {{POSITION}} of {{TOTAL ITEMS}} in \"{{LIST NAME}}.\"",
+      live_now: "LIVE NOW",
+      loading: "Loading...",
+      processing_ellipsis: "Processing...",
+      remove: "Remove",
+      removing_ellipsis: "Removing...",
+      saving_ellipsis: "Saving...",
+      search_results: "Search Results",
+      showing_item_position_of_total: "Showing item {{POSITION}} of {{TOTAL ITEMS}}",
+      start_creating_content: "Start creating content",
+      there_was_a_problem_getting_your_updates: "There was a problem in getting your updates.",
+      tomorrow: "tomorrow",
+      topicsSuggestionEmpty: "Sorry. We've run out of suggested topics.",
+      topicsSelectionEmpty: "No topics have been assigned to this activity.",
+      topicsFollowedSelectionEmpty: "No topics have been followed yet.",
+      upload_canceled: "The upload was canceled.",
+      uploadfile_no_file_selected: "No file selected",
+      uploadfile_uploading_msg: "Uploading {{FILENAME}}",
+      uploadfile_error_format_msg: "{{FILENAME}} is not the correct file type. Please try again.",
+      uploadfile_error_size_coursefile_msg: "{{FILENAME}} is too large. Size limit: 10MB for images, 3GB for videos and audio.",
+      uploadfile_error_size_msg: "{{FILENAME}} is too big. Please try again.",
+      uploadfile_error_msg: "There was a problem uploading {{FILENAME}}. Please try again.",
+      uploading_ellipsis: "Uploading...",
+      use_menu_edit_html: "Use menu to edit HTML",
+      when_datepicket_widget_appears: "When the datepicker widget appears, use arrow keys to navigate dates and select a date.",
+    },
+    mediumEditorI18n: {
+      bold: "Bold",
+      italic: "Italic",
+      link: "Link",
+      title: "Title",
+      subtitle: "Subtitle",
+      unorderedList: "Unordered List",
+      orderedList: "Ordered List",
+      quote: "Quote",
+      linkPlaceholderText: "Paste or type a link...",
+      save: "Save",
+      close: "Close",
+    },
+    properties: {
+      courseContentFileSizeConstraintsInMB: {
+        image: 10485760,
+        video: 3221225472,
+        audio: 3221225472,
+      },
+    },
+    translation_paths: {
+        'ar': '/locales/ar.64d8a03f3d67af2d4a7558d1067a52f5.json',
+        'as': '/locales/as.63c566f54b18f92dd9a45ea97fc176c8.json',
+        'bg': '/locales/bg.08e371e1d3c3da4a44b971cd579866ad.json',
+        'bn': '/locales/bn.5a845523cdbb5f1725b6b9dc83b4a459.json',
+        'cs': '/locales/cs.50de653a6af795b674f2ff7c7f8d2853.json',
+        'da': '/locales/da.ebab5f787022baec412f832d82ecdd01.json',
+        'de': '/locales/de.e377612438f506b1e10282ed7f06cfdd.json',
+        'el': '/locales/el.3c6bb2c8d6234216d3f869e5ef53569c.json',
+        'en-AU': '/locales/en-AU.ba0966e3016804403fb289a61dd564aa.json',
+        'en-CA': '/locales/en-CA.fa9c2ba6b2317b45eaafa9577538ad42.json',
+        'en-GB': '/locales/en-GB.d18890d7a2c1e7c5c5e22db620140c67.json',
+        'en-IN': '/locales/en-IN.3bbb7325b0f1a184374106d8e27e3a85.json',
+        'en-SG': '/locales/en-SG.d6d45e1583162d9f7fe850dcffca6d2e.json',
+        'en': '/locales/en.2221f126ab6007ae0c039f66a00de0cc.json',
+        'es-419': '/locales/es-419.4e1f1de9969bd760d9fbc33eacc9edb4.json',
+        'es-MX': '/locales/es-MX.0ca18d9a6d2f6cae25fed5222db56b40.json',
+        'es': '/locales/es.d102888d845224b4937613530d92621e.json',
+        'et': '/locales/et.ff11e0531894d5cbc51fc8b329087c5a.json',
+        'fi': '/locales/fi.7ae25219967212c10ea39bb462c91651.json',
+        'fr-CA': '/locales/fr-CA.e57546d2aedbab95e028419b540e6f2b.json',
+        'fr': '/locales/fr.bac14ff9777f270512ac5146003ea541.json',
+        'gu': '/locales/gu.b5a6129cbd6db50f605d24e936df20bc.json',
+        'he': '/locales/he.0fca81a30bca9a953852e70fd91a1f36.json',
+        'hi': '/locales/hi.4f18ce5d2f28aeca87af22a4ab26b646.json',
+        'hr': '/locales/hr.fff0132190b32b13993ef93a3dcbd0f7.json',
+        'hu': '/locales/hu.0eb8f35e2fcdcf8fb26fb1e12196cfd4.json',
+        'id': '/locales/id.44df49f43764051be44ce0889f9f11e0.json',
+        'it': '/locales/it.0730aa48e845335092c2c0dd356ecc76.json',
+        'ja': '/locales/ja.e3d37e568f271ecde3ca4520cc4868c0.json',
+        'kn': '/locales/kn.ff08cc13bc7c9d84dfe2ceb17ef1cfac.json',
+        'ko': '/locales/ko.cd71677c37bac76dadd1139b25279c67.json',
+        'lt': '/locales/lt.2f01054fb333f6459edd1e869c1b9b24.json',
+        'lv': '/locales/lv.3c3c62216503af7ca6413c930ebc2069.json',
+        'ml': '/locales/ml.0a6888e1e4f51869dbafe2f596ba2413.json',
+        'mn': '/locales/mn.25fa1031c727bcaf5fc26c46e6c8220f.json',
+        'mr': '/locales/mr.a0ba7d4698396acf50ad13c4da4c5171.json',
+        'ms': '/locales/ms.50dab7a93618eb3827ae98d23eafd5bb.json',
+        'my': '/locales/my.1259a35ca7272d64959549e2ba7a6233.json',
+        'nb': '/locales/nb.53fc8cfc341a5302131ecad4a44e71a1.json',
+        'nl': '/locales/nl.80700bf8529078bc7edd2e55ffefba87.json',
+        'or': '/locales/or.670281ce5151fd5358c5fe53752bde6e.json',
+        'pa': '/locales/pa.4e7c92e35b16e30dc7a76a278b3f0e03.json',
+        'pl': '/locales/pl.6a6c4ec7f49203c3f803dfbb6b62da7e.json',
+        'pt-BR': '/locales/pt-BR.90105db810c2d8f461c18b2564934c6d.json',
+        'pt-PT': '/locales/pt-PT.f0ebcf641b298a7e2462608b2f848012.json',
+        'ro': '/locales/ro.1e006dc06cefa100bce6fb581e2b905b.json',
+        'ru': '/locales/ru.0a23cb5f379ae14a787806003186aab0.json',
+        'si': '/locales/si.7aa83413bc0f4abdbe590dfc84ae2298.json',
+        'sk': '/locales/sk.b4ebe4a5e81ecdc082017d2aaa635d9c.json',
+        'sl': '/locales/sl.97f55cc57c402825385017c9323d3588.json',
+        'sr-Cyrl': '/locales/sr-Cyrl.60c3c4d3dab36a2e2a7cb6b07f124be7.json',
+        'sr-Latn': '/locales/sr-Latn.17d601ed8c34985e1178926c8ec2fb7b.json',
+        'sv': '/locales/sv.c63c6911d6a7cb0376ef0bc3008737e0.json',
+        'ta': '/locales/ta.166ea964de57298bbaf5acc6335468b1.json',
+        'te': '/locales/te.9633bc140516d88bf2e4271dd4a826a0.json',
+        'th': '/locales/th.54b6f695e193ef19eddb1735e89f9002.json',
+        'tr': '/locales/tr.b054fdb1741e8565d2e2338a5fff6188.json',
+        'uk': '/locales/uk.2570871e666880bf88805084737e9f17.json',
+        'vi': '/locales/vi.b7310530c32402f8c273dc255dc43097.json',
+        'zh-CN': '/locales/zh-CN.fcde76cbc10446e5020b648d7880e703.json',
+        'zh-TW': '/locales/zh-TW.4dc03eadfbeb75a6743240a399edfd4d.json',
+    },
+  };
+</script>
+
+
+    <link rel="preconnect" href="https://storage.googleapis.com" crossorigin>
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/organizations/favicons/349/small/logo-googleg-gradient-color-1x-web-24dp-1.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=5PPUQPGg2a%2FvhtTNWecBn7VdrEo%3D&amp;Expires=1794345280" sizes="16x16">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/organizations/favicons/349/medium/logo-googleg-gradient-color-1x-web-24dp-1.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=njZgEa2d%2B8LEV10LU9L%2F3SSz4oM%3D&amp;Expires=1794345280" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/organizations/favicons/349/large/logo-googleg-gradient-color-1x-web-24dp-1.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Gq2%2Ff4KMiKuTrGjvwO0YSnh0zDE%3D&amp;Expires=1794345280" sizes="96x96">
+
+  <meta charset="utf-8" />
+  
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+
+
+    <meta name="apple-itunes-app" content="app-id=1087150865, app-argument=https://edu.exceedlms.com/student/catalog/list" />
+    <link rel="manifest" href="/manifest.json" />
+
+
+
+
+
+
+      <title>Applied Digital Skills : Google for Education</title>
+
+    <meta name="description" content="Teach and learn practical digital skills needed for the jobs of today and tomorrow with our video lessons that are free of charge"/>
+
+
+    <meta content="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/10934/original/525x295-apski-topic.png" property="og:image" />
+
+
+  <link rel="stylesheet" href="https://edu.exceedlms.com/custom_fonts/349/font_faces-1741047541176779.css" media="all" />
+
+  <link rel="stylesheet" href="/assets/google/all-febe2b9c319fe79e6330ed89e2fbbfb26f979ec8770b0acff0c8cc8def749dc7.css" media="all" />
+  <link rel="stylesheet" href="/theme/349-default/1794324315/styles-bec4915b5db287b96184367e5e0cde68.css" media="all" />
+  
+
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="BQ3ErsjhEDBEFCR_xwAYPCjHtFvtRq4l4AHlz5BxZfSm1pW8wC2WqMgCm7mWsqFL7NSvENncAOcqwT8FWQtr6g" />
+  
+  
+
+  
+
+  
+
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push(
+      {'user_id': null}
+    );
+    window.dataLayer.push({'cluster': "google_external"});
+    window.dataLayer.push({'environment': "production"})
+</script>
+
+  <script>
+    window.IntellumDataLayer = window.IntellumDataLayer || {"account":{"id":1066,"name":"Google for Education"},"organization":{"id":349,"code":null,"name":"Default"},"user":null,"course":null,"course_session":null,"enrollment":null,"page_type":null,"search":null};
+</script>
+
+  
+
+
+
+  <!-- Intellum GA4 script -->
+  <script type="text/javascript" async src="https://www.googletagmanager.com/gtag/js?id=G-9QZZZPK0JH"></script>
+  <script type="text/javascript">
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-9QZZZPK0JH');
+  </script>
+
+  <script type="text/javascript">
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+
+        ga('create', 'UA-45326746-3', 'auto', {'name': 'intellumTracker'});
+    ga('intellumTracker.set', 'anonymizeIp', true);
+    ga('intellumTracker.send', 'pageview');
+  </script>
+  <script type="text/javascript" async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+  
+
+  
+
+
+
+
+  
+</head>
+
+<body class="body--logged-out" data-controller="catalogs" data-action="list" data-custom-ui="google">
+
+  
+
+  
+
+
+  <a href="#main" class="skip2content">
+    Skip to main content
+  </a>
+      
+  <div id="gdpr-consent" class="consent u-orgcolor--bg">
+  <div class="consent__content">
+    <span class="consent__text">This site uses cookies to provide you with a greater user experience. By using Exceed LMS, you accept our <a href='https://www.intellum.com/privacy-policy' target='_BLANK' class='whatsnew__link'>use of cookies</a>.</span>
+  </div>
+  <div class="consent__actions">
+    <button type="button" id="gdpr-consent__button" class="consent__close" aria-label="Close">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="consent__icon btnicon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M11.84,24.57 L24.57,11.84 L23.16,10.43 L10.43,23.16 z"></path>
+    <path d="M10.43,11.84 L23.16,24.57 L24.57,23.16 L11.84,10.43 z"></path>
+  </g>
+</svg>
+
+    </button>
+  </div>
+</div>
+
+
+
+
+<div class="appheader appheader--exceed u-org--header">
+
+    
+<div class="appheader__navigation">
+
+  <div class="appheader__section appheader__section--title u-org--header">
+
+      <exceed-nav-menu trigger-el-selector=".appheader__button--appnavmobile" menu-el-selector=".appnav--mobile" menu-visible-class="appnav--mobilevisible" option-el-selector=".navmenu__option">
+        <button type="button" class="appheader__button appheader__button--appnavmobile u-org--header" aria-label="Toggle Navigation">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="appheader__icon" focusable="false">
+  <path aria-hidden="true" d="M8.5 23.5h18v-2h-18v2zm0-5h18v-2h-18v2zm0-7v2h18v-2h-18z" fill="currentColor"></path>
+  <path aria-hidden="true" fill="none" d="M0 0h35v35H0z"></path>
+</svg>
+
+        </button>
+
+        <nav class="appnav appnav--mobile">
+            <div class="appheader__categories appheader__categories--mobile">
+              <div class="appheader__categoriesbuttoncontainer--mobile navmenu__option">
+                <button name="button" type="button" class="button button--toggle appheader__categoriesbutton appheader__categoriesbutton--mobile" data-trigger="modal.open" data-trigger-target="mobile-categories-menu-modal">
+                  Topics
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="button__icon button__icon--toggle" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M18.6,16.4L12,9.8l-6.6,6.6L4,15l8-8l8,8L18.6,16.4z"></path>
+  </g>
+</svg>
+
+</button>              </div>
+            </div>
+
+          <ul class="appnav__list--mobile">
+              <li class="navmenu__listitem--mobile navmenu__option">
+      <a class="appnav__link appnav__link--mobile" href="/student/catalog">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="appnav__icon appnav__icon--left" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M12,3L4,9v12h16V9L12,3z M18,19h-3v-6H9v6H6v-9l6-4.5l6,4.5V19z"></path>
+  </g>
+</svg>
+
+          <span class="appnav__label">
+            Home
+          </span>
+</a></li>  <li class="navmenu__listitem--mobile navmenu__option">
+      <a class="appnav__link appnav__link--mobile appnav__link--mobilecurrent u-orgcolor--color" aria-current="page" href="/student/catalog/browse">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="appnav__icon appnav__icon--left" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M9,21c0,0.552,0.448,1,1,1h4c0.552,0,1-0.448,1-1v-1H9V21z M12,2C8.134,2.004,5.003,5.141,5.006,9.007     C5.008,11.292,6.126,13.432,8,14.74V17c0,0.552,0.448,1,1,1h6c0.552,0,1-0.448,1-1v-2.26c3.17-2.213,3.946-6.576,1.733-9.747     C16.425,3.12,14.285,2.002,12,2z M14.85,13.1L14,13.7V16h-4v-2.3l-0.85-0.6c-2.269-1.574-2.832-4.689-1.258-6.958     s4.689-2.832,6.958-1.258s2.832,4.689,1.258,6.958C15.767,12.333,15.341,12.759,14.85,13.1z"></path>
+  </g>
+</svg>
+
+          <span class="appnav__label">
+            Browse
+          </span>
+</a></li>  <li class="navmenu__listitem--mobile navmenu__option">
+      <a class="appnav__link appnav__link--mobile" target="_blank" href="https://edu.google.com/for-educators">
+          <svg xmlns="http://www.w3.org/2000/svg" width="25" height="24" viewBox="0 0 25 24" aria-hidden="true" class="appnav__icon appnav__icon--left" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M19.875 3H5.875C4.765 3 3.875 3.9 3.875 5V19C3.875 20.1 4.765 21 5.875 21H19.875C20.975 21 21.875 20.1 21.875 19V5C21.875 3.9 20.985 3 19.875 3ZM19.875 19H5.875V7H19.875V19ZM17.875 12H7.875V10H17.875V12ZM13.875 16H7.875V14H13.875V16Z"></path>
+  </g>
+</svg>
+
+          <span class="appnav__label">
+            More Resources
+          </span>
+</a></li>  <li class="navmenu__listitem--mobile navmenu__option">
+      <a class="appnav__link appnav__link--mobile" target="_blank" href="https://educertifications.google/google-ai-educator-series">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="appnav__icon appnav__icon--left" focusable="false">
+<g aria-hidden="true" fill="currentColor">
+	  <path d="M9.943,2C9.708,2.009,9.469,2.055,9.234,2.141C8.295,2.482,7.711,3.35,7.748,4.35c0.004,0.107-0.049,0.173-0.094,0.211   c-0.046,0.038-0.12,0.077-0.223,0.055c-0.976-0.212-1.936,0.214-2.436,1.08c-0.501,0.866-0.39,1.906,0.281,2.648   C5.352,8.427,5.35,8.519,5.342,8.566C5.331,8.624,5.299,8.702,5.205,8.752c-0.884,0.468-1.344,1.408-1.17,2.393   c0.174,0.985,0.927,1.711,1.918,1.848c0.104,0.014,0.162,0.077,0.191,0.127c0.029,0.05,0.054,0.131,0.014,0.23   c-0.308,0.757-0.187,1.571,0.283,2.195L3.857,20h3.5v0.002l1.49,3.268l3.137-5.229l3.137,5.229l1.49-3.27h3.5l-2.568-4.428   c0.487-0.627,0.613-1.453,0.301-2.223c-0.039-0.098-0.012-0.179,0.016-0.23c0.029-0.05,0.087-0.113,0.191-0.127   c0.991-0.137,1.744-0.863,1.918-1.848s-0.286-1.925-1.17-2.393c-0.094-0.05-0.126-0.128-0.137-0.186   c-0.008-0.047-0.011-0.14,0.064-0.223c0.671-0.742,0.782-1.781,0.281-2.648c-0.5-0.867-1.462-1.291-2.436-1.08   c-0.103,0.022-0.178-0.017-0.223-0.055s-0.098-0.105-0.094-0.211c0.037-0.999-0.547-1.867-1.486-2.209   c-0.94-0.342-1.946-0.054-2.561,0.736c-0.131,0.167-0.283,0.168-0.414,0C11.333,2.284,10.651,1.974,9.943,2z M10.08,4.008   c0.05,0.014,0.095,0.045,0.135,0.096c0.861,1.11,2.707,1.109,3.57,0c0.078-0.1,0.179-0.129,0.297-0.086   c0.119,0.043,0.178,0.13,0.174,0.256c-0.026,0.702,0.268,1.364,0.807,1.816c0.538,0.452,1.239,0.627,1.928,0.479   c0.127-0.027,0.219,0.016,0.283,0.125c0.064,0.11,0.052,0.215-0.033,0.309c-0.472,0.522-0.673,1.217-0.551,1.91   c0.123,0.692,0.549,1.279,1.17,1.607c0.113,0.059,0.159,0.152,0.137,0.277s-0.098,0.196-0.223,0.213   c-0.697,0.097-1.298,0.502-1.65,1.111c-0.351,0.608-0.4,1.33-0.135,1.98c0.048,0.117,0.023,0.219-0.074,0.301   c-0.098,0.081-0.204,0.088-0.309,0.021c-0.597-0.374-1.316-0.451-1.977-0.211c-0.66,0.241-1.164,0.762-1.381,1.432   c-0.076,0.242-0.42,0.242-0.498,0c-0.216-0.669-0.719-1.19-1.379-1.43c-0.254-0.093-0.514-0.139-0.775-0.139   c-0.418,0-0.833,0.118-1.199,0.35c-0.108,0.068-0.21,0.061-0.309-0.021c-0.096-0.082-0.123-0.183-0.076-0.299   c0.265-0.651,0.216-1.375-0.135-1.984c-0.351-0.61-0.953-1.012-1.65-1.109c-0.125-0.017-0.2-0.09-0.221-0.215   c-0.022-0.124,0.023-0.217,0.135-0.277c0.621-0.328,1.047-0.913,1.17-1.605c0.122-0.693-0.077-1.389-0.549-1.91   C6.677,6.909,6.666,6.805,6.729,6.695C6.793,6.586,6.882,6.542,7.01,6.57c0.69,0.15,1.39-0.026,1.928-0.479   c0.54-0.451,0.833-1.113,0.807-1.816C9.74,4.148,9.799,4.062,9.918,4.018C9.976,3.997,10.03,3.994,10.08,4.008z M9.586,16.076   c0.039-0.001,0.074,0.008,0.102,0.018c0.055,0.02,0.128,0.065,0.16,0.166c0.093,0.288,0.239,0.541,0.42,0.76l-1.209,2.014   C8.705,18.419,8.077,18,7.357,18H7.33l0.889-1.535c0.424,0.006,0.853-0.104,1.24-0.348C9.504,16.089,9.547,16.078,9.586,16.076z    M14.418,16.076c0.039,0.001,0.083,0.012,0.129,0.041c0.376,0.236,0.789,0.347,1.201,0.348L16.639,18h-0.027   c-0.719,0-1.348,0.417-1.701,1.033l-1.195-1.992c0.19-0.224,0.344-0.483,0.441-0.781c0.033-0.101,0.106-0.146,0.16-0.166   C14.343,16.084,14.379,16.075,14.418,16.076z"></path>
+	</g>
+</svg>
+
+          <span class="appnav__label">
+            Google AI Educator Series
+          </span>
+</a></li>
+
+          </ul>
+
+        </nav>
+      </exceed-nav-menu>
+
+      <a class="appheader__titlelink u-org--header" href="/"><img class="appheader__titleimage" alt="Google for Education" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/organizations/branding_logos/349/full/logo-google-fullcolor-3x-464x153px.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=9GV6rnTCs6ySbaQbIMHcQrtceYc%3D&amp;Expires=1794345349" /></a>
+
+      <nav class="appnav appnav--text">
+        <exceed-nav-text>
+          <ul class="appnav__list">
+                <li class="appnav__listitem appnav__listitem--text">
+      <a class="appnav__link appnav__link--text u-org--header u-orgcolor--borderhover" href="/student/catalog">
+          Home
+</a></li>  <li class="appnav__listitem appnav__listitem--text">
+      <a class="appnav__link appnav__link--text u-org--header appnav__link--current u-orgcolor--borderonly" aria-current="page" href="/student/catalog/browse">
+          Browse
+</a></li>  <li class="appnav__listitem appnav__listitem--text">
+      <a class="appnav__link appnav__link--text u-org--header u-orgcolor--borderhover" target="_blank" href="https://edu.google.com/for-educators">
+          More Resources
+</a></li>  <li class="appnav__listitem appnav__listitem--text">
+      <a class="appnav__link appnav__link--text u-org--header u-orgcolor--borderhover" target="_blank" href="https://educertifications.google/google-ai-educator-series">
+          Google AI Educator Series
+</a></li>
+              <li class="appnav__listitem" hidden>
+                <exceed-nav-menu class="navmenu">
+                  <button name="button" type="button" role="button" class="appnav__link appnav__link--more navmenu__trigger u-org--header" aria-haspopup="true" aria-expanded="false" aria-label="More">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" aria-hidden="true" class="appnav__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M9,6c0.825,0,1.5-0.675,1.5-1.5S9.825,3,9,3S7.5,3.675,7.5,4.5S8.175,6,9,6z M9,7.5C8.175,7.5,7.5,8.175,7.5,9s0.675,1.5,1.5,1.5s1.5-0.675,1.5-1.5S9.825,7.5,9,7.5z M9,12c-0.825,0-1.5,0.675-1.5,1.5S8.175,15,9,15s1.5-0.675,1.5-1.5     S9.825,12,9,12z"></path>
+  </g>
+</svg>
+
+</button>                  <ul class="appnav__sublist navmenu__menu"></ul>
+                </exceed-nav-menu>
+              </li>
+          </ul>
+</exceed-nav-text>      </nav>
+  </div>
+
+
+  <div class="appheader__section u-org--header">
+        <exceed-nav-menu class="appheader__search"
+          trigger-el-selector=".appheader__searchbutton"
+          blur-trigger-el-selector=".appsearch__backdrop"
+          menu-el-selector=".appheader__searchmenu"
+          menu-visible-class="appheader__searchmenu--visible"
+          trigger-active-class="appheader__searchbutton--active"
+          dynamic-content-container-selector=".appsearch__recommendations"
+          dynamic-content-endpoint="/student/catalog/recommend_for_user"
+          is-dynamic-content-delayed="true"
+        >
+          <button
+            class="button button--toggle appheader__searchbutton u-org--header"
+            aria-haspopup="true"
+            aria-expanded="false"
+            data-object-name="header_search"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" aria-hidden="true" class="appheader__icon appheader__icon--searchbuttonicon appheader__searchbuttonicon--inactive" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M13.935,9.25 C16.243,9.252 18.229,10.885 18.677,13.149 C19.126,15.413 17.914,17.679 15.781,18.562 C13.648,19.445 11.189,18.699 9.906,16.78 C8.623,14.861 8.874,12.303 10.505,10.67 C11.412,9.757 12.648,9.245 13.935,9.25 M13.935,8.25 C11.149,8.25 8.751,10.219 8.208,12.952 C7.665,15.684 9.128,18.42 11.702,19.486 C14.276,20.552 17.245,19.651 18.792,17.334 C20.34,15.017 20.035,11.93 18.065,9.96 C16.97,8.864 15.484,8.249 13.935,8.25 L13.935,8.25 z"></path>
+    <path d="M23.425,23.75 C23.293,23.748 23.167,23.694 23.075,23.6 L17.885,18.41 C17.689,18.214 17.689,17.896 17.885,17.7 C18.081,17.504 18.399,17.504 18.595,17.7 L23.785,22.89 C23.934,23.033 23.979,23.253 23.899,23.443 C23.82,23.634 23.631,23.755 23.425,23.75 z"></path>
+  </g>
+</svg>
+
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" aria-hidden="true" class="appheader__icon appheader__icon--searchbuttonicon appheader__searchbuttonicon--active" focusable="false">
+  <g fill="currentColor" aria-hidden="true">
+    <path d="M8 0.5C3.8525 0.5 0.5 3.8525 0.5 8C0.5 12.1475 3.8525 15.5 8 15.5C12.1475 15.5 15.5 12.1475 15.5 8C15.5 3.8525 12.1475 0.5 8 0.5ZM11.75 10.6925L10.6925 11.75L8 9.0575L5.3075 11.75L4.25 10.6925L6.9425 8L4.25 5.3075L5.3075 4.25L8 6.9425L10.6925 4.25L11.75 5.3075L9.0575 8L11.75 10.6925Z"></path>
+  </g>
+</svg>
+
+            <span class="appheader__searchbuttontext">Search</span>
+          </button>
+            <div class="appheader__searchmenu">
+              <div class="appsearch appsearch--menu">
+                <form class="appsearch__form  appsearch__form--menu" action="/student/catalog/list">
+                  <input type="search" name="search" id="app-search"
+                    class="appsearch__input"
+                    placeholder="Search..."
+                    value=""
+                    aria-label="Search"
+                    data-search-path="/student/catalog/list"
+                    data-is-menu-focus="true"
+                  />
+                </form>
+                <div class="appsearch__recommendations"></div>
+              </div>
+              <div class="appsearch__backdrop"></div>
+            </div>
+       </exceed-nav-menu>
+
+      <exceed-nav-menu class="appheader__categories" trigger-el-selector=".button--toggle" menu-el-selector=".categoriesmenu" menu-visible-class="categoriesmenu--visible">
+        <button name="button" type="button" class="button button--toggle appheader__categoriesbutton u-org--header" aria-haspopup="true" aria-expanded="false" data-object-name="topics_filter">
+          Topics
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="button__icon button__icon--toggle" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M18.6,16.4L12,9.8l-6.6,6.6L4,15l8-8l8,8L18.6,16.4z"></path>
+  </g>
+</svg>
+
+</button>        <div class="categoriesmenu">
+  <section class="categoriesmenu__wrap">
+          <div id="categoriesmenu-aside-10934" class="categoriesmenu__aside">
+              <exceed-toggle-button
+                trigger-selector="#categoriesmenu-10934-back"
+                target-selector="#categoriesmenu-aside-10934"
+                target-focus="#categoriesmenu-10934-select"
+                trigger-toggle-class="current"
+                toggle-class="categoriesmenu__aside--current">
+                <button
+                  type="button"
+                  id="categoriesmenu-aside-10934-back"
+                  class="button button--link categoriesmenu__back"
+                  aria-controls="categoriesmenu-aside-10934">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon categoriesmenu__icon--offset" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M20.185,23.86 L21.245,22.8 L15.885,17.45 L21.155,12.2 L20.095,11.14 L13.755,17.46 L20.185,23.86 z"></path>
+  </g>
+</svg>
+
+                  All Topics
+                </button>
+              </exceed-toggle-button>
+            <h2 class="categoriesmenu__heading">
+              <a href="/student/catalog/list?category_ids=10934-applied-digital-skills">Applied Digital Skills</a>
+            </h2>
+            <ul class="categoriesmenu__list">
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11127-browse-all-lessons">Browse All Lessons</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11028-back-to-school">Back to School</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11030-celebrate-black-history-culture-identity">Celebrate Black History, Culture, &amp; Identity</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11032-celebrate-latinx-history">Celebrate Latinx History</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11031-celebrate-earth-day">Celebrate Earth Day</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11033-college-readiness">College Readiness</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11034-computer-science">Computer Science</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11048-explore-careers-and-prepare-for-your-first-job">Explore Careers and Prepare for Your First Job</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11038-explore-the-world-with-google-arts-culture">Explore the World with Google Arts &amp; Culture</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11035-digital-art-games">Digital Art &amp; Games</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11040-google-workspace-training">Google Workspace Training</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11039-google-workspace-for-beginners">Google Workspace for Beginners</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11043-online-safety-and-digital-well-being">Online Safety and Digital Well-Being</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11047-study-skills-and-learning-strategies">Study Skills and Learning Strategies</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11585-super-searchers">Super Searchers</a>
+                </li>
+            </ul>
+          </div>
+          <div id="categoriesmenu-aside-11050" class="categoriesmenu__aside">
+              <exceed-toggle-button
+                trigger-selector="#categoriesmenu-11050-back"
+                target-selector="#categoriesmenu-aside-11050"
+                target-focus="#categoriesmenu-11050-select"
+                trigger-toggle-class="current"
+                toggle-class="categoriesmenu__aside--current">
+                <button
+                  type="button"
+                  id="categoriesmenu-aside-11050-back"
+                  class="button button--link categoriesmenu__back"
+                  aria-controls="categoriesmenu-aside-11050">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon categoriesmenu__icon--offset" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M20.185,23.86 L21.245,22.8 L15.885,17.45 L21.155,12.2 L20.095,11.14 L13.755,17.46 L20.185,23.86 z"></path>
+  </g>
+</svg>
+
+                  All Topics
+                </button>
+              </exceed-toggle-button>
+            <h2 class="categoriesmenu__heading">
+              <a href="/student/catalog/list?category_ids=11050-p-d-enterprise-solutions">P&amp;D Enterprise Solutions</a>
+            </h2>
+            <ul class="categoriesmenu__list">
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11058-chromeos">ChromeOS</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11061-chrome-browser">Chrome Browser </a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11521-cameyo-by-google">Cameyo by Google</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11059-google-workspace-for-education">Google Workspace for Education</a>
+                </li>
+            </ul>
+          </div>
+    <div class="categoriesmenu__content">
+        <h2 id="categoriesmenu-heading" class="categoriesmenu__heading">
+          <a href="/student/catalog/browse">All Topics</a>
+        </h2>
+        <div class="categoriesmenu__search">
+          <form class="categoriesmenu__searchform" action="/student/catalog/list" method="get">
+            <input type="hidden" name="inline_search" value="true" />
+            <input type="hidden" name="category_ids" value="" />
+            <input type="hidden" name="duration" value="" />
+            <input type="hidden" name="difficulty" value="" />
+            <input type="hidden" name="sort" value="relevance_most_recent" />
+            <input type="hidden" name="featured" value="" />
+            <input type="hidden" name="course_type" value="all" />
+            <input type="hidden" name="filter" value="" />
+            <label for="categoriesmenu-search" class="categoriesmenu__searchlabel">
+              <span class="a11y-atonly">Search Activities</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="categoriesmenu__searchicon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M15.5,14h-0.79l-0.28-0.27C15.41,12.59,16,11.11,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5S5.91,16,9.5,16   c1.61,0,3.09-0.59,4.23-1.57L14,14.71v0.79l5,4.99L20.49,19L15.5,14z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5   S11.99,14,9.5,14z"></path>
+  </g>
+</svg>
+
+            </label>
+            <input
+              type="search"
+              name="search"
+              id="categoriesmenu-search"
+              class="categoriesmenu__searchinput"
+              placeholder="Search Activities"
+            />
+            <button type="submit" class="a11y-atonly">Submit</button>
+          </form>
+        </div>
+      <ul class="categoriesmenu__list">
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11120-for-educators">For Educators</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11245-google-ai-training">Google AI Training</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11121-for-it-admins">For IT Admins</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <exceed-toggle-button
+                  trigger-selector="#categoriesmenu-10934-select"
+                  target-selector="#categoriesmenu-aside-10934"
+                  target-focus="#categoriesmenu-aside-10934-back"
+                  trigger-toggle-class="current"
+                  toggle-class="categoriesmenu__aside--current">
+                  <button
+                    type="button"
+                    id="categoriesmenu-10934-select"
+                    class="button button--link categoriesmenu__name"
+                    aria-controls="categoriesmenu-aside-10934">
+                    Applied Digital Skills
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M14.82,11.14 L13.75,12.2 L19.12,17.55 L13.85,22.8 L14.91,23.86 L21.25,17.54 L14.82,11.14 z"></path>
+  </g>
+</svg>
+
+                  </button>
+                </exceed-toggle-button>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <exceed-toggle-button
+                  trigger-selector="#categoriesmenu-11050-select"
+                  target-selector="#categoriesmenu-aside-11050"
+                  target-focus="#categoriesmenu-aside-11050-back"
+                  trigger-toggle-class="current"
+                  toggle-class="categoriesmenu__aside--current">
+                  <button
+                    type="button"
+                    id="categoriesmenu-11050-select"
+                    class="button button--link categoriesmenu__name"
+                    aria-controls="categoriesmenu-aside-11050">
+                    P&amp;D Enterprise Solutions
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M14.82,11.14 L13.75,12.2 L19.12,17.55 L13.85,22.8 L14.91,23.86 L21.25,17.54 L14.82,11.14 z"></path>
+  </g>
+</svg>
+
+                  </button>
+                </exceed-toggle-button>
+          </li>
+      </ul>
+      <ul class="categoriesmenu__list">
+        <li class="categoriesmenu__listitem categoriesmenu__listitem--nosubitems">
+          <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list">All Activities</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+      </exceed-nav-menu>
+
+        
+  <div class="direct-login">
+    <a href="/authentication/google_authentication" class="button button--primary button--appheader">
+      Log In
+    </a>
+</div>
+
+
+
+  </div>
+
+</div>
+
+
+    
+</div>
+
+
+
+  
+
+  <main class="main main--student" id="main" data-save-state="scroll.y" data-reset-state="true">
+
+
+      
+<div class="hero hero--browse" style="--hero-ratio: 27.113702623906704%; --hero-ratio-mobile: 27.113702623906704%;"><img alt="" class="hero__image" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w550/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=d6rIXEeQV2stjAq7BqyBZ2ENk5U%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w800/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=z9dGXJzlnioAIacYQYBloG%2FgbS8%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w1100/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=CC%2Bsa5XSXyKB0bHRKIaUYb5CPWQ%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w1600/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=WU%2B4t4d6IRq2pP%2BGMMZUCKNwlv0%3D&amp;Expires=1794350524 1600w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w2400/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=AGFZdRTm2r8LaO5VG2GMde8bbSg%3D&amp;Expires=1794350524 2400w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/resource_hero_pictures/targets/2393317/w550/hero-4-educator-2400x650.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=d6rIXEeQV2stjAq7BqyBZ2ENk5U%3D&amp;Expires=1794350524" /></div>
+
+
+
+<header class="categoryheader">
+  <div class="categoryheader__content">
+
+
+
+    <div class="categoryheader__title">
+      <h1 class="u-headingpage" data-test-target=applied-digital-skills>
+        Applied Digital Skills
+      </h1>
+    </div>
+
+      <a class="categoryheader__backlink backlink" href="/student/catalog/browse">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="backlink__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M20.185,23.86 L21.245,22.8 L15.885,17.45 L21.155,12.2 L20.095,11.14 L13.755,17.46 L20.185,23.86 z"></path>
+  </g>
+</svg>
+
+        All Topics
+</a>
+      <p class="categoryheader__description">Teach and learn practical digital skills needed for the jobs of today and tomorrow with our video lessons that are free of charge</p>
+
+
+  </div>
+
+  <div class="categoryheader__actions categoryheader__actions--withbacklink">
+    
+  </div>
+</header>
+
+
+
+<section class="main__content main__content--categories" data-test-target="categories-list">
+    <ul class="cardgrid cardgrid--categorycards">
+      <li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11127-browse-all-lessons"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11127/w550/525x295-skillshop-collections-thumbnails-01.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=kE261wmUG54rUF90PouwCX%2Bns14%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11127/w800/525x295-skillshop-collections-thumbnails-01.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=HC6Qyq1S%2FTMUu000jFpz0X08jl4%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11127/w1100/525x295-skillshop-collections-thumbnails-01.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=p4hnzBGCiu2Al09NMg1llJZQ0NA%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11127/w1600/525x295-skillshop-collections-thumbnails-01.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=jWER%2FTGScLHJ5l1HLxF0ULA6zwA%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11127/w550/525x295-skillshop-collections-thumbnails-01.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=kE261wmUG54rUF90PouwCX%2Bns14%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11127-browse-all-lessons">Browse All Lessons</a>
+    </h2>
+    <p class="categorycard__description">Explore our complete collection of Applied Digital Skills lessons.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11028-back-to-school"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11028/w550/525x295-02-back-to-school.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=aDfI5wPRNx3dg0%2FnYaP9YNRzys0%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11028/w800/525x295-02-back-to-school.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=DbLY1J53XKRpFyNcmBFbjHkQf0s%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11028/w1100/525x295-02-back-to-school.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=8RrwCzIk0NgsCj4G9lDqZCdpZ5k%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11028/w1600/525x295-02-back-to-school.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=LEGvmKWcGuPBwAm9tROmOMV7kTY%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11028/w550/525x295-02-back-to-school.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=aDfI5wPRNx3dg0%2FnYaP9YNRzys0%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11028-back-to-school">Back to School</a>
+    </h2>
+    <p class="categorycard__description">Kick off the school year with lessons that help students express themselves, build relationships, and stay organized while learning new technology skills.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11030-celebrate-black-history-culture-identity"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11030/w550/525x295-03-celebrate-black-history-culture-and-identity.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=7Imad2tbufW97MwoS1hG%2BCfD0FM%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11030/w800/525x295-03-celebrate-black-history-culture-and-identity.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=pdFys8J0l1E0DH7pJo60i4cN4PU%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11030/w1100/525x295-03-celebrate-black-history-culture-and-identity.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=KzXwcbgvds0W8WL9JFiU190zZII%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11030/w1600/525x295-03-celebrate-black-history-culture-and-identity.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Y1fTiRTtCeqaFM2GpMAJ8xv89ks%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11030/w550/525x295-03-celebrate-black-history-culture-and-identity.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=7Imad2tbufW97MwoS1hG%2BCfD0FM%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11030-celebrate-black-history-culture-identity">Celebrate Black History, Culture, &amp; Identity</a>
+    </h2>
+    <p class="categorycard__description">Use these lessons to explore the importance of Black history, express your identity, and celebrate the contributions of African Americans throughout history, during Black History Month, or any time of year.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11032-celebrate-latinx-history"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11032/w550/525x295-04-celebrate-latinx-history.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=vJb2W9jx2ArqOfn1djanR4aZiU0%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11032/w800/525x295-04-celebrate-latinx-history.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=gAiNKy9RzBZW5fVY7hCftpmeVUY%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11032/w1100/525x295-04-celebrate-latinx-history.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=oyOVEQxjpxNV%2FcOHq5tEl%2FCalMI%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11032/w1600/525x295-04-celebrate-latinx-history.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=RCO0yJBISPxHfsLp0n%2Bvz3P3CrU%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11032/w550/525x295-04-celebrate-latinx-history.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=vJb2W9jx2ArqOfn1djanR4aZiU0%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11032-celebrate-latinx-history">Celebrate Latinx History</a>
+    </h2>
+    <p class="categorycard__description">Use these lessons to explore the importance of Latinx history, express your identity, and celebrate the contributions made by the Latinx community during Hispanic Heritage Month, or any time of year.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11031-celebrate-earth-day"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11031/w550/525x295-05-celebrate-earth-day.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=aVZE5B8XwFTxws%2ByeeTZdQDaRfw%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11031/w800/525x295-05-celebrate-earth-day.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Jk9UbS5sgvxSQYyXcxqNNw90IRk%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11031/w1100/525x295-05-celebrate-earth-day.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=8bLTTl%2Bx44DNIZujG33M%2BZunO1g%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11031/w1600/525x295-05-celebrate-earth-day.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=V0hvwjnNYXcbcikgAo69LL8b9Ik%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11031/w550/525x295-05-celebrate-earth-day.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=aVZE5B8XwFTxws%2ByeeTZdQDaRfw%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11031-celebrate-earth-day">Celebrate Earth Day</a>
+    </h2>
+    <p class="categorycard__description">In honor of Earth Day, learn about the environment and take action while building new digital skills with Earth Day projects.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11033-college-readiness"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11033/w550/525x295-06-college-readiness.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=0FrBbkfeqCAYthtBQxWkuT0s7Eg%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11033/w800/525x295-06-college-readiness.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=oOE%2FWrrG82vlvyvVjr4UgIKn7LU%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11033/w1100/525x295-06-college-readiness.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=TywKxcXH%2F%2F8d2vOHQjHihMr%2BubY%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11033/w1600/525x295-06-college-readiness.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=36oTmA7FdXprbjcTGU%2B7LG2pqTk%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11033/w550/525x295-06-college-readiness.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=0FrBbkfeqCAYthtBQxWkuT0s7Eg%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11033-college-readiness">College Readiness</a>
+    </h2>
+    <p class="categorycard__description">These lessons will help you plan and prepare for college and other education opportunities.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11034-computer-science"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11034/w550/525x295-07-computer-science.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=BI5xr1YoqxLzDcsPoIxbFpguAf4%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11034/w800/525x295-07-computer-science.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=xzZ%2Bq7%2F0qegvRmrwDZIKPFXqWAw%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11034/w1100/525x295-07-computer-science.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=WC%2BxWn379WNihXiMFtxFkwU3CLI%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11034/w1600/525x295-07-computer-science.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=gKtmxD0oot%2BhILSPba3ivj81cgo%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11034/w550/525x295-07-computer-science.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=BI5xr1YoqxLzDcsPoIxbFpguAf4%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11034-computer-science">Computer Science</a>
+    </h2>
+    <p class="categorycard__description">These lessons will inspire and introduce your students to essential coding and computer science skills.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11048-explore-careers-and-prepare-for-your-first-job"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11048/w550/525x295-08-explore-careers-and-prepare-for-your-first-job.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Wys8rcXyhFgPxaNaLCcbZ8%2BKcv4%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11048/w800/525x295-08-explore-careers-and-prepare-for-your-first-job.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=rJ2NBU4BF1Xv1XpjIJgj%2FGi%2Bbj4%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11048/w1100/525x295-08-explore-careers-and-prepare-for-your-first-job.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=8IcsvYLTWVtT9Fks3Nxl9tOHopc%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11048/w1600/525x295-08-explore-careers-and-prepare-for-your-first-job.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=hSGMHbE0KB8kCIaIXsCj4TV%2BHTs%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11048/w550/525x295-08-explore-careers-and-prepare-for-your-first-job.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Wys8rcXyhFgPxaNaLCcbZ8%2BKcv4%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11048-explore-careers-and-prepare-for-your-first-job">Explore Careers and Prepare for Your First Job</a>
+    </h2>
+    <p class="categorycard__description">These lessons will help you prepare for and find your first job while exploring various career paths.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11038-explore-the-world-with-google-arts-culture"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11038/w550/525x295-skillshop-collections-thumbnails-09.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=nk00k1%2Bf6ro3pwPRb516%2FGWlH3o%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11038/w800/525x295-skillshop-collections-thumbnails-09.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Y3uCnJF5FDFDFePq9vfCEreq5TY%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11038/w1100/525x295-skillshop-collections-thumbnails-09.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=4JH3uK1ZumLuq%2F7m%2Fr%2BsOteQe44%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11038/w1600/525x295-skillshop-collections-thumbnails-09.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=eVQ%2F8XEiv6bzWklKCVddOHZ6YZQ%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11038/w550/525x295-skillshop-collections-thumbnails-09.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=nk00k1%2Bf6ro3pwPRb516%2FGWlH3o%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11038-explore-the-world-with-google-arts-culture">Explore the World with Google Arts &amp; Culture</a>
+    </h2>
+    <p class="categorycard__description">These lessons help you learn digital skills while exploring art, historic events, and iconic figures with Google Arts &amp; Culture (http://g.co/arts)</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11035-digital-art-games"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11035/w550/525x295-skillshop-collections-thumbnails-10.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=gN12W7%2BaGa4L8OmD59Xt%2BuYp9xk%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11035/w800/525x295-skillshop-collections-thumbnails-10.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=USuGhBhjBcM8CLT9r%2FYFwdZB65I%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11035/w1100/525x295-skillshop-collections-thumbnails-10.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=%2FJp%2F8aNYt6rdyRGdfkmu9Wm%2B7dM%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11035/w1600/525x295-skillshop-collections-thumbnails-10.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=Db67r0EqwF8DGqdCbz%2Bd%2B3K%2Bh%2FA%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11035/w550/525x295-skillshop-collections-thumbnails-10.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=gN12W7%2BaGa4L8OmD59Xt%2BuYp9xk%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11035-digital-art-games">Digital Art &amp; Games</a>
+    </h2>
+    <p class="categorycard__description">These lessons help you express your creativity while creating fun projects using digital skills.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11040-google-workspace-training"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11040/w550/525x295-11-google-workspace-training.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=yeJ6ys18Em0dyz3RwScGKdUr0zg%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11040/w800/525x295-11-google-workspace-training.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=yyjGG6UpvwG34QvkDYEnw%2FcU394%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11040/w1100/525x295-11-google-workspace-training.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=xV7HSKbpPYXMs6kvlmUNtTWVCpA%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11040/w1600/525x295-11-google-workspace-training.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=5UmzVt7mdpWGGkInaNKSDztmmVg%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11040/w550/525x295-11-google-workspace-training.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=yeJ6ys18Em0dyz3RwScGKdUr0zg%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11040-google-workspace-training">Google Workspace Training</a>
+    </h2>
+    <p class="categorycard__description">Learn how to use Google Workspace tools like Docs, Sheets, and Drive to help you improve productivity and collaboration in school, work and life.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11039-google-workspace-for-beginners"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11039/w550/525x295-12-google-workspace-for-beginners.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=AucmTE8cSmIlwmR5qxXyVExkI6o%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11039/w800/525x295-12-google-workspace-for-beginners.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=LM5V6hIDAprPf027JQjlRZ58LD0%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11039/w1100/525x295-12-google-workspace-for-beginners.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=vkoU1zoFrOKjgOy%2BkdUexgHC9Ns%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11039/w1600/525x295-12-google-workspace-for-beginners.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=AOuJ31v%2B8nEYhDjgBACT1st%2FBQ8%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11039/w550/525x295-12-google-workspace-for-beginners.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=AucmTE8cSmIlwmR5qxXyVExkI6o%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11039-google-workspace-for-beginners">Google Workspace for Beginners</a>
+    </h2>
+    <p class="categorycard__description">These lessons will teach you the necessary and basic skills for using Google Workspace Apps.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11043-online-safety-and-digital-well-being"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11043/w550/525x295-skillshop-collections-thumbnails-13.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=3CpRC2%2B2fMil10vQu1jGiMsZ6Ro%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11043/w800/525x295-skillshop-collections-thumbnails-13.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=9GYo1SI9dW9NfY0zY57E3n2q1%2F8%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11043/w1100/525x295-skillshop-collections-thumbnails-13.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=rTIPf77HKLhSpLn5IymsXuRYygc%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11043/w1600/525x295-skillshop-collections-thumbnails-13.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=XYD93KW6re%2Fk6LfugvtlRW0tfUc%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11043/w550/525x295-skillshop-collections-thumbnails-13.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=3CpRC2%2B2fMil10vQu1jGiMsZ6Ro%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11043-online-safety-and-digital-well-being">Online Safety and Digital Well-Being</a>
+    </h2>
+    <p class="categorycard__description">Video lessons engage your students in learning how to safely navigate the online world and develop skills for school, work, and life.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11047-study-skills-and-learning-strategies"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11047/w550/525x295-14-study-skills-and-learning-strategies.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=%2Byvs4k9Ytl%2BCbtzg0uqQiU6kJ7g%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11047/w800/525x295-14-study-skills-and-learning-strategies.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=NvQvdX%2FM8Un6xY76DLHSkzP36CI%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11047/w1100/525x295-14-study-skills-and-learning-strategies.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=8%2BYvhD5M21H8XWO7IzQuaS1WcWg%3D&amp;Expires=1794350524 1100w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11047/w1600/525x295-14-study-skills-and-learning-strategies.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=lcd7fZsR83AfUt6L8kZ3S0HOD%2Fs%3D&amp;Expires=1794350524 1600w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11047/w550/525x295-14-study-skills-and-learning-strategies.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=%2Byvs4k9Ytl%2BCbtzg0uqQiU6kJ7g%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11047-study-skills-and-learning-strategies">Study Skills and Learning Strategies</a>
+    </h2>
+    <p class="categorycard__description">These lessons help you learn effective study skills and techniques to prepare for projects, tests and exams.</p>
+  </div>
+</li>
+<li class="cardgrid__item cardgrid__item--categorycards">
+  <div class="categorycard">
+      <a class="categorycard__image" tabindex="-1" aria-hidden="true" href="/student/catalog/list?category_ids=11585-super-searchers"><img alt="" sizes="(min-width: 992px) 367px, (min-width: 480px) 46vw, 93vw" srcset="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11585/w550/super-searchers-cover-art-2.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=4J%2Bj3pP4XNXSasET4luwglx6xkk%3D&amp;Expires=1794350524 550w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11585/w800/super-searchers-cover-art-2.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=yH%2FLm%2B2n8H9r5pHYz5VPuOcXLp8%3D&amp;Expires=1794350524 800w, https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11585/w1100/super-searchers-cover-art-2.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=NF1pP07Kb418w7hnqXmkGtt%2FFzI%3D&amp;Expires=1794350524 1100w" src="https://storage.googleapis.com/exceedlms-external-uploads-production/uploads/categories/pictures/11585/w550/super-searchers-cover-art-2.png?GoogleAccessId=GOOG1EIO7LXRUFV35UXSWKJ3AWMYHZUVNMYIAMGSBIFYEF2AMYYAY4Y4Y5PKA&amp;Signature=4J%2Bj3pP4XNXSasET4luwglx6xkk%3D&amp;Expires=1794350524" /></a>
+    <h2 class="u-headingitem--group categorycard__name">
+      <a class="categorycard__link" href="/student/catalog/list?category_ids=11585-super-searchers">Super Searchers</a>
+    </h2>
+    <p class="categorycard__description">In this course, you will learn practical information literacy skills, using the SIFT method and Google’s AI Mode. With these tools, you will be able to navigate complex digital environments thoughtfully and responsibly, and support others to do the same.</p>
+  </div>
+</li>
+
+    </ul>
+</section>
+
+
+
+
+    <div class="dialog dialog--award" id="award-dialog"
+         role="dialog"
+         aria-hidden="true">
+      <div class="dialog__content award dialog__content--removedefaults" role="document"></div>
+    </div>
+
+      <div class="dialog dialog--publiclogin" id="public-login-dialog"
+           role="dialog"
+           aria-hidden="true">
+        <div class="dialog__content publiclogin " role="document"></div>
+      </div>
+
+
+
+
+
+
+      
+<exceed-modal id="mobile-categories-menu-modal"
+              class="modal "
+              role="dialog"
+              aria-modal="true"
+              preserve-on-close="true"
+              focus-immediately="true"
+                aria-labelledby="categoriesmenu-heading-mobile"
+                aria-describedby="categoriesmenu-heading-mobile"
+              aria-hidden="true"
+  >
+  <section class="modal__content">
+
+    
+        <div class="categoriesmenu categoriesmenu--mobile">
+  <section class="categoriesmenu__wrap">
+          <div id="categoriesmenu-aside-mobile-10934" class="categoriesmenu__aside">
+              <exceed-toggle-button
+                trigger-selector="#categoriesmenu-10934-back"
+                target-selector="#categoriesmenu-aside-mobile-10934"
+                target-focus="#categoriesmenu-mobile-10934-select"
+                trigger-toggle-class="current"
+                toggle-class="categoriesmenu__aside--current">
+                <button
+                  type="button"
+                  id="categoriesmenu-aside-mobile-10934-back"
+                  class="button button--link categoriesmenu__back"
+                  aria-controls="categoriesmenu-aside-mobile-10934">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon categoriesmenu__icon--offset" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M20.185,23.86 L21.245,22.8 L15.885,17.45 L21.155,12.2 L20.095,11.14 L13.755,17.46 L20.185,23.86 z"></path>
+  </g>
+</svg>
+
+                  All Topics
+                </button>
+              </exceed-toggle-button>
+            <h2 class="categoriesmenu__heading">
+              <a href="/student/catalog/list?category_ids=10934-applied-digital-skills">Applied Digital Skills</a>
+            </h2>
+            <ul class="categoriesmenu__list">
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11127-browse-all-lessons">Browse All Lessons</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11028-back-to-school">Back to School</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11030-celebrate-black-history-culture-identity">Celebrate Black History, Culture, &amp; Identity</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11032-celebrate-latinx-history">Celebrate Latinx History</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11031-celebrate-earth-day">Celebrate Earth Day</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11033-college-readiness">College Readiness</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11034-computer-science">Computer Science</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11048-explore-careers-and-prepare-for-your-first-job">Explore Careers and Prepare for Your First Job</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11038-explore-the-world-with-google-arts-culture">Explore the World with Google Arts &amp; Culture</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11035-digital-art-games">Digital Art &amp; Games</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11040-google-workspace-training">Google Workspace Training</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11039-google-workspace-for-beginners">Google Workspace for Beginners</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11043-online-safety-and-digital-well-being">Online Safety and Digital Well-Being</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11047-study-skills-and-learning-strategies">Study Skills and Learning Strategies</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11585-super-searchers">Super Searchers</a>
+                </li>
+            </ul>
+          </div>
+          <div id="categoriesmenu-aside-mobile-11050" class="categoriesmenu__aside">
+              <exceed-toggle-button
+                trigger-selector="#categoriesmenu-11050-back"
+                target-selector="#categoriesmenu-aside-mobile-11050"
+                target-focus="#categoriesmenu-mobile-11050-select"
+                trigger-toggle-class="current"
+                toggle-class="categoriesmenu__aside--current">
+                <button
+                  type="button"
+                  id="categoriesmenu-aside-mobile-11050-back"
+                  class="button button--link categoriesmenu__back"
+                  aria-controls="categoriesmenu-aside-mobile-11050">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon categoriesmenu__icon--offset" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M20.185,23.86 L21.245,22.8 L15.885,17.45 L21.155,12.2 L20.095,11.14 L13.755,17.46 L20.185,23.86 z"></path>
+  </g>
+</svg>
+
+                  All Topics
+                </button>
+              </exceed-toggle-button>
+            <h2 class="categoriesmenu__heading">
+              <a href="/student/catalog/list?category_ids=11050-p-d-enterprise-solutions">P&amp;D Enterprise Solutions</a>
+            </h2>
+            <ul class="categoriesmenu__list">
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11058-chromeos">ChromeOS</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11061-chrome-browser">Chrome Browser </a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11521-cameyo-by-google">Cameyo by Google</a>
+                </li>
+                <li class="categoriesmenu__listitem">
+                  <a class="categoriesmenu__name" href="/student/catalog/list?category_ids=11059-google-workspace-for-education">Google Workspace for Education</a>
+                </li>
+            </ul>
+          </div>
+    <div class="categoriesmenu__content">
+        <h2 id="categoriesmenu-heading-mobile" class="categoriesmenu__heading">
+          <a href="/student/catalog/browse">All Topics</a>
+        </h2>
+        <div class="categoriesmenu__search">
+          <form class="categoriesmenu__searchform" action="/student/catalog/list" method="get">
+            <input type="hidden" name="inline_search" value="true" />
+            <input type="hidden" name="category_ids" value="" />
+            <input type="hidden" name="duration" value="" />
+            <input type="hidden" name="difficulty" value="" />
+            <input type="hidden" name="sort" value="relevance_most_recent" />
+            <input type="hidden" name="featured" value="" />
+            <input type="hidden" name="course_type" value="all" />
+            <input type="hidden" name="filter" value="" />
+            <label for="categoriesmenu-search-mobile" class="categoriesmenu__searchlabel">
+              <span class="a11y-atonly">Search Activities</span>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" class="categoriesmenu__searchicon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M15.5,14h-0.79l-0.28-0.27C15.41,12.59,16,11.11,16,9.5C16,5.91,13.09,3,9.5,3S3,5.91,3,9.5S5.91,16,9.5,16   c1.61,0,3.09-0.59,4.23-1.57L14,14.71v0.79l5,4.99L20.49,19L15.5,14z M9.5,14C7.01,14,5,11.99,5,9.5S7.01,5,9.5,5S14,7.01,14,9.5   S11.99,14,9.5,14z"></path>
+  </g>
+</svg>
+
+            </label>
+            <input
+              type="search"
+              name="search"
+              id="categoriesmenu-search-mobile"
+              class="categoriesmenu__searchinput"
+              placeholder="Search Activities"
+            />
+            <button type="submit" class="a11y-atonly">Submit</button>
+          </form>
+        </div>
+      <ul class="categoriesmenu__list">
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11120-for-educators">For Educators</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11245-google-ai-training">Google AI Training</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list?category_ids=11121-for-it-admins">For IT Admins</a>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <exceed-toggle-button
+                  trigger-selector="#categoriesmenu-mobile-10934-select"
+                  target-selector="#categoriesmenu-aside-mobile-10934"
+                  target-focus="#categoriesmenu-aside-mobile-10934-back"
+                  trigger-toggle-class="current"
+                  toggle-class="categoriesmenu__aside--current">
+                  <button
+                    type="button"
+                    id="categoriesmenu-mobile-10934-select"
+                    class="button button--link categoriesmenu__name"
+                    aria-controls="categoriesmenu-aside-mobile-10934">
+                    Applied Digital Skills
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M14.82,11.14 L13.75,12.2 L19.12,17.55 L13.85,22.8 L14.91,23.86 L21.25,17.54 L14.82,11.14 z"></path>
+  </g>
+</svg>
+
+                  </button>
+                </exceed-toggle-button>
+          </li>
+          <li class="categoriesmenu__listitem">
+                <exceed-toggle-button
+                  trigger-selector="#categoriesmenu-mobile-11050-select"
+                  target-selector="#categoriesmenu-aside-mobile-11050"
+                  target-focus="#categoriesmenu-aside-mobile-11050-back"
+                  trigger-toggle-class="current"
+                  toggle-class="categoriesmenu__aside--current">
+                  <button
+                    type="button"
+                    id="categoriesmenu-mobile-11050-select"
+                    class="button button--link categoriesmenu__name"
+                    aria-controls="categoriesmenu-aside-mobile-11050">
+                    P&amp;D Enterprise Solutions
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="categoriesmenu__icon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M14.82,11.14 L13.75,12.2 L19.12,17.55 L13.85,22.8 L14.91,23.86 L21.25,17.54 L14.82,11.14 z"></path>
+  </g>
+</svg>
+
+                  </button>
+                </exceed-toggle-button>
+          </li>
+      </ul>
+      <ul class="categoriesmenu__list">
+        <li class="categoriesmenu__listitem categoriesmenu__listitem--nosubitems">
+          <a class="categoriesmenu__name" data-object-name="topic_list_item" href="/student/catalog/list">All Activities</a>
+        </li>
+      </ul>
+    </div>
+  </section>
+</div>
+
+
+
+
+      <footer>
+        <button class="button button--link button--close modal__close" type="button" data-trigger="modal.close" data-trigger-target="mobile-categories-menu-modal" aria-label="Close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" aria-hidden="true" class="btnicon" focusable="false">
+  <g aria-hidden="true" fill="currentColor">
+    <path d="M11.84,24.57 L24.57,11.84 L23.16,10.43 L10.43,23.16 z"></path>
+    <path d="M10.43,11.84 L23.16,24.57 L24.57,23.16 L11.84,10.43 z"></path>
+  </g>
+</svg>
+
+        </button>
+      </footer>
+  </section>
+</exceed-modal>
+
+
+    
+
+    <exceed-modal-helper aria-live="polite"></exceed-modal-helper>
+
+
+  </main>
+
+  <script src="/assets/student/application-034b7e588347592bc5f5453d6fcda2aacde9e67fcff0ca6e64c003f7c5b1cb9b.js"></script>
+
+
+  
+
+  
+
+  
+
+    <footer id="page-footer" class="appfooter footer">
+  <div class="appfooter__content footer__content">
+
+        <div class="appfooter__item appfooter__customcontent footer__item footer__customcontent">
+            Google <a href='https://policies.google.com/privacy?hl=en' target='_blank'>Privacy</a> & <a href='https://www.google.com/accounts/TOS?hl=en' target='_blank'>Terms</a>, Intellum <a href='https://www.intellum.com/privacy-policy' target='_blank'>Privacy</a> & <a href='https://www.intellum.com/terms-of-service' target='_blank'>Terms</a>
+
+        </div>
+
+      <div class="menulist menulist--footer appfooter__item appfooter__item--locale">
+  <div id="app-locale-label" class="menulist__title">
+    Locale:
+    <span class="a11y-atonly">English selected</span>
+  </div>
+  <div class="menulist__wrapper">
+    <exceed-simple-select is-menu-only="true" trigger-content-selector="#app-locale-trigger span">
+      <button
+      id="app-locale-trigger"
+      class="menulist__trigger"
+      type="button"
+      aria-haspopup="listbox"
+      aria-expanded="false"
+       aria-labelledby="app-locale-label"><span
+      class="menulist__optionname">English</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" aria-hidden="true" class="menulist__triggericon" focusable="false">
+  <g fill="currentColor" aria-hidden="true">
+    <path d="M6,8.9c-0.1,0-0.3,0-0.4-0.1L2.1,5.3c-0.2-0.2-0.2-0.5,0.2,-0.7l6.8,0       c0.2,0,0.5,0,0.7,0.1s0.2,0.5,0,0.7L6.4,8.8C6.3,8.9,6.1,8.9,6,8.9z"></path>
+  </g>
+</svg>
+</button>
+
+      <ul id="app-locale-menu" class="menulist__listbox menulist__listbox--footer menulist__listbox--top" role="listbox" aria-labelledby="app-locale-label">
+          <li id="app-locale-menu-option-id"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=id"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Bahasa Indonesia</span>
+          </li>
+          <li id="app-locale-menu-option-da"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=da"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Dansk</span>
+          </li>
+          <li id="app-locale-menu-option-de"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=de"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">deutsch (Deutschland)</span>
+          </li>
+          <li id="app-locale-menu-option-en"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=en"
+            aria-selected="true"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">English</span>
+          </li>
+          <li id="app-locale-menu-option-es"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=es"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Español</span>
+          </li>
+          <li id="app-locale-menu-option-es-419"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=es-419"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Español (Latinoamérica)</span>
+          </li>
+          <li id="app-locale-menu-option-fr"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=fr"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">français (France)</span>
+          </li>
+          <li id="app-locale-menu-option-it"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=it"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">italiano (Italia)</span>
+          </li>
+          <li id="app-locale-menu-option-lv"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=lv"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">latviešu</span>
+          </li>
+          <li id="app-locale-menu-option-ms"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ms"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Malaysia</span>
+          </li>
+          <li id="app-locale-menu-option-nl"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=nl"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">nederlands (Holland)</span>
+          </li>
+          <li id="app-locale-menu-option-nb"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=nb"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Norsk</span>
+          </li>
+          <li id="app-locale-menu-option-pl"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=pl"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">polski</span>
+          </li>
+          <li id="app-locale-menu-option-pt-BR"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=pt-BR"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Português</span>
+          </li>
+          <li id="app-locale-menu-option-ro"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ro"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Română</span>
+          </li>
+          <li id="app-locale-menu-option-fi"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=fi"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Suomi</span>
+          </li>
+          <li id="app-locale-menu-option-sv"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=sv"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Svensk</span>
+          </li>
+          <li id="app-locale-menu-option-en-GB"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=en-GB"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">UK English</span>
+          </li>
+          <li id="app-locale-menu-option-cs"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=cs"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Čeština</span>
+          </li>
+          <li id="app-locale-menu-option-bg"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=bg"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Български</span>
+          </li>
+          <li id="app-locale-menu-option-mn"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=mn"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">монгол</span>
+          </li>
+          <li id="app-locale-menu-option-ru"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ru"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">русский</span>
+          </li>
+          <li id="app-locale-menu-option-uk"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=uk"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">Українська</span>
+          </li>
+          <li id="app-locale-menu-option-he"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=he"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">עברית</span>
+          </li>
+          <li id="app-locale-menu-option-ar"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ar"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">العربية</span>
+          </li>
+          <li id="app-locale-menu-option-mr"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=mr"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">मराठी</span>
+          </li>
+          <li id="app-locale-menu-option-hi"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=hi"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">हिन्दी </span>
+          </li>
+          <li id="app-locale-menu-option-as"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=as"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">অসমীয়া</span>
+          </li>
+          <li id="app-locale-menu-option-pa"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=pa"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">ਪੰਜਾਬੀ</span>
+          </li>
+          <li id="app-locale-menu-option-or"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=or"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">ଓଡ଼ିଆ</span>
+          </li>
+          <li id="app-locale-menu-option-te"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=te"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">తెలుగు</span>
+          </li>
+          <li id="app-locale-menu-option-th"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=th"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">ไทย</span>
+          </li>
+          <li id="app-locale-menu-option-ja"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ja"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">日本語</span>
+          </li>
+          <li id="app-locale-menu-option-zh-TW"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=zh-TW"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">繁體中文 (台灣)</span>
+          </li>
+          <li id="app-locale-menu-option-ko"
+            class="menulist__option"
+            role="option"
+            data-href="/student/catalog/list?locale=ko"
+            aria-selected="false"
+            tabindex="-1"
+          >
+            <span class="menulist__optionname">한국어</span>
+          </li>
+      </ul>
+    </exceed-simple-select>
+  </div>
+</div>
+
+
+      <p class="appfooter__item footer__item">
+        <a target="_blank" rel="noopener noreferrer" class="appfooter__link appfooter__link--poweredby" href="https://www.intellum.com/platform/powered-by-intellum/?utm_source=Google for Education&amp;utm_medium=referral&amp;utm_campaign=powered-by">
+          Powered by:
+          <span class="appfooter__logo footer__logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 75 21" title="Intellum">
+  <g fill="currentColor">
+    <path class="st0" d="M8.8 13.9H7V7.1h1.8v6.8zM11.9 7.1h1.8l3.2 4.2V7.1h1.8v6.8H17l-3.2-4.2v4.2H12V7.1zM25 13.9h-1.8V8.6h-1.5V7.1h4.7v1.5H25v5.3zM31.6 8.6v1.1h2v1.5h-2v1.2h2.1v1.5h-3.9V7.1h3.9v1.5h-2.1zM39.3 12.4h2.1v1.5h-3.9V7.1h1.8v5.3zM46.5 12.4h2.1v1.5h-3.9V7.1h1.8v5.3zM57.1 7.1v3.8c0 .9 0 1.7-.7 2.4-.6.6-1.5.8-2.3.8-.8 0-1.7-.2-2.3-.8-.7-.7-.7-1.5-.7-2.4V7.1h1.8v3.6c0 .9.1 1.9 1.2 1.9 1.1 0 1.2-1 1.2-1.9V7.1h1.8zM60.6 7.1h1.7l1.4 3.6 1.5-3.6H67l1 6.8h-1.8l-.4-3.9-1.6 3.9h-.7L61.8 10l-.6 3.9h-1.8l1.2-6.8z"/>
+    <g>
+      <path d="M70.4 1.5h3.2v3.2L75 6.1v-6h-6zM73.6 8.6v10.9H1.4v-18h65.1L65.1.1H0v20.8h75V10z"/>
+    </g>
+  </g>
+</svg>
+          </span>
+</a>      </p>
+  </div>
+
+</footer>
+
+
+  
+
+    <script src="/assets/jstz.min-37ad96aacf8f700e90554cbb6594de8435d1102ca1f075bedc18ce3975b6089c.js"></script>
+<script type="text/javascript">
+  var tz = jstz.determine();
+  document.cookie = "jstztimezone=" + tz.name();
+</script>
+
+
+
+  <script src="/vite/assets/packs/components.js-DydnflJ4.js" crossorigin="" type="module"></script><link rel="modulepreload" href="/vite/assets/rolldown-runtime-DAXXjFlN.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/dist-Bnj2Qb5M.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/esm-PQyfgXxY.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/axios-wqCnfrY2.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/defineProperty-J_YDmCO0.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/axios-O4nXRoJo.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/jsx-runtime-BhgoufuK.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/react-dom-CY2kD1EW.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/cute-md-editor-Bzh0zUWp.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/markdownEditor-E-CtQML2.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/query-string-UQcpApSg.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/exceed-searchable-select-4vQgdocm.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/build-B35CWvLd.js" as="script" crossorigin="">
+<link rel="modulepreload" href="/vite/assets/centrifugo-CjHr0NSV.js" as="script" crossorigin="">
+
+  
+  
+
+  <style>
+  :root {
+    --ids-color-brand-rgb: 49, 104, 246;
+  }
+</style>
+
+</body></html>
