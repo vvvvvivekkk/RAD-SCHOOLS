@@ -1,0 +1,25 @@
+- https://www.cbseacademic.nic.in/web_material/Curriculum25/sec/417-AI-X.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum26/sec/417-AI-IX.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum25/sec/417-AI-IX.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum24/sec/417-AI-IX-X.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum23/sec/417-AI-IX-X-2022-23.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum21/publication/secondary/Class10_Facilitator_Handbook.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum21/publication/secondary/AI_Curriculum_Handbook%20Class%209.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum23/SQP_MS_X/417_AI_SQP.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum24/SQP_MS_X/417_AI_MS.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum22/SQP_MS_X/417_AI_MS_T1.pdf — curl fail
+- https://www.cbseacademic.nic.in/web_material/Curriculum21/revised/Class_X/417-revisedAI.pdf — curl fail
+- https://itpd.ncert.gov.in/pluginfile.php/1535136/mod_page/content/10/NISHTHA_Secondary_19July%202021.pdf — curl fail
+- https://www.ncert.nic.in/pdf/An_Introductory_Module_AI_CT_UN514.pdf — curl fail
+- https://repository.education.gov.in/wp-content/uploads/2017/08/telagana-repository-of-open-educational-resources-troer.pdf — curl fail
+- https://cisce.org/wp-content/uploads/2024/06/ICSE_2025_SPECIMEN_661_RAI.pdf → HTML not PDF
+- https://cisce.org/wp-content/uploads/2024/06/ICSE_2025_SPECIMEN_661_RAI.pdf → HTML not PDF
+- https://dsel.education.gov.in/sites/default/files/update/ncf_2023.pdf → HTML not PDF
+- https://salwanpublicschool.edu.in/wp-content/uploads/2024/02/NCF-for-School-Education.pdf → HTML not PDF
+- https://www.education.gov.in/sites/upload_files/mhrd/files/NEP_Final_English_0.pdf → HTML not PDF
+- https://nishtha.ncert.gov.in/ — curl fail
+- https://raise.mit.edu/wp-content/uploads/2025/03/2024-Day-of-AI-Impact-Report.pdf → HTML not PDF
+- https://cognimates.me/ — curl fail
+- https://digitalsky.dgca.gov.in/ — curl fail
+- https://pjtsau.edu.in/pjtsau-mou-marut-drones-12-10-2022.html — curl fail
+- https://menglish.sakshi.com/news/telangana/telangana-state-aviation-academy-offers-dronerpa-pilot-training-programmes-152111 — curl fail

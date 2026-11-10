@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>MIT App Inventor</title>
+
+    <!--
+      Bootstrap 5.3.3, the same local file every other page loads, so it is
+      already cached when someone arrives from an inner page. This layout
+      used to load Bootstrap 4 AND Bootstrap 5 from a CDN, and the footer
+      added Bootstrap 4's JavaScript, jQuery and Popper on top.
+    -->
+    <link rel="stylesheet" href="/css/bootstrap5.min.css">
+
+    <!--
+      Font Awesome (/css/all.css) was requested here on every page. The only
+      element on the site using an fa- icon is _includes/headernodonate.html,
+      which no layout includes. The file and /webfonts are still in the repo;
+      load them from the page that needs an icon, not from every page.
+    -->
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/mit_app_inventor.css?v=202611091141">
+
+    <!-- New, namespaced. Loaded last so it wins on ties.
+         The ?v= build stamp makes browsers fetch the new file after every
+         deploy. Without it a returning visitor can get new HTML with last
+         week's cached CSS (that is how the news-card photos came out
+         stretched: new width/height attributes, old stylesheet). -->
+    <link rel="stylesheet" href="/css/ai2-tokens.css?v=202611091141">
+    <link rel="stylesheet" href="/css/ai2-home.css?v=202611091141">
+    <!-- The live-text MIT Apps for Action banner, slide/panel 2. -->
+    <link rel="stylesheet" href="/css/ai2-afa-banner.css?v=202611091141">
+    <link rel="stylesheet" href="/css/ai2-chrome.css?v=202611091141">
+
+    <!--
+      Fonts. Only two families are used on this page: Poppins (body, set in
+      mit_app_inventor.css) and the display face (the ai2-display-font custom property in
+      ai2-tokens.css). Montserrat, Dongle, Roboto Flex, Barlow and Source Code
+      Pro used to be requested here too, though nothing referenced them.
+
+      Display face: Poppins SemiBold, the same family as the nav and the
+      body, one weight heavier. To preview alternatives on any build, add
+      ?font=fredoka (or nunito, baloo, lexend, quicksand) to the URL. The
+      script below loads that family on demand and swaps it in; without the
+      parameter it does nothing. To change the default, edit the family in
+      the link below AND the ai2-display-font and ai2-display-weight custom properties.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700&amp;display=swap">
+    <script>
+      (function () {
+        var m = /[?&]font=([a-z0-9]+)/i.exec(location.search);
+        if (!m) return;
+        var faces = {
+          poppins:   ['Poppins',   'Poppins:wght@600',         600],
+          fredoka:   ['Fredoka',   'Fredoka:wght@500;600',     600],
+          nunito:    ['Nunito',    'Nunito:wght@700;800',      800],
+          baloo:     ['Baloo 2',   'Baloo+2:wght@600;700',     700],
+          lexend:    ['Lexend',    'Lexend:wght@500;600',      600],
+          quicksand: ['Quicksand', 'Quicksand:wght@600;700',   700]
+        };
+        var f = faces[m[1].toLowerCase()];
+        if (!f) return;
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=' + f[1] + '&display=swap';
+        document.head.appendChild(l);
+        var r = document.documentElement.style;
+        r.setProperty('--ai2-display-font', "'" + f[0] + "', var(--ai2-display-fallback)");
+        r.setProperty('--ai2-display-weight', f[2]);
+      })();
+    </script>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8JVR7MNWD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-X8JVR7MNWD');
+    </script>
+  </head>
+
+  <body class="mit_app_inventor">
+
+
+<header class="ai2-header">
+  <a class="ai2-skip" href="#main">Skip to main content</a>
+
+  <nav class="ai2-nav" aria-label="Main">
+    <a class="ai2-brand" href="/">
+      <img src="/images/logo.png" alt="MIT App Inventor home" />
+    </a>
+
+    <a class="ai2-signin ai2-compact" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+
+    <a class="ai2-cta ai2-compact" href="/get-started">Build Your First App!</a>
+
+    <button
+      class="ai2-toggle"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ai2Menu"
+      data-bs-toggle="collapse"
+      data-bs-target="#ai2Menu"
+      aria-controls="ai2Menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" fill="none" />
+      </svg>
+    </button>
+
+    <div class="collapse ai2-menu" id="ai2Menu">
+      <ul class="ai2-list">
+        <!--
+          To underline the current section, add aria-current="page" to the
+          matching link, e.g.
+          {% if page.url contains '/explore/teach' %}aria-current="page"{% endif %}
+        -->
+        <li><a class="ai2-link" href="/explore/who-we-are">Who We Are</a></li>
+        <li><a class="ai2-link" href="/explore/teach">For Teachers</a></li>
+        <li><a class="ai2-link" href="/explore/news">News &amp; Events</a></li>
+        <li><a class="ai2-link" href="/explore/research">Research</a></li>
+        <li class="ai2-signin-item">
+          <a class="ai2-link" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Desktop copies of the two actions; see "Desktop: brand | menu" in the styles above. -->
+    <a class="ai2-signin ai2-wide" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+
+    <a class="ai2-cta ai2-wide" href="/get-started">Build Your First App!</a>
+  </nav>
+</header>
+
+<script>
+  /* Keeps --ai2-header-h equal to the header's real height (see the
+     scroll-padding-top rule above). */
+  (function () {
+    var header = document.querySelector('.ai2-header');
+    if (!header) return;
+    function measure() {
+      document.documentElement.style.setProperty('--ai2-header-h', header.offsetHeight + 'px');
+    }
+    measure();
+    if (window.ResizeObserver) new ResizeObserver(measure).observe(header);
+    else window.addEventListener('resize', measure);
+  })();
+</script>
+<div class="container-fluid-home">
+
+      <!-- Carousel panels for phone-size screens -->
+      <div class="ai2-carousel-mobile">
+
+        <!-- Panel 1: Global Appathon (first since Oct 29, 2026). A
+             phone-shaped card made from the banner's art (logo, partner
+             logos, photo collage). "Join today!" is live text over it, so it
+             translates; see section 12 of css/ai2-home.css. It is the first
+             thing a phone shows, so it loads right away; the 1x1 GIF source
+             stops desktop browsers fetching it for a panel they never show. -->
+        <div class="ai2-panel">
+          <a class="ai2-panel__media" href="https://globalappathon.org/" target="_blank" rel="noopener">
+            <picture>
+              <source media="(min-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+              <img src="/landing_page_assets/carousel_banners_small/GlobalAppathon_join_mobile_732.jpg"
+                   width="732" height="964" fetchpriority="high"
+                   alt="Global Appathon, from appinventor.org and MIT App Inventor. Students present the apps they built.">
+            </picture>
+            <span class="ai2-ga-join ai2-ga-join--panel">Join today!</span>
+          </a>
+        </div>
+
+        <!-- Panel 2: "Your idea. Your app. Your phone." Below the first
+             panel, so its photo loads only as the visitor scrolls to it. -->
+        <div class="ai2-panel">
+          <a class="ai2-panel__media ai2-panel__media--split" href="/get-started">
+            <div class="ai2-panel__field">
+              <div class="ai2-panel__headline"><span class="ai2-nowrap">Your idea.</span> <span class="ai2-nowrap">Your app.</span> <span class="ai2-nowrap">Your phone.</span></div>
+              <div class="ai2-panel__sub">And it works on iPhone and Android!</div>
+            </div>
+            <!-- The 1x1 GIF source stops desktop browsers fetching this photo
+                 for a panel they never show. -->
+            <picture>
+              <source media="(min-width: 768px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+              <img src="/landing_page_assets/carousel_banners_full/students_heart_app_800.jpg" width="800" height="533" loading="lazy"
+                   alt="Two students smiling at the camera, one holding up a phone running the heart-drawing app they built.">
+            </picture>
+          </a>
+        </div>
+
+        <!-- Panel 3: MIT Apps for Action. Live text, not an image; see
+             _includes/apps-for-action-banner.html. -->
+        <div class="ai2-panel">
+          <a class="ai2-panel__media" href="/explore/apps-for-action">
+            
+
+<div class="afa-banner afa-banner--panel">
+
+  
+  
+
+<svg class="afa-flight afa-flight--on-view" viewBox="0 0 1200 200" aria-hidden="true" focusable="false">
+  <defs>
+    <mask id="afa-reveal-panel" maskUnits="userSpaceOnUse" x="-80" y="0" width="1360" height="200">
+      <path class="afa-reveal" pathLength="1000"
+            d="M -40 158 C 60 160, 118 130, 118 98 C 118 70, 78 64, 68 88 C 56 116, 96 142, 146 144 C 232 150, 300 122, 362 96 C 470 50, 524 86, 652 72 C 802 56, 902 88, 1012 62 C 1082 48, 1112 44, 1146 52" />
+    </mask>
+  </defs>
+  <path class="afa-trail" mask="url(#afa-reveal-panel)"
+        d="M -40 158 C 60 160, 118 130, 118 98 C 118 70, 78 64, 68 88 C 56 116, 96 142, 146 144 C 232 150, 300 122, 362 96 C 470 50, 524 86, 652 72 C 802 56, 902 88, 1012 62 C 1082 48, 1112 44, 1146 52" />
+  <g class="afa-bee" transform="translate(1146, 52)">
+    <image href="/landing_page_assets/logos/ai2-bee.svg" x="-28" y="-22.4" width="56" height="44.8" />
+  </g>
+</svg>
+
+<script>
+  /* Start the flight the first time this box is half on screen, so a bee
+     below the fold does not land before anyone scrolls down to see it. */
+  (function (svg) {
+    if (!svg) return;
+    var box = svg.parentNode;
+    function go() { svg.classList.add('is-flying'); }
+    if (!('IntersectionObserver' in window)) { go(); return; }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { go(); io.disconnect(); }
+      });
+    }, { threshold: 0.5 });
+    io.observe(box);
+  })(document.currentScript && document.currentScript.previousElementSibling);
+</script>
+
+
+  
+
+  <div class="afa-banner__head">
+    <p class="afa-banner__title">MIT Apps for Action</p>
+    <p class="afa-banner__promise">Your students build a working app &mdash; in two days to two weeks.</p>
+  </div>
+
+  <ul class="afa-words afa-banner__over" aria-label="What students become">
+    <li>confident</li>
+    <li>community-builders</li>
+    <li>empowered</li>
+  </ul>
+
+  <ul class="afa-words afa-banner__under">
+    <li>computational thinkers</li>
+    <li>problem-solvers</li>
+    <li>inspired</li>
+  </ul>
+
+</div>
+
+          </a>
+        </div>
+
+      </div>
+
+      <!-- Carousel for computer screens.
+           STRUCTURE IS LOAD-BEARING. Bootstrap needs exactly:
+
+             #heroCarousel .carousel > .carousel-inner > .carousel-item
+                                     > button.carousel-control-prev
+                                     > button.carousel-control-next
+
+           A stray closing div tag inside slide 1 used to close .carousel-item and
+           .carousel-inner early. Slides 2 and 3 then landed as siblings of
+           .carousel-inner: being floated with nothing to contain them, the
+           carousel collapsed to zero height when either became active (the
+           page "pulled up"), and both control buttons fell outside
+           #heroCarousel, so they had no positioned ancestor and vanished.
+           Do not reflow this block without re-counting the divs. -->
+      <div class="ai2-carousel-desktop">
+        <!--
+             No data-bs-ride here: autoplay is turned on by the script at the
+             end of this file, and only for visitors who have not asked for
+             less data or less motion. The arrows always work.
+        -->
+        <div id="heroCarousel" class="carousel slide" data-bs-interval="5000">
+
+          <div class="carousel-inner">
+
+            <!-- Slide 1: Global Appathon (first since Oct 29, 2026). The art
+                 is an image; "Join today!" is live text laid over it, so it
+                 translates. See section 12 of css/ai2-home.css. 4:1 like the
+                 other slides (the master is 2000x500). It shows first, so it
+                 loads right away with fetchpriority. The 1x1 GIF source keeps
+                 phones, which show the panel version above, from downloading
+                 it at all; its "1w" and sizes="1px" are only there to satisfy
+                 the HTML validator (a source beside a width-described srcset
+                 must describe widths too). -->
+            <div class="carousel-item active">
+              <a class="ai2-slide" href="https://globalappathon.org/"
+                 target="_blank" rel="noopener">
+                <picture class="ai2-slide__pic">
+                  <source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 1w" sizes="1px">
+                  <img class="ai2-slide__art"
+                       src="/landing_page_assets/carousel_banners_full/GlobalAppathon_join_1600.jpg"
+                       srcset="/landing_page_assets/carousel_banners_full/GlobalAppathon_join_960.jpg 960w,
+                               /landing_page_assets/carousel_banners_full/GlobalAppathon_join_1600.jpg 1600w"
+                       sizes="100vw" width="1600" height="400" fetchpriority="high"
+                       alt="Global Appathon, from appinventor.org and MIT App Inventor. Students present the apps they built.">
+                </picture>
+                <span class="ai2-ga-join ai2-ga-join--slide">Join today!</span>
+              </a>
+            </div>
+
+            <!-- Slide 2: heart app (slide 1 until Oct 29, 2026). A pre-cropped
+                 file (2.28:1, the shape of the photo box) instead of the
+                 2400x1600 original: 129 KB at 1600w, 56 KB at 960w, against
+                 434 KB. Lazy: hidden slides are display:none, so it loads
+                 only when the carousel is about to show it. The 1x1 GIF
+                 source keeps phones from downloading it at all. -->
+            <div class="carousel-item">
+              <a class="ai2-slide ai2-slide--split ai2-slide--heart" href="/get-started">
+                <picture>
+                  <source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw== 1w" sizes="1px">
+                  <img class="ai2-slide__photo"
+                       src="/landing_page_assets/carousel_banners_full/students_heart_app_wide_1600.jpg"
+                       srcset="/landing_page_assets/carousel_banners_full/students_heart_app_wide_960.jpg 960w,
+                               /landing_page_assets/carousel_banners_full/students_heart_app_wide_1600.jpg 1600w"
+                       sizes="57vw" width="1600" height="702"
+                       loading="lazy"
+                       alt="Two students smiling at the camera, one holding up a phone running the heart-drawing app they built.">
+                </picture>
+                <div class="ai2-slide__feather"></div>
+                <div class="carousel-caption ai2-caption--overview">
+                  <div class="ai2-caption__headline"><span class="ai2-nowrap">Your idea.</span> <span class="ai2-nowrap">Your app.</span> <span class="ai2-nowrap">Your phone.</span></div>
+                  <div class="ai2-caption__sub">And it works on iPhone and Android!</div>
+                </div>
+              </a>
+            </div>
+
+            <!-- Slide 3: MIT Apps for Action. Live text, not an image, so it
+                 translates and costs 4.6 KB (the bee) instead of a banner PNG.
+                 The bee flies in each time this slide becomes active, so it
+                 stays up 8 seconds rather than 5 to leave time to read it
+                 after the bee lands. -->
+            <div class="carousel-item" data-bs-interval="8000">
+              <a class="ai2-slide" href="/explore/apps-for-action">
+                
+
+<div class="afa-banner afa-banner--carousel">
+
+  
+  
+
+<svg class="afa-flight" viewBox="0 0 1200 200" aria-hidden="true" focusable="false">
+  <defs>
+    <mask id="afa-reveal-carousel" maskUnits="userSpaceOnUse" x="-80" y="0" width="1360" height="200">
+      <path class="afa-reveal" pathLength="1000"
+            d="M -40 158 C 60 160, 118 130, 118 98 C 118 70, 78 64, 68 88 C 56 116, 96 142, 146 144 C 232 150, 300 122, 362 96 C 470 50, 524 86, 652 72 C 802 56, 902 88, 1012 62 C 1082 48, 1112 44, 1146 52" />
+    </mask>
+  </defs>
+  <path class="afa-trail" mask="url(#afa-reveal-carousel)"
+        d="M -40 158 C 60 160, 118 130, 118 98 C 118 70, 78 64, 68 88 C 56 116, 96 142, 146 144 C 232 150, 300 122, 362 96 C 470 50, 524 86, 652 72 C 802 56, 902 88, 1012 62 C 1082 48, 1112 44, 1146 52" />
+  <g class="afa-bee" transform="translate(1146, 52)">
+    <image href="/landing_page_assets/logos/ai2-bee.svg" x="-28" y="-22.4" width="56" height="44.8" />
+  </g>
+</svg>
+
+
+  
+
+  <div class="afa-banner__head">
+    <p class="afa-banner__title">MIT Apps for Action</p>
+    <p class="afa-banner__promise">Your students build a working app &mdash; in two days to two weeks.</p>
+  </div>
+
+  <ul class="afa-words afa-banner__over" aria-label="What students become">
+    <li>confident</li>
+    <li>community-builders</li>
+    <li>empowered</li>
+  </ul>
+
+  <ul class="afa-words afa-banner__under">
+    <li>computational thinkers</li>
+    <li>problem-solvers</li>
+    <li>inspired</li>
+  </ul>
+
+</div>
+
+              </a>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button"
+                  data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Previous slide">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button"
+                  data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Next slide">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+
+        </div>
+      </div>
+
+      <main id="main">
+        
+
+
+<h1 class="visually-hidden">MIT App Inventor</h1>
+
+<!-- Impact figures -->
+
+<section class="ai2-impact">
+  <h2 class="ai2-impact__heading">
+    App Inventor is the largest app development tool for global education.
+  </h2>
+
+  <ul class="ai2-impact__row">
+    <li class="ai2-impact__circle">
+      <span class="ai2-impact__figure">30M</span>
+      <span class="ai2-impact__label">Learners</span>
+    </li>
+    <li class="ai2-impact__circle">
+      <span class="ai2-impact__figure">137M</span>
+      <span class="ai2-impact__label">Apps Built</span>
+    </li>
+    <li class="ai2-impact__circle">
+      <span class="ai2-impact__figure">200</span>
+      <span class="ai2-impact__label">Countries + Regions</span>
+    </li>
+    <li class="ai2-impact__circle">
+      <span class="ai2-impact__figure">52%</span>
+      <span class="ai2-impact__label">Developing World</span>
+    </li>
+  </ul>
+</section>
+
+<!-- appinventor.org video -->
+
+<section class="ai2-video" aria-labelledby="ai2-video-heading">
+  <h2 id="ai2-video-heading" class="ai2-video__heading">See what students build</h2>
+  <div class="ai2-video__frame"
+       data-src="https://video.squarespace-cdn.com/content/v1/63125c822016031acb8ce16a/4b2a599d-e88a-43f9-98cd-05c5f903ccd2/playlist.m3u8">
+    <button type="button" class="ai2-video__play"
+            aria-label="Play the video: students around the world build apps with App Inventor (3 minutes)">
+      <img class="ai2-video__poster"
+           src="/landing_page_assets/video/aiorg-video-poster.jpg"
+           width="720" height="355" alt="" loading="lazy" decoding="async">
+      <span class="ai2-video__badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="28" height="28"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+        <span>Play video &middot; 3:01</span>
+      </span>
+    </button>
+  </div>
+</section>
+
+
+<section class="ai2-setup" aria-labelledby="ai2-setup-heading">
+  <h2 id="ai2-setup-heading">All you need is a web browser</h2>
+  <p>App Inventor is free and runs right in your browser on a Mac, Windows computer, or Chromebook. There&rsquo;s nothing to install.</p>
+  <p><strong>Run your app on your own phone or tablet.</strong> Get the free MIT AI2 Companion app for iPhone or Android. <a href="/explore/ai2/setup-device-wifi">Here&rsquo;s how to connect</a>.</p>
+</section>
+
+
+<!-- Start here: tutorials by level -->
+
+<section class="ai2-tutorials">
+  <h2 class="ai2-tutorials__heading">Pick something to build</h2>
+  <p class="ai2-tutorials__lede">Step-by-step tutorials at three levels.</p>
+
+  <div class="ai2-tutorials__track">
+
+    <!-- Beginner -->
+    <section class="ai2-tutgroup ai2-tutgroup--beginner">
+      <h3 class="ai2-tutgroup__label">Beginner</h3>
+      <p class="ai2-tutgroup__note">No experience needed. About an hour each.</p>
+
+      <ul class="ai2-tutgroup__list">
+        <li>
+          <a class="ai2-tut__link" href="/explore/ai2/hellopurr">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/hello-purr.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">Hello Purr</span>
+              <span class="ai2-tut__blurb">Tap the kitty and hear him meow. The classic first app.</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link"
+             href="http://ai2.appinventor.mit.edu/?locale=en&amp;repo=http://appinventor.mit.edu/yrtoolkit/yr/aiaFiles/talk_to_me/TalkToMe.asc" target="_blank" rel="noopener">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/talk-to-me.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">Talk to Me</span>
+              <span class="ai2-tut__blurb">Build an app that says whatever you type.</span>
+            </span>
+            <span class="ai2-tut__opens">Opens in App Inventor</span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link"
+             href="http://ai2.appinventor.mit.edu/?locale=en&amp;repo=http://appinventor.mit.edu/yrtoolkit/yr/aiaFiles/Fake_Voices/FakeVoices_Starter.asc" target="_blank" rel="noopener">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/fake-voices.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">Fake Voices</span>
+              <span class="ai2-tut__blurb">Bend a synthetic voice’s pitch and speed, then debate the ethics.</span>
+            </span>
+            <span class="ai2-tut__opens">Opens in App Inventor</span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="ai2-tutgroup__more" href="/explore/ai2/tutorials">
+        All Tutorials &rarr;
+      </a>
+    </section>
+
+    <!-- Intermediate -->
+    <section class="ai2-tutgroup ai2-tutgroup--intermediate">
+      <h3 class="ai2-tutgroup__label">Intermediate</h3>
+      <p class="ai2-tutgroup__note">Once you know the blocks editor. Generative AI, maps, and the camera.</p>
+
+      <ul class="ai2-tutgroup__list">
+        <li>
+          <a class="ai2-tut__link" href="/explore/resources/ai/GenAIDigitalDoodle">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/genai-digital-doodle.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">GenAI Digital Doodle</span>
+              <span class="ai2-tut__blurb">Have AI paint a background, then draw on top of it.</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link" href="/explore/ai2/emergencyapp">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/emergency-app.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">Emergency App</span>
+              <span class="ai2-tut__blurb">Share your location, a photo, and a recorded message fast.</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link" href="/explore/resources/ai/GenAIVisionAid">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/genai-vision-aid.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">GenAI Vision Aid</span>
+              <span class="ai2-tut__blurb">Snap a photo and have AI describe it out loud.</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="ai2-tutgroup__more" href="/explore/ai2/tutorials">
+        All Tutorials &rarr;
+      </a>
+    </section>
+
+    <!-- Advanced -->
+    <section class="ai2-tutgroup ai2-tutgroup--advanced">
+      <h3 class="ai2-tutgroup__label">Advanced</h3>
+      <p class="ai2-tutgroup__note">Machine learning, saved data, and apps that talk to each other.</p>
+
+      <ul class="ai2-tutgroup__list">
+        <li>
+          <a class="ai2-tut__link" href="/explore/resources/ai/picaboo">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/picaboo.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">PICaboo</span>
+              <span class="ai2-tut__blurb">Train an image classifier on your face for a peekaboo game.</span>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link"
+             href="http://ai2.appinventor.mit.edu/?locale=en&amp;repo=http://appinventor.mit.edu/yrtoolkit/yr/aiaFiles/mytodolist/myToDoList_Starter.asc" target="_blank" rel="noopener">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/todo-list.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">ToDo List App</span>
+              <span class="ai2-tut__blurb">Add and remove tasks, bullet-journal style.</span>
+            </span>
+            <span class="ai2-tut__opens">Opens in App Inventor</span>
+          </a>
+        </li>
+        <li>
+          <a class="ai2-tut__link" href="/explore/ai2/clouddb-chat">
+            <img class="ai2-tut__thumb" width="176" height="136"
+                 src="/landing_page_assets/tutorial_thumbs/clouddb-chat.jpg"
+                 alt="" loading="lazy">
+            <span>
+              <span class="ai2-tut__title">CloudDB Chat App</span>
+              <span class="ai2-tut__blurb">Chat with friends on other phones through the cloud.</span>
+            </span>
+          </a>
+        </li>
+      </ul>
+
+      <a class="ai2-tutgroup__more" href="/explore/ai2/tutorials">
+        All Tutorials &rarr;
+      </a>
+    </section>
+
+  </div>
+
+  <p class="ai2-tutorials__video">
+    Rather watch than read?
+    <a href="https://www.youtube.com/@MITAppInventor" target="_blank" rel="noopener">Video tutorials on our YouTube channel &rarr;</a>
+  </p>
+</section>
+
+
+<script src="/js/ai2-video.js?v=202611091141" defer></script>
+
+<!-- News & Events -->
+<div class="ai2-band ai2-band--tight">
+  <div class="row news-header">
+    <div class="col-xl-12">
+      <h2 class="ai2-news__heading">News &amp; Events</h2>
+    </div>
+  </div>
+
+  <div class="row news-cards">
+    <div class="col-xl-12 ai2-news">
+      
+      <div class="ai2-news__grid">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <div class="card ai2-news-card ai2-card--orange">
+          <div class="card-body">
+            <h3 class="card-title">Registration for the Global Appathon 2027 is open!</h3>
+            <p class="ai2-news__date"><time datetime="2026-10-29">Oct 29, 2026</time></p>
+            
+            <div class="ai2-news-card__media">
+              <img src="/images/GlobalAppathon2027-web.jpg" alt="Global Appathon students mosaic" width="800" height="533" loading="lazy" decoding="async">
+            </div>
+            
+            <p class="card-text ai2-news-card__summary">The Global Appathon is a free, virtual hackathon hosted by appinventor.org and MIT App Inventor that encourages people around the world to build mobile apps for a cause. The goal of the competition is to develop an app using MIT...</p>
+            
+            
+            
+            
+            
+            <p class="card-text ai2-news-card__link">
+              <a href="https://globalappathon.org/" target="_blank" rel="noopener">Link to Global Appathon</a>
+            </p>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="card ai2-news-card ai2-news-card--text ai2-card--lime">
+          <div class="card-body">
+            <h3 class="card-title">Ten Years of iOS</h3>
+            <p class="ai2-news__date"><time datetime="2026-10-20">Oct 20, 2026</time></p>
+            
+            <p class="card-text ai2-news-card__summary">In this blog post I celebrate 10 years of working on MIT App Inventor for iOS, capturing the history of this effort and how it has changed the face of the App Inventor project. Ten years ago, during a quiet long weekend in 2016, I sat at my computer and asked myself a question that every engineer loves (and occasionally regrets): "How hard could it be to create a brand new runtime for my product?" Many people had been asking about iOS support for App Inventor, and it made sense to dive in and find out the answer to that question. At the time, the goal was modest: I wanted to see if we could get a project like Hello Purr to run on an iPhone. But as I quickly discovered, the gap between a "simple idea" and a working implementation was a great technical puzzle that ended up having a lot of moving parts.</p>
+            
+            
+            
+            
+            
+            <p class="card-text ai2-news-card__link">
+              <a href="/blogs/evan/2026/10/20/ten-years-of-ios">Link to article</a>
+            </p>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="card ai2-news-card ai2-news-card--text ai2-card--magenta">
+          <div class="card-body">
+            <h3 class="card-title">First MIT Apps for Action summer program announced for 2027</h3>
+            <p class="ai2-news__date"><time datetime="2026-10-14">Oct 14, 2026</time></p>
+            
+            <p class="card-text ai2-news-card__summary">MIT App Inventor is pleased to announce the first MIT Apps for Action summer program for Boston Education Consulting. This two-week, in-person program will take place in summer 2027. Designed for students in grades 9–11, the program combines artificial intelligence, mobile application development, and design thinking. Guided by MIT instructional staff and teaching assistants, participants will use MIT App Inventor to design, build, and present applications addressing real-world challenges in their communities. For program details and application information, visit bostonedu.net.</p>
+            
+            
+            
+            
+            
+            <p class="card-text ai2-news-card__link">
+              <a href="/explore/apps-for-action">About MIT Apps for Action</a>
+            </p>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        
+        <div class="card ai2-news-card ai2-card--slate">
+          <div class="card-body">
+            <h3 class="card-title">Blocks, AI, and Access: App Inventor at the 2026 Blockly Summit</h3>
+            <p class="ai2-news__date"><time datetime="2026-06-17">Jun 17, 2026</time></p>
+            
+            <div class="ai2-news-card__media">
+              <img src="/images/BlocklySummit2026-web.jpg" alt="José Dominguez, Natalie Lao, Evan Patton, Mark Friedman and Michael Gallagher, left to right, standing outside the 2026 Blockly Summit." width="800" height="533" loading="lazy" decoding="async">
+            </div>
+            
+            <p class="card-text ai2-news-card__summary">Can blocks serve as powerful abstractions in the era of AI-assisted coding? How can we increase the accessibility of programming for people with disabilities or who may have limited connectivity?</p>
+            
+            
+            
+            
+            
+            <p class="card-text ai2-news-card__link">
+              <a href="https://www.appinventorfoundation.org/news/app-inventor-blockly-summit-2026" target="_blank" rel="noopener">Link to appinventor.org</a>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+
+      <p class="text-center">
+        <a class="ai2-viewmore" href="/explore/news">View More</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+      </main>
+
+    </div>
+
+    
+
+<footer class="ai2-footer">
+  <div class="ai2-footer__inner">
+
+    <div class="ai2-footer__brand">
+      <h2>MIT App Inventor</h2>
+      <div class="ai2-footer__logos">
+        <a href="https://raise.mit.edu" target="_blank" rel="noopener"><img class="ai2-footer__raise" src="/images/RAISE_sub-brand_lockup_two-level_rgb_black-and-silver-gray.svg" width="220" alt="MIT RAISE: Responsible AI for Social Empowerment and Education" loading="lazy"></a>
+        <a href="https://web.mit.edu" target="_blank" rel="noopener"><img src="/landing_page_assets/logos/MIT-logo-gray-ltgray-72x38.svg" width="120" alt="MIT" loading="lazy"></a>
+      </div>
+      <div class="ai2-footer__social">
+        <a href="https://www.youtube.com/@MITAppInventor" target="_blank" rel="noopener"><img src="/images/social_media/youtube.png" alt="MIT App Inventor on YouTube" loading="lazy"></a>
+        <a href="https://www.instagram.com/mitappinventorofficial/" target="_blank" rel="noopener"><img src="/images/social_media/instagram.png" alt="Instagram" loading="lazy"></a>
+        <a href="https://www.facebook.com/MITAppInventor" target="_blank" rel="noopener"><img src="/images/social_media/facebook.png" alt="Facebook" loading="lazy"></a>
+        <a href="https://www.linkedin.com/company/appinventorfoundation" target="_blank" rel="noopener"><img src="/images/social_media/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+      </div>
+      <a class="ai2-footer__donate" href="https://giving.appinventor.mit.edu/button" target="_blank" rel="noopener">Donate</a>
+    </div>
+
+    <nav class="ai2-footer__cols" aria-label="Site">
+      <div>
+        <h3>Get help</h3>
+        <a class="ai2-footer__ask" href="https://community.appinventor.mit.edu" target="_blank" rel="noopener">Ask the Community</a>
+        <p class="ai2-footer__note">Our community experts answer questions about using App Inventor.</p>
+        <ul>
+          <li><a href="/FAQ">FAQ</a></li>
+          <li><a href="/explore/content/system-requirements">System Requirements</a></li>
+          <li><a href="/ios_tips">iPhone &amp; iPad</a></li>
+          <li><a href="/ai2/ReleaseNotes">Release Notes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="/get-started">Get Started</a></li>
+          <li><a href="/explore/ai2/tutorials">Tutorials</a></li>
+          <li><a href="https://www.youtube.com/@MITAppInventor" target="_blank" rel="noopener">Video Tutorials</a></li>
+          <li><a href="/explore/books">Books</a></li>
+          <li><a href="/explore/teach">For Teachers</a></li>
+          <li><a href="/explore/expert-trainers">Expert Trainers</a></li>
+          <li><a href="/explore/apps-for-action">Apps for Action</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="/explore/news">News &amp; Events</a></li>
+          <li><a href="/explore/blog">Team Blog</a></li>
+          <li><a href="https://www.appinventor.org/appathons" target="_blank" rel="noopener">Appathons</a></li>
+          <li><a href="/explore/research">Research</a></li>
+          <li><a href="https://github.com/mit-cml/appinventor-sources" target="_blank" rel="noopener">Open Source Code</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="/explore/who-we-are">Who We Are</a></li>
+          <li>
+            <a href="mailto:appinventor@mit.edu">Workshops &amp; Collaborations</a>
+            <p class="ai2-footer__note">For schools, districts, and organizations: <a href="mailto:appinventor@mit.edu">Email Us</a>.</p>
+          </li>
+          <li><a href="/about/termsofservice">Terms &amp; Privacy</a></li>
+          <li><a href="https://accessibility.mit.edu" target="_blank" rel="noopener">Accessibility</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="ai2-footer__legal">
+    &copy; 2012&ndash;2026 Massachusetts Institute of Technology
+    <img alt="" src="/images/cc80x15.png" width="80" height="15">
+    This work is licensed under a
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </div>
+</footer>
+
+	<!--
+	  One Bootstrap bundle (5.3.3; Popper is inside it), replacing jQuery +
+	  Popper + Bootstrap 4 JS. The homepage used to load this bundle again
+	  from a CDN on top of those three. Nothing on the site calls jQuery
+	  except pages that load their own copy.
+	-->
+	<script src="/js/bootstrap5.bundle.min.js" defer></script>
+	<!--
+	  Twitter's widgets.js (95 KB) used to load here on every page. Nothing on
+	  the site embeds a tweet or a timeline; the file is still in /js if a page
+	  ever needs it, and should then be loaded by that page alone.
+	-->
+	
+<!-- The Bootstrap bundle comes from _includes/footer.html, which every
+         layout includes. -->
+
+    <script>
+      /* Start the hero carousel only when rotating it is welcome.
+
+         The heart-app slide fetches its photo (56-129 KB) when the
+         carousel rotates to it, so a visitor who stays a few seconds pays
+         for it whether or not they looked. (The Apps for Action slide is
+         live text and costs almost nothing.)
+
+         Skipped when the browser reports Data Saver or a 2G-class
+         connection -- Chromium only, which is most of the Android audience
+         this matters for -- and when the visitor's system asks for reduced
+         motion. In both cases the carousel still works; it just waits to be
+         asked, and the other slides cost nothing until then. */
+      window.addEventListener('load', function () {
+        var el = document.getElementById('heroCarousel');
+        if (!el || !window.bootstrap) return;
+
+        var net = navigator.connection || {};
+        var thrifty = net.saveData === true || /(^|-)2g$/.test(net.effectiveType || '');
+        var still = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (thrifty || still) return;
+
+        var carousel = bootstrap.Carousel.getOrCreateInstance(el);
+        carousel.cycle();
+
+        /* Hold still while keyboard focus is inside it. Otherwise the slide
+           someone has tabbed to rotates away after five seconds and takes
+           their focus with it. Rotation resumes when focus leaves. */
+        el.addEventListener('focusin', function () { carousel.pause(); });
+        el.addEventListener('focusout', function (e) {
+          if (!el.contains(e.relatedTarget)) carousel.cycle();
+        });
+      });
+    </script>
+  </body>
+</html>

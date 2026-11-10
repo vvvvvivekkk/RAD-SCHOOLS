@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <style>
+    .cookie-consent {
+        position: fixed;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99999;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+        padding: 12px 20px;
+        background: #55ac42;
+        color: #fff;
+        font-size: 14px;
+        line-height: 1.4;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, .2);
+    }
+
+    .cookie-consent.commbox {
+        background: #0C628F;
+    }
+
+    .cookie-consent__agree.btn {
+        flex: 0 0 auto;
+        min-width: 80px;
+        padding: 6px 18px;
+        border: 1px solid #fff;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .cookie-consent__agree.btn:hover {
+        border-color: #fff;
+        opacity: 0.75;
+    }
+
+    @media (max-width: 575px) {
+        .cookie-consent {
+            flex-direction: column;
+            align-items: stretch;
+            text-align: center;
+        }
+    }
+</style>
+
+<div class="js-cookie-consent cookie-consent commbox">
+
+    <span class="cookie-consent__message">
+        COMMBOX uses cookies to constantly improve the site and to enable features. By continuing here, you agree to this. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    </span>
+
+    <button class="js-cookie-consent-agree cookie-consent__agree btn">
+        OK
+    </button>
+
+</div>
+    <script>
+
+        window.laravelCookieConsent = (function () {
+            const COOKIE_VALUE = 1;
+            const COOKIE_DOMAIN = 'www.commbox.org';
+
+            function consentWithCookies() {
+                setCookie('medbox', COOKIE_VALUE, 3650);
+                hideCookieDialog();
+            }
+
+            function cookieExists(name) {
+                return (document.cookie.split('; ').indexOf(name + '=' + COOKIE_VALUE) !== -1);
+            }
+
+            function hideCookieDialog() {
+                const dialogs = document.getElementsByClassName('js-cookie-consent');
+
+                for (let i = 0; i < dialogs.length; ++i) {
+                    dialogs[i].style.display = 'none';
+                }
+            }
+
+            function setCookie(name, value, expirationInDays) {
+                const date = new Date();
+                date.setTime(date.getTime() + (expirationInDays * 24 * 60 * 60 * 1000));
+                document.cookie = name + '=' + value
+                    + ';expires=' + date.toUTCString()
+                    + ';domain=' + COOKIE_DOMAIN
+                    + ';path=/';
+            }
+
+            if (cookieExists('medbox')) {
+                hideCookieDialog();
+            }
+
+            const buttons = document.getElementsByClassName('js-cookie-consent-agree');
+
+            for (let i = 0; i < buttons.length; ++i) {
+                buttons[i].addEventListener('click', consentWithCookies);
+            }
+
+            return {
+                consentWithCookies: consentWithCookies,
+                hideCookieDialog: hideCookieDialog
+            };
+        })();
+    </script>
+
+
+    <!-- Matomo Tag Manager -->
+<script>
+var _mtm = window._mtm = window._mtm || [];
+_mtm.push({'mtm.startTime': (new Date().getTime()), 'event': 'mtm.Start'});
+(function() {
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src='https://matomo.commbox.org/js/container_ecppYudm.js?v=1'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Matomo Tag Manager -->
+
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+    <title>AI competency framework for students</title>
+<meta name="description" content="&quot;Integrating AI learning objectives into official school curricula is crucial for students globally to engage safely and meaningfully&nbsp; &#10152;read more">
+<meta name="keywords" content="">
+<meta property="medbox:section" content="publication">
+    <link rel="stylesheet" type="text/css" href="/css/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/Open-Sans-Stylesheet.css?v=1720549218">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/bootstrap-icons.css?v=1717350483">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/bootstrap.min.css?v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/medbox.css?v=23&amp;v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/datatables.min.css?v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/chosen.css?v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/bootstrap-select.css?v=1789492707">
+            <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/commbox.css?v=1789492707">
+        
+    <style>
+        .bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+            color: white;
+        }
+
+        .bootstrap-select > .dropdown-toggle.bs-placeholder,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:hover,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:focus,
+        .bootstrap-select > .dropdown-toggle.bs-placeholder:active {
+            color: black;
+        }
+    </style>
+
+    
+
+        <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/toolbox.css?v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/mb/css/jquery-jvectormap-2.0.5.css?v=1789492707">
+
+    <script type="text/javascript" src="https://www.commbox.org/mb/js/jquery-3.4.1.min.js?v=1789492707"></script>
+    <script type="text/javascript" src="https://www.commbox.org/mb/js/jquery-jvectormap-2.0.5.min.js?v=1789492707"></script>
+    <script type="text/javascript" src="https://www.commbox.org/mb/js/jquery-jvectormap-world-mill.js?v=1789492707"></script>
+
+    <script type="text/javascript" src="https://www.commbox.org/mb/js/bootstrap-select.min.js?v=1789492707"></script>
+    <script type="text/javascript" src="https://www.commbox.org/js/medbox-project.js?v=1789492707"></script>
+
+</head>
+
+
+<body id="mb" class="body align-items-center commbox">
+<div id="page-container">
+    <header class="background-color header">
+    <div class="container">
+        <nav class="navbar navbar-expand-xl navbar-dark  sticky-top">
+        <span class="show-mobile-screen">
+            <a class="show-mobile-screen" alt="" id="" href="https://www.commbox.org">
+                <img src="/commbox/svg/commbox-Logo-RGB-white.svg"
+                    width="30" height="30" class="d-inline-block align-top show-mobile-screen" alt=""
+                >
+            </a>
+        </span>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"
+                    aria-controls="navbar"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbar">
+                <ul class="navbar-nav">
+                                                                <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/63108E069ACFE/audiences-users">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox/svg/commbox-icons-audiences.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Audiences & Users">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Audiences &</span>
+                                    <br>Users
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/63108E069ACFE/audiences-users">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/691268D0A8959/anthropology-of-media">Anthropology of Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DCE2597BF/audience-focus-engagement">Audience Focus & Engagement</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DD4596171/audience-research-methods">Audience Research & Methods</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DD84BDB1B/audience-segmentation-lifestyles">Audience Segmentation & Lifestyles</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DDB7CD39D/children">Children</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DDF417526/counselling-helplines">Counselling & Helplines</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6313201E63268/disadvantaged-groups-minorities">Disadvantaged Groups & Minorities</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F7204C04/gender">Gender</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F8A51269/indigenous-peoples">Indigenous Peoples</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F9D9BBEB/information-needs">Information Needs</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131FE126982/media-literacy">Media Literacy</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131FBBAE2B3/media-use-media-consumption">Media Use, Media Consumption</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6310DDD937852/memory-collective-memory">Memory, Collective Memory</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131FFC2FAD3/migrants-refugees-diasporas">Migrants, Refugees, Diasporas</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F5F9FC47/older-adults">Older Adults</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F4910D31/persons-with-disabilities">Persons with Disabilities</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6313203778CEE/reception-effects-psychology">Reception, Effects, Psychology</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112ECC573A3/trauma-death-grief">Trauma, Death, Grief</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6313204DD36A1/trust-in-media">Trust in Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6313205B05703/youth">Youth</a></li></ul></div>
+                        </li>
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/630FA0825E1F3/development-communication">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox/svg/commbox-icons-development-communication.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Development & Communication">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Development &</span>
+                                    <br>Communication
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/630FA0825E1F3/development-communication">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FB5C55768A/agriculture-food-security">Agriculture & Food Security</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FB6022D6CB/behaviour-change">Behaviour Change</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD1313BC6A/climate-environment-sustainable-development">Climate, Environment, Sustainable Development</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FB62D3A821/communication-in-development-projects">Communication in Development Projects</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FB6A10DCC5/devcom-research-theories">Devcom Research & Theories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FCEF2D295D/development-aid-reporting-pr">Development Aid Reporting & PR</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/67276A0362F08/development-communication">Development Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FCF0D74F75/development-education">Development Education</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FCFFA463B3/development-journalism">Development Journalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD01CC789A/disasters-humanitarian-crises">Disasters & Humanitarian Crises</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD0590E9E3/educational-media">Educational Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD06AA4AAF/edutainment">Edutainment</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD09E22E92/health-communication">Health Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD0C74D151/participatory-communication">Participatory Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD0DA0B892/participatory-video">Participatory Video</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD0ECABB41/poverty-poverty-reduction">Poverty & Poverty Reduction</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD107D91A1/rural-development">Rural Development</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD11E2309F/social-change-communication">Social Change Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD143DD918/theatre-for-development">Theatre for Development</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD17570A04/visual-aids-for-development">Visual Aids for Development</a></li></ul></div>
+                        </li>
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/63108E4E2FCC9/digital-transformation">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox/svg/commbox-icons-management-evaluation.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Digital Transformation">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Digital</span>
+                                    <br>Transformation
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f;margin-left:-70px"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/63108E4E2FCC9/digital-transformation">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D7331FCC6/artificial-intelligence-algorithms">Artificial Intelligence & Algorithms</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131A737C270/community-connectivity-informatics">Community Connectivity & Informatics</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6889089E5B6C4/country-regional-digital-ecosystems">Country & Regional Digital Ecosystems</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688B8A73B6BB8/cyberbullying-digital-abuse-online-deviance">Cyberbullying, Digital Abuse, Online Deviance</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/67AA880E15B20/cyberpsychology-digital-effects-wellbeing">Cyberpsychology, Digital Effects & Wellbeing</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/68892EDC952ED/data-open-data-data-regulation">Data, Open Data, Data Regulation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688B401142B64/democracy-digitalisation">Democracy & Digitalisation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/67E884D73AFE2/digital-access-inequalities-inclusion">Digital Access, Inequalities & Inclusion</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688B2EAB5E1B0/digital-cultures-digital-anthropology">Digital Cultures, Digital Anthropology</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688907A64CEFD/digital-economies-industries-markets">Digital Economies, Industries & Markets</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688907BB2EE39/digital-ethics">Digital Ethics</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688907D47DDA6/digital-freedom-digital-rights">Digital Freedom, Digital Rights</a></li></ul><ul class="menu-column"><li><a class="dropdown-item" href="https://www.commbox.org/categories/688B40A6747D0/digital-governance-regulation">Digital Governance & Regulation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/657EE644C6C3F/digital-infrastructure-telecommunications">Digital Infrastructure, Telecommunications</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6889080C19D4A/digital-literacy-skills">Digital Literacy & Skills</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/642EF5EF4192D/digital-platforms-social-media">Digital Platforms, Social Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F339673B/digital-privacy-safety-security">Digital Privacy, Safety & Security</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131F1E0FFEE/digital-social-media-use">Digital & Social Media Use</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688B279D02C98/digital-transformation-processes-strategies">Digital Transformation Processes & Strategies</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/678C492D49786/ecological-footprint-sustainable-it">Ecological Footprint & Sustainable IT</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/630FD0AF52B68/ict4d-icts-for-development">ICT4D - ICTs for Development</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/68890649531BD/labour-digitisation-tech-entrepreneurship">Labour Digitisation & Tech Entrepreneurship</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/688904A5A68F6/mobile-money-e-commerce">Mobile Money & E-Commerce</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6889051CBC06C/software-hardware-digital-technologies">Software, Hardware, Digital Technologies</a></li></ul></div>
+                        </li>
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/63108E6261744/media-development">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox/svg/commbox-icons-media-development.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Media Development">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Media</span>
+                                    <br>Development
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f;margin-left:-70px"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/63108E6261744/media-development">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D6BC8F07E/access-to-public-information">Access to Public Information</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D6D63B744/authoritarian-regimes">Authoritarian Regimes</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/631090ABCDF92/civic-engagement-civil-society-protest-movements">Civic Engagement, Civil Society, Protest Movements</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63131B3ABABDF/community-radio-alternative-citizen-media">Community Radio, Alternative & Citizen Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D6F58984C/conflicts-peace">Conflicts & Peace</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D719A194B/corruption-anti-corruption">Corruption & Anti-Corruption</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/67A33ED98A106/digital-news-media">Digital News Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D74FD0F5A/disinformation-misinformation">Disinformation & Misinformation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D76E1A933/economics-markets-viability-of-media">Economics, Markets & Viability of Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D7F39894D/ethics-self-regulation">Ethics & Self-Regulation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D8431A9CC/extremism-hate-speech">Extremism & Hate Speech</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D80FC7318/freedom-of-expression-media">Freedom of Expression & Media</a></li></ul><ul class="menu-column"><li><a class="dropdown-item" href="https://www.commbox.org/categories/640D1146E21CC/human-rights">Human Rights</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D91B4CD10/information-ecosystems-media-landscapes">Information Ecosystems & Media Landscapes</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D881C98C5/journalism">Journalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D8B47C886/law-regulation-media-policies">Law, Regulation, Media Policies</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D8CF6DCBD/local-media-journalism">Local Media & Journalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D8FD16C67/media-assistance">Media Assistance</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D934D8A18/nonwestern-decolonial-approaches">Nonwestern & Decolonial Approaches</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D9969AD76/political-communication-elections-democracy">Political Communication, Elections, Democracy</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D9CDB801E/public-service-state-media">Public Service & State Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311D86B73A5C/transnational-communication">Transnational Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/64C3DDA106CC1/un-multilateral-organisations">UN & Multilateral Organisations</a></li></ul></div>
+                        </li>
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/63108E72518EE/religion-communication">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox//svg/commbox-icons-religion.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Religion & Communication">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Religion &</span>
+                                    <br>Communication
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f;margin-left:-70px"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/63108E72518EE/religion-communication">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63113006D4898/buddhism">Buddhism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311301C29892/catholic-church">Catholic Church</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63113032D011F/christianity-christian-churches">Christianity, Christian Churches</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/631131C120016/conflicts-peace-religion">Conflicts, Peace & Religion</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BED5E11B3/development-religion">Development & Religion</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/631131DC4AE9E/digital-religion-theologies">Digital Religion & Theologies</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/631131FDE239C/film-religion">Film & Religion</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63113217993C3/fundamentalism">Fundamentalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BBE562207/hinduism">Hinduism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/64FDF9CFCD55F/interreligious-dialogue">Interreligious Dialogue</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BC10DD688/islam">Islam</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BC2484267/judaism">Judaism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/64DF8B1D44C32/managing-financing-religious-media">Managing & Financing Religious Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BC3EDBEA3/parish-communication">Parish Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BC679D735/pastoral-communication">Pastoral Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BC7EDD5D5/pentecostal-churches">Pentecostal Churches</a></li></ul><ul class="menu-column"><li><a class="dropdown-item" href="https://www.commbox.org/categories/654D32AB3BA99/politics-society-religion">Politics, Society & Religion</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BCA087E45/popular-religion-religiotainment">Popular Religion & Religiotainment</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/67227E98BA74B/religious-art-music-symbols">Religious Art, Music & Symbols</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BFA50CB09/religious-audiences-media-use">Religious Audiences & Media Use</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BE8FCBA42/religious-book-publishing">Religious Book Publishing</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BCB867C56/religious-communication">Religious Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BEF0C80FC/religious-education-catequetics">Religious Education & Catequetics</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF1FE4992/religious-freedom-minorities">Religious Freedom & Minorities</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF3402CED/religious-journalism">Religious Journalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63113046A8150/religious-marketing-pr">Religious Marketing & PR</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF492ADA9/religious-press">Religious Press</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF6112512/religious-radio">Religious Radio</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF7490D03/religious-television">Religious Television</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6311BF8BEDBC5/theologies-of-communication">Theologies of Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/658B64B35E0AF/youth-religion">Youth & Religion</a></li></ul></div>
+                        </li>
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/categories/63108E85DDA29/other">
+                            <div class="main-item cursor-pointer">
+                                <div class="circle-icon" style="background-color: #0c628f">
+                                    <img src="/commbox/svg/commbox-icons-other.svg" class="nav-icon d-inline-block align-top"
+                                         alt="Other">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="bold">Other</span>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu" style="background-color:#0c628f;margin-left:-70px"><ul class="menu-column dropright"><li class="dropdown-item d-none d-xs-block d-sm-block d-md-block d-lg-none"><a href="https://www.commbox.org/categories/63108E85DDA29/other">All categories</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112A7C2F324/advertising">Advertising</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112B4BB79C3/archives-libraries-documentation">Archives, Libraries, Documentation</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112A97A4261/area-studies-politics-society-history">Area Studies, Politics, Society, History</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112AAAA900B/book-publishing">Book Publishing</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/68531BD3F38C4/cartoons-comics-graphic-novels">Cartoons, Comics, Graphic Novels</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112AC1B1FD1/cinema">Cinema</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/64F65135CC5CA/colonialism-colonial-legacies">Colonialism, Colonial Legacies</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112AD2AC80D/communication-media-general">Communication & Media General</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112AFC94D10/culture-popular-culture-literature-arts">Culture, Popular Culture, Literature, Arts</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112B2EBD0FF/development-development-assistance">Development & Development Assistance</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/637A18041A092/economy-general-political-economy">Economy General & Political Economy</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112B68A1AFA/entertainment">Entertainment</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/6889034FC068A/gaming">Gaming</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112B8FE369F/history-of-media">History of Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112BA70F236/intercultural-communication">Intercultural Communication</a></li></ul><ul class="menu-column"><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112BC81368C/interpersonal-group-communication">Interpersonal & Group Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112BF4BD608/language-linguistics-multilingualism">Language, Linguistics, Multilingualism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112C0BD8556/music-popular-music-dance">Music, Popular Music, Dance</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/69A5A0C11E510/oral-history-cultures">Oral History & Cultures</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112C29E617A/photography-photojournalism">Photography, Photojournalism</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112C69DA159/radio-audio-general">Radio & Audio (General)</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112CA579127/research-in-media-communication">Research in Media & Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/631318CCC00D4/research-methods">Research Methods</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112CC162B9B/science-research-communication">Science & Research Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/65832A8560E02/technologies-equipment">Technologies & Equipment</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112CD95D57E/television-general">Television (General)</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112D0883E10/theories-of-communication-media">Theories of Communication & Media</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/637A1FB8B92B2/urban-communication">Urban Communication</a></li><li><a class="dropdown-item" href="https://www.commbox.org/categories/63112DE530EDA/visual-communication">Visual Communication</a></li></ul></div>
+                        </li>
+                    
+                    <li class="nav-item dropdown bg-countries hidden-line">
+                        <div class="circle-icon">
+                            <img src="/svg/Countries.svg" class="nav-icon d-inline-block align-top "
+                                 alt="Countrie">
+                        </div>
+                        <div class="menu-text"><span
+                                    class="condensed-bold">COUNTRIES</span><br>
+                        </div>
+
+                        <div class="country" style="position: absolute">
+                            <div class="country-row">
+                                <div class="col-4">
+                                    <div class="form-group">
+                                        <select data-live-search="true" title="Select country"
+                                                data-live-search-placeholder="Search Country ..."
+                                                data-size=15 class="selectpicker" data-width="320px"
+                                                data-style="btn-country" onchange="gfunc(this.value)">
+                                            <option Value="">Abkhazia</option><option Value="AF">Afghanistan</option><option Value="">Africa</option><option Value="AL">Albania</option><option Value="DZ">Algeria</option><option Value="">Amazonia</option><option Value="">Andean Countries</option><option Value="AD">Andorra</option><option Value="">Anglophone Africa</option><option Value="AO">Angola</option><option Value="AG">Antigua and Barbuda</option><option Value="">Arab Gulf States</option><option Value="">Arab World</option><option Value="AR">Argentina</option><option Value="AM">Armenia</option><option Value="">Asia</option><option Value="AU">Australia</option><option Value="AT">Austria</option><option Value="AZ">Azerbaijan</option><option Value="BS">Bahamas</option><option Value="BH">Bahrain</option><option Value="">Baltic States</option><option Value="BD">Bangladesh</option><option Value="BB">Barbados</option><option Value="BY">Belarus</option><option Value="BE">Belgium</option><option Value="BZ">Belize</option><option Value="BJ">Benin</option><option Value="BM">Bermuda Islands</option><option Value="BT">Bhutan</option><option Value="BO">Bolivia</option><option Value="BA">Bosnia and Herzegovina</option><option Value="BW">Botswana</option><option Value="BR">Brazil</option><option Value="BN">Brunei</option><option Value="BG">Bulgaria</option><option Value="BF">Burkina Faso</option><option Value="BI">Burundi</option><option Value="KH">Cambodia</option><option Value="CM">Cameroon</option><option Value="CA">Canada</option><option Value="CV">Cape Verde</option><option Value="">Caribbean</option><option Value="">Central Africa</option><option Value="CF">Central African Republic</option><option Value="">Central America</option><option Value="">Central Asia & Caucasus</option><option Value="TD">Chad</option><option Value="">Chechnya</option><option Value="CL">Chile</option><option Value="CN">China</option><option Value="CO">Colombia</option><option Value="">Commonwealth of Independent States</option><option Value="KM">Comoros</option><option Value="CD">Congo, Democratic Republic</option><option Value="CG">Congo-Brazzaville</option><option Value="">Cono Sur</option><option Value="CK">Cook Islands</option><option Value="CR">Costa Rica</option><option Value="HR">Croatia</option><option Value="CU">Cuba</option><option Value="CY">Cyprus</option><option Value="CZ">Czech Republic</option><option Value="CI">Côte d'Ivoire / Ivory Coast</option><option Value="">Darfur (Sudan)</option><option Value="DK">Denmark</option><option Value="DJ">Djibouti</option><option Value="DM">Dominica</option><option Value="DO">Dominican Republic</option><option Value="">Dutch Caribbean, Aruba, Bonaire, Curaçao, Sint Maarten</option><option Value="">East Africa</option><option Value="">East Asia</option><option Value="">Eastern & Central Europe</option><option Value="EC">Ecuador</option><option Value="EG">Egypt</option><option Value="SV">El Salvador</option><option Value="GQ">Equatorial Guinea</option><option Value="ER">Eritrea</option><option Value="EE">Estonia</option><option Value="SZ">Eswatini / Swaziland</option><option Value="ET">Ethiopia</option><option Value="">Europe</option><option Value="FK">Falkland Islands</option><option Value="FJ">Fiji</option><option Value="FI">Finland</option><option Value="">Former Soviet Union</option><option Value="">Former Yugoslavia</option><option Value="FR">France</option><option Value="">Francophone Africa</option><option Value="GF">French Guiana</option><option Value="PF">French Polynesia</option><option Value="GA">Gabon</option><option Value="GM">Gambia</option><option Value="GE">Georgia</option><option Value="DE">Germany</option><option Value="GH">Ghana</option><option Value="">Global South, Developing Countries</option><option Value="">Great Lakes Region (Africa)</option><option Value="GR">Greece</option><option Value="GL">Greenland</option><option Value="GD">Grenada</option><option Value="GP">Guadeloupe</option><option Value="GU">Guam</option><option Value="GT">Guatemala</option><option Value="GN">Guinea</option><option Value="GW">Guinea-Bissau</option><option Value="GY">Guyana</option><option Value="HT">Haiti</option><option Value="">Hawaii</option><option Value="HN">Honduras</option><option Value="HK">Hong Kong</option><option Value="HU">Hungary</option><option Value="IS">Iceland</option><option Value="IN">India</option><option Value="">Indian Ocean Islands (Off the East African Coast)</option><option Value="ID">Indonesia</option><option Value="">International Scope</option><option Value="IR">Iran</option><option Value="IQ">Iraq</option><option Value="IE">Ireland</option><option Value="IL">Israel</option><option Value="IT">Italy</option><option Value="JM">Jamaica</option><option Value="JP">Japan</option><option Value="JO">Jordan</option><option Value="KZ">Kazakhstan</option><option Value="KE">Kenya</option><option Value="KI">Kiribati</option><option Value="XK">Kosovo</option><option Value="">Kurdistan</option><option Value="KW">Kuwait</option><option Value="KG">Kyrgyzstan</option><option Value="LA">Laos</option><option Value="LV">Latvia</option><option Value="LB">Lebanon</option><option Value="LS">Lesotho</option><option Value="LR">Liberia</option><option Value="LY">Libya</option><option Value="LI">Liechtenstein</option><option Value="LT">Lithuania</option><option Value="">Lusophone Africa</option><option Value="LU">Luxembourg</option><option Value="MO">Macao</option><option Value="MG">Madagascar</option><option Value="MW">Malawi</option><option Value="MY">Malaysia</option><option Value="MV">Maldives</option><option Value="ML">Mali</option><option Value="MT">Malta</option><option Value="MH">Marshall Islands</option><option Value="MQ">Martinique</option><option Value="MR">Mauritania</option><option Value="MU">Mauritius</option><option Value="">Melanesia</option><option Value="MX">Mexico</option><option Value="FM">Micronesia</option><option Value="">Middle East</option><option Value="MD">Moldova</option><option Value="MC">Monaco</option><option Value="MN">Mongolia</option><option Value="ME">Montenegro</option><option Value="MA">Morocco</option><option Value="MZ">Mozambique</option><option Value="MM">Myanmar / Burma</option><option Value="NA">Namibia</option><option Value="NR">Nauru</option><option Value="NP">Nepal</option><option Value="NL">Netherlands</option><option Value="NC">New Caledonia</option><option Value="NZ">New Zealand</option><option Value="NI">Nicaragua</option><option Value="NE">Niger</option><option Value="NG">Nigeria</option><option Value="">Niue</option><option Value="">Nordic Countries, Scandinavia</option><option Value="">North Africa, Maghreb</option><option Value="KP">North Korea</option><option Value="MK">North Macedonia</option><option Value="">Northern Ireland</option><option Value="NO">Norway</option><option Value="OM">Oman</option><option Value="PK">Pakistan</option><option Value="">Palau / Belau</option><option Value="PS">Palestine</option><option Value="PA">Panama</option><option Value="PG">Papua New Guinea</option><option Value="PY">Paraguay</option><option Value="PE">Peru</option><option Value="PH">Philippines</option><option Value="PL">Poland</option><option Value="">Polynesia</option><option Value="PT">Portugal</option><option Value="PR">Puerto Rico</option><option Value="QA">Qatar</option><option Value="RO">Romania</option><option Value="RU">Russia</option><option Value="RW">Rwanda</option><option Value="">Réunion</option><option Value="">Sahel & Sahara</option><option Value="">Saint Helena</option><option Value="KN">Saint Kitts and Nevis</option><option Value="LC">Saint Lucia</option><option Value="VC">Saint Vincent and the Grenadines</option><option Value="WS">Samoa</option><option Value="SA">Saudi Arabia</option><option Value="SN">Senegal</option><option Value="RS">Serbia</option><option Value="SC">Seychelles</option><option Value="SL">Sierra Leone</option><option Value="SG">Singapore</option><option Value="SK">Slovakia</option><option Value="SI">Slovenia</option><option Value="SB">Solomon Islands</option><option Value="SO">Somalia</option><option Value="XS">Somaliland</option><option Value="ZA">South Africa</option><option Value="">South America</option><option Value="">South Asia</option><option Value="KR">South Korea</option><option Value="SS">South Sudan</option><option Value="">Southeast Asia</option><option Value="">Southeast Europe</option><option Value="">Southern Africa</option><option Value="ES">Spain</option><option Value="LK">Sri Lanka</option><option Value="SD">Sudan</option><option Value="SR">Suriname</option><option Value="SE">Sweden</option><option Value="CH">Switzerland</option><option Value="SY">Syria</option><option Value="">São Tomé and Príncipe</option><option Value="TW">Taiwan</option><option Value="TJ">Tajikistan</option><option Value="TZ">Tanzania</option><option Value="TH">Thailand</option><option Value="">Tibet</option><option Value="TL">Timor Leste / East Timor</option><option Value="TG">Togo</option><option Value="">Tokelau</option><option Value="TO">Tonga</option><option Value="TT">Trinidad and Tobago</option><option Value="TN">Tunisia</option><option Value="TR">Turkey</option><option Value="TM">Turkmenistan</option><option Value="TV">Tuvalu</option><option Value="US">USA</option><option Value="UG">Uganda</option><option Value="UA">Ukraine</option><option Value="AE">United Arab Emirates</option><option Value="GB">United Kingdom</option><option Value="UY">Uruguay</option><option Value="UZ">Uzbekistan</option><option Value="VU">Vanuatu</option><option Value="VE">Venezuela</option><option Value="VN">Vietnam</option><option Value="VI">Virgin Islands</option><option Value="">West Africa</option><option Value="">Western Europe</option><option Value="EH">Western Sahara</option><option Value="YE">Yemen</option><option Value="ZM">Zambia</option><option Value="ZW">Zimbabwe</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="world-map" id="world-map" style="height:480px; width:900px"></div>
+
+                            <div class="regions" id="wm">
+                                <ul id="submenu " class="subnav clearfix w100 region"
+                                    style="padding-left:0px; width:900px;margin-left:-653px;">
+                                    <li class="nav-item"><a href="https://www.commbox.org/bccounty/689F6536E28C6" style="color:#E98C23;">West & Central Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F6507A300A" style="color:#E1B277;">East & Southern Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5C100F7D55E8E" style="color:#ebc034;">Middle East & North Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F658D855F1" style="color:#9FB668;">Central & South Asia</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65649B84B" style="color:#8B9661;">East & Southeast Asia</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5C1010592C33C" style="color:#A1AA8E;">Oceania & Pacific Islands</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65CB4A705" style="color:#69C4B4;">Western & Northern Europe</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65A62E934" style="color:#91C8D2;">Eastern & Southeast Europe</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/4U0IEOQN" style="color:#83C08D;">Latin America</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5E2A52272AC43" style="color:#91BC9F;">North America</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                                            <li class="nav-item dropdown" data-redirect="https://www.commbox.org/toolbox">
+                            <div>
+                                <div class="circle-icon toolbox-circle">
+                                    <img src="/commbox/svg/commbox-icons-toolboxes.svg" class="nav-icon d-inline-block align-top">
+                                </div>
+                                <div class="menu-text">
+                                    <span class="condensed-bold">TOOLBOXES</span>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="dropdown-menu toolbox-menu">
+                                                                                                                                                                            <ul class="menu-column">
+                                                                        <li>
+                                        <a class="dropdown-item" href="https://www.commbox.org/6687F9BCA0D1D/toolbox/campaigning-advocacy-pr">
+                                                                                        <span>Campaigning, Advocacy, PR</span>
+                                        </a>
+                                    </li>
+                                                                        
+                                                                                                        <li>
+                                        <a class="dropdown-item" href="https://www.commbox.org/686A8298AB40D/toolbox/evaluation-impact-assessment">
+                                                                                        <span>Evaluation &amp; Impact Assessment</span>
+                                        </a>
+                                    </li>
+                                                                        
+                                                                                                        <li>
+                                        <a class="dropdown-item" href="https://www.commbox.org/665D949249848/toolbox/management-financing">
+                                                                                        <span>Management &amp; Financing</span>
+                                        </a>
+                                    </li>
+                                                                        
+                                                                                                        <li>
+                                        <a class="dropdown-item" href="https://www.commbox.org/64045BDA4EA50/toolbox/production-skills">
+                                                                                        <span>Production Skills</span>
+                                        </a>
+                                    </li>
+                                                                        
+                                                                </ul>
+                            </div>
+                        </li>
+                    
+                                            <li class="nav-item dropdown special-collection" data-redirect="https://www.commbox.org/special-collections">
+    <div>
+        <div class="circle-icon special-col-circle" style="background-color: #038738">
+            <img src="/commbox/svg/commbox-icons-toolboxes.svg" class="nav-icon d-inline-block align-top">
+        </div>
+        <div class="menu-text">
+            <span class="condensed-bold">SPECIAL COLLECTIONS</span>
+        </div>
+    </div>
+    <div class="dropdown-menu" style="background-color: #038738">
+                                                    <ul class="menu-column">
+                                <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/674B36F4D2002/special-collection/afghanistan-ikm-leipzig">
+                                                        Afghanistan IKM Leipzig
+                        </a>
+                    </li>
+                                            
+                                                    <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/6AA2AFE56CB1C/special-collection/ai-journalism-education-addressing-disinformation">
+                                                        AI Journalism Education Addressing Disinformation
+                        </a>
+                    </li>
+                                            
+                                                    <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/69A1FEBE93219/special-collection/dealing-with-the-past-cameco">
+                                                        Dealing with the Past CAMECO
+                        </a>
+                    </li>
+                                            
+                                                    <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/6752184083329/special-collection/media-assistance-cidesa-1971">
+                                                        Media Assistance CIDESA 1971
+                        </a>
+                    </li>
+                                            
+                                                    <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/6970127C53710/special-collection/media-development-journal-wacc">
+                                                        Media Development Journal WACC
+                        </a>
+                    </li>
+                                            
+                                                    <li>
+                        <a class="dropdown-item" href="https://www.commbox.org/6752059577198/special-collection/safety-of-journalists-cfom-sheffield">
+                                                        Safety of Journalists CFOM Sheffield
+                        </a>
+                    </li>
+                                            
+                                    </ul>
+    </div>
+</li>                                    </ul>
+
+                <div class="nav-elements-mobile"></div>
+
+                <div class="mobile-world-map-wrapper">
+                    <div class="country-row">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <select data-live-search="true" title="Select country"
+                                        data-live-search-placeholder="Search Country ..."
+                                        data-size=15 class="selectpicker" data-width="320px"
+                                        data-style="btn-country" onchange="gfunc(this.value)">
+                                    <option Value="">Abkhazia</option><option Value="AF">Afghanistan</option><option Value="">Africa</option><option Value="AL">Albania</option><option Value="DZ">Algeria</option><option Value="">Amazonia</option><option Value="">Andean Countries</option><option Value="AD">Andorra</option><option Value="">Anglophone Africa</option><option Value="AO">Angola</option><option Value="AG">Antigua and Barbuda</option><option Value="">Arab Gulf States</option><option Value="">Arab World</option><option Value="AR">Argentina</option><option Value="AM">Armenia</option><option Value="">Asia</option><option Value="AU">Australia</option><option Value="AT">Austria</option><option Value="AZ">Azerbaijan</option><option Value="BS">Bahamas</option><option Value="BH">Bahrain</option><option Value="">Baltic States</option><option Value="BD">Bangladesh</option><option Value="BB">Barbados</option><option Value="BY">Belarus</option><option Value="BE">Belgium</option><option Value="BZ">Belize</option><option Value="BJ">Benin</option><option Value="BM">Bermuda Islands</option><option Value="BT">Bhutan</option><option Value="BO">Bolivia</option><option Value="BA">Bosnia and Herzegovina</option><option Value="BW">Botswana</option><option Value="BR">Brazil</option><option Value="BN">Brunei</option><option Value="BG">Bulgaria</option><option Value="BF">Burkina Faso</option><option Value="BI">Burundi</option><option Value="KH">Cambodia</option><option Value="CM">Cameroon</option><option Value="CA">Canada</option><option Value="CV">Cape Verde</option><option Value="">Caribbean</option><option Value="">Central Africa</option><option Value="CF">Central African Republic</option><option Value="">Central America</option><option Value="">Central Asia & Caucasus</option><option Value="TD">Chad</option><option Value="">Chechnya</option><option Value="CL">Chile</option><option Value="CN">China</option><option Value="CO">Colombia</option><option Value="">Commonwealth of Independent States</option><option Value="KM">Comoros</option><option Value="CD">Congo, Democratic Republic</option><option Value="CG">Congo-Brazzaville</option><option Value="">Cono Sur</option><option Value="CK">Cook Islands</option><option Value="CR">Costa Rica</option><option Value="HR">Croatia</option><option Value="CU">Cuba</option><option Value="CY">Cyprus</option><option Value="CZ">Czech Republic</option><option Value="CI">Côte d'Ivoire / Ivory Coast</option><option Value="">Darfur (Sudan)</option><option Value="DK">Denmark</option><option Value="DJ">Djibouti</option><option Value="DM">Dominica</option><option Value="DO">Dominican Republic</option><option Value="">Dutch Caribbean, Aruba, Bonaire, Curaçao, Sint Maarten</option><option Value="">East Africa</option><option Value="">East Asia</option><option Value="">Eastern & Central Europe</option><option Value="EC">Ecuador</option><option Value="EG">Egypt</option><option Value="SV">El Salvador</option><option Value="GQ">Equatorial Guinea</option><option Value="ER">Eritrea</option><option Value="EE">Estonia</option><option Value="SZ">Eswatini / Swaziland</option><option Value="ET">Ethiopia</option><option Value="">Europe</option><option Value="FK">Falkland Islands</option><option Value="FJ">Fiji</option><option Value="FI">Finland</option><option Value="">Former Soviet Union</option><option Value="">Former Yugoslavia</option><option Value="FR">France</option><option Value="">Francophone Africa</option><option Value="GF">French Guiana</option><option Value="PF">French Polynesia</option><option Value="GA">Gabon</option><option Value="GM">Gambia</option><option Value="GE">Georgia</option><option Value="DE">Germany</option><option Value="GH">Ghana</option><option Value="">Global South, Developing Countries</option><option Value="">Great Lakes Region (Africa)</option><option Value="GR">Greece</option><option Value="GL">Greenland</option><option Value="GD">Grenada</option><option Value="GP">Guadeloupe</option><option Value="GU">Guam</option><option Value="GT">Guatemala</option><option Value="GN">Guinea</option><option Value="GW">Guinea-Bissau</option><option Value="GY">Guyana</option><option Value="HT">Haiti</option><option Value="">Hawaii</option><option Value="HN">Honduras</option><option Value="HK">Hong Kong</option><option Value="HU">Hungary</option><option Value="IS">Iceland</option><option Value="IN">India</option><option Value="">Indian Ocean Islands (Off the East African Coast)</option><option Value="ID">Indonesia</option><option Value="">International Scope</option><option Value="IR">Iran</option><option Value="IQ">Iraq</option><option Value="IE">Ireland</option><option Value="IL">Israel</option><option Value="IT">Italy</option><option Value="JM">Jamaica</option><option Value="JP">Japan</option><option Value="JO">Jordan</option><option Value="KZ">Kazakhstan</option><option Value="KE">Kenya</option><option Value="KI">Kiribati</option><option Value="XK">Kosovo</option><option Value="">Kurdistan</option><option Value="KW">Kuwait</option><option Value="KG">Kyrgyzstan</option><option Value="LA">Laos</option><option Value="LV">Latvia</option><option Value="LB">Lebanon</option><option Value="LS">Lesotho</option><option Value="LR">Liberia</option><option Value="LY">Libya</option><option Value="LI">Liechtenstein</option><option Value="LT">Lithuania</option><option Value="">Lusophone Africa</option><option Value="LU">Luxembourg</option><option Value="MO">Macao</option><option Value="MG">Madagascar</option><option Value="MW">Malawi</option><option Value="MY">Malaysia</option><option Value="MV">Maldives</option><option Value="ML">Mali</option><option Value="MT">Malta</option><option Value="MH">Marshall Islands</option><option Value="MQ">Martinique</option><option Value="MR">Mauritania</option><option Value="MU">Mauritius</option><option Value="">Melanesia</option><option Value="MX">Mexico</option><option Value="FM">Micronesia</option><option Value="">Middle East</option><option Value="MD">Moldova</option><option Value="MC">Monaco</option><option Value="MN">Mongolia</option><option Value="ME">Montenegro</option><option Value="MA">Morocco</option><option Value="MZ">Mozambique</option><option Value="MM">Myanmar / Burma</option><option Value="NA">Namibia</option><option Value="NR">Nauru</option><option Value="NP">Nepal</option><option Value="NL">Netherlands</option><option Value="NC">New Caledonia</option><option Value="NZ">New Zealand</option><option Value="NI">Nicaragua</option><option Value="NE">Niger</option><option Value="NG">Nigeria</option><option Value="">Niue</option><option Value="">Nordic Countries, Scandinavia</option><option Value="">North Africa, Maghreb</option><option Value="KP">North Korea</option><option Value="MK">North Macedonia</option><option Value="">Northern Ireland</option><option Value="NO">Norway</option><option Value="OM">Oman</option><option Value="PK">Pakistan</option><option Value="">Palau / Belau</option><option Value="PS">Palestine</option><option Value="PA">Panama</option><option Value="PG">Papua New Guinea</option><option Value="PY">Paraguay</option><option Value="PE">Peru</option><option Value="PH">Philippines</option><option Value="PL">Poland</option><option Value="">Polynesia</option><option Value="PT">Portugal</option><option Value="PR">Puerto Rico</option><option Value="QA">Qatar</option><option Value="RO">Romania</option><option Value="RU">Russia</option><option Value="RW">Rwanda</option><option Value="">Réunion</option><option Value="">Sahel & Sahara</option><option Value="">Saint Helena</option><option Value="KN">Saint Kitts and Nevis</option><option Value="LC">Saint Lucia</option><option Value="VC">Saint Vincent and the Grenadines</option><option Value="WS">Samoa</option><option Value="SA">Saudi Arabia</option><option Value="SN">Senegal</option><option Value="RS">Serbia</option><option Value="SC">Seychelles</option><option Value="SL">Sierra Leone</option><option Value="SG">Singapore</option><option Value="SK">Slovakia</option><option Value="SI">Slovenia</option><option Value="SB">Solomon Islands</option><option Value="SO">Somalia</option><option Value="XS">Somaliland</option><option Value="ZA">South Africa</option><option Value="">South America</option><option Value="">South Asia</option><option Value="KR">South Korea</option><option Value="SS">South Sudan</option><option Value="">Southeast Asia</option><option Value="">Southeast Europe</option><option Value="">Southern Africa</option><option Value="ES">Spain</option><option Value="LK">Sri Lanka</option><option Value="SD">Sudan</option><option Value="SR">Suriname</option><option Value="SE">Sweden</option><option Value="CH">Switzerland</option><option Value="SY">Syria</option><option Value="">São Tomé and Príncipe</option><option Value="TW">Taiwan</option><option Value="TJ">Tajikistan</option><option Value="TZ">Tanzania</option><option Value="TH">Thailand</option><option Value="">Tibet</option><option Value="TL">Timor Leste / East Timor</option><option Value="TG">Togo</option><option Value="">Tokelau</option><option Value="TO">Tonga</option><option Value="TT">Trinidad and Tobago</option><option Value="TN">Tunisia</option><option Value="TR">Turkey</option><option Value="TM">Turkmenistan</option><option Value="TV">Tuvalu</option><option Value="US">USA</option><option Value="UG">Uganda</option><option Value="UA">Ukraine</option><option Value="AE">United Arab Emirates</option><option Value="GB">United Kingdom</option><option Value="UY">Uruguay</option><option Value="UZ">Uzbekistan</option><option Value="VU">Vanuatu</option><option Value="VE">Venezuela</option><option Value="VN">Vietnam</option><option Value="VI">Virgin Islands</option><option Value="">West Africa</option><option Value="">Western Europe</option><option Value="EH">Western Sahara</option><option Value="YE">Yemen</option><option Value="ZM">Zambia</option><option Value="ZW">Zimbabwe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="world-map" id="world-map"></div>
+
+                    <div class="regions" id="wm">
+                        <ul class="clearfix region">
+                            <li class="nav-item"><a href="https://www.commbox.org/bccounty/689F6536E28C6" style="color:#E98C23;">West & Central Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F6507A300A" style="color:#E1B277;">East & Southern Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5C100F7D55E8E" style="color:#ebc034;">Middle East & North Africa</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F658D855F1" style="color:#9FB668;">Central & South Asia</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65649B84B" style="color:#8B9661;">East & Southeast Asia</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5C1010592C33C" style="color:#A1AA8E;">Oceania & Pacific Islands</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65CB4A705" style="color:#69C4B4;">Western & Northern Europe</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/689F65A62E934" style="color:#91C8D2;">Eastern & Southeast Europe</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/4U0IEOQN" style="color:#83C08D;">Latin America</a></li><li class="nav-item"><a href="https://www.commbox.org/bccounty/5E2A52272AC43" style="color:#91BC9F;">North America</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<script>
+    const WORLD_COUNTRIES_COLORS = {"GN":"#E98C23","BF":"#E98C23","SL":"#E98C23","LR":"#E98C23","NG":"#E98C23","SN":"#E98C23","CD":"#E98C23","ML":"#E98C23","GW":"#E98C23","CI":"#E98C23","MA":"#ebc034","US":"#91BC9F","SA":"#ebc034","ET":"#E1B277","CM":"#E98C23","GH":"#E98C23","UG":"#E1B277","NE":"#E98C23","TG":"#E98C23","ZW":"#E1B277","HT":"#83C08D","PH":"#8B9661","IN":"#9FB668","SO":"#E1B277","NP":"#9FB668","PK":"#9FB668","SS":"#E1B277","IQ":"#ebc034","JO":"#ebc034","AF":"#9FB668","DE":"#69C4B4","LB":"#ebc034","ZM":"#E1B277","TR":"#9FB668","EG":"#ebc034","SY":"#ebc034","TD":"#E98C23","KE":"#E1B277","TZ":"#E1B277","KH":"#8B9661","TH":"#8B9661","GM":"#E98C23","CN":"#8B9661","RW":"#E98C23","ID":"#8B9661","MY":"#8B9661","ZA":"#E1B277","IE":"#69C4B4","BD":"#9FB668","SG":"#8B9661","MW":"#E1B277","MZ":"#E1B277","PG":"#A1AA8E","SD":"#E1B277","BJ":"#E98C23","CF":"#E98C23","VU":"#A1AA8E","AR":"#83C08D","DO":"#83C08D","NA":"#E1B277","PE":"#83C08D","SZ":"#E1B277","BR":"#83C08D","MK":"#91C8D2","AT":"#69C4B4","CH":"#69C4B4","RS":"#91C8D2","HU":"#96BEC5","HR":"#91C8D2","CU":"#83C08D","BI":"#E98C23","UA":"#96BEC5","CO":"#83C08D","HN":"#83C08D","SI":"#91C8D2","EC":"#83C08D","BW":"#E1B277","PF":"#A1AA8E","SV":"#83C08D","BO":"#83C08D","GR":"#91C8D2","LY":"#ebc034","AO":"#E1B277","GT":"#83C08D","CV":"#E98C23","MG":"#E1B277","LS":"#E1B277","MX":"#83C08D","BS":"#83C08D","NI":"#83C08D","MM":"#8B9661","LK":"#9FB668","CL":"#83C08D","YE":"#ebc034","PY":"#83C08D","LU":"#69C4B4","FJ":"#A1AA8E","SB":"#A1AA8E","BT":"#9FB668","VE":"#83C08D","PL":"#96BEC5","PS":"#ebc034","KP":"#8B9661","IT":"#69C4B4","AL":"#91C8D2","DJ":"#ebc034","AM":"#9FB668","MN":"#8B9661","LA":"#8B9661","CG":"#E98C23","CA":"#91BC9F","TL":"#8B9661","TJ":"#9FB668","RU":"#96BEC5","QA":"#ebc034","BG":"#91C8D2","EE":"#96BEC5","RO":"#91C8D2","LT":"#96BEC5","MD":"#91C8D2","SK":"#96BEC5","IR":"#ebc034","UZ":"#9FB668","KG":"#9FB668","AU":"#A1AA8E","KZ":"#9FB668","GE":"#9FB668","WS":"#A1AA8E","VN":"#8B9661","GA":"#E98C23","UY":"#83C08D","TM":"#9FB668","JM":"#83C08D","JP":"#8B9661","DK":"#69C4B4","BE":"#69C4B4","FR":"#69C4B4","MV":"#9FB668","MU":"#E1B277","TN":"#ebc034","SE":"#69C4B4","GB":"#69C4B4","NO":"#69C4B4","PT":"#69C4B4","ES":"#69C4B4","KR":"#8B9661","DZ":"#ebc034","AZ":"#9FB668","BY":"#96BEC5","GF":"#83C08D","IL":"#ebc034","BA":"#91C8D2","LV":"#96BEC5","EH":"#ebc034","AG":"#83C08D","BB":"#83C08D","BM":"#83C08D","DM":"#83C08D","GD":"#83C08D","GP":"#83C08D","MQ":"#83C08D","PR":"#83C08D","KN":"#83C08D","LC":"#83C08D","VC":"#83C08D","TT":"#83C08D","VI":"#83C08D","NC":"#A1AA8E","NZ":"#A1AA8E","FM":"#A1AA8E","GU":"#A1AA8E","KI":"#A1AA8E","MH":"#A1AA8E","NR":"#A1AA8E","CK":"#A1AA8E","TO":"#A1AA8E","TV":"#A1AA8E","GQ":"#E98C23","ER":"#E1B277","KM":"#E1B277","SC":"#E1B277","BN":"#8B9661","HK":"#8B9661","MO":"#8B9661","TW":"#8B9661","XK":"#91C8D2","ME":"#91C8D2","FI":"#69C4B4","IS":"#69C4B4","CZ":"#96BEC5","CY":"#91C8D2","NL":"#69C4B4","MT":"#69C4B4","MC":"#69C4B4","AD":"#69C4B4","LI":"#69C4B4","BZ":"#83C08D","CR":"#83C08D","PA":"#83C08D","GY":"#83C08D","SR":"#83C08D","BH":"#ebc034","KW":"#ebc034","OM":"#ebc034","AE":"#ebc034","MR":"#E98C23","XS":"#E1B277","FK":"#83C08D","GL":"#69C4B4"};
+    const REGION_CLICK_URL = 'https://www.commbox.org/isofilter';
+</script>        <a id="Top"></a>
+<div class="search-navbar" >
+    <div class="container">
+        <div class="col-12 text-right">
+            <ul class="line-menu menu-log-lang">
+                                    <li class="nav-item">
+                        <a href="https://www.commbox.org/web/login">
+                            <i class="bi-box-arrow-in-right"></i> Login
+                        </a>
+                    <li class="nav-item">
+                        <a href="https://www.commbox.org/web/register">
+                            Register</a>
+                    </li>
+                
+                            </ul>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2 col-3 logo-column">
+                <a href="https://www.commbox.org">
+                    <img class="logo" src="/commbox/svg/commbox-Logo-RGB-white.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="col-md-10 col-12 search-row">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="searchbar-title">
+                                                            <span class="bold">Document details</span>
+                                
+                                                    </div>
+                    </div>
+                                    </div>
+
+                <div class="row">
+                                                                                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    </div>
+        <div id="main-content-wrapper">
+                    <script>
+    const mainCategories = ["63108E4E2FCC9;Digital Transformation"];
+    const mainToolboxes = [];
+    const mainSpecialCollections = [];
+</script>
+
+<div class="document-detail container">
+    <div class="row">
+        <div class="col-sm-12 col-md-4 col-lg-3">
+            <div class="document-detail-left">
+    <div class="detail-image-wrapper d-none d-sm-block text-center">
+                            <img src="/preview/68e2e91085303c7d1c7ebdc4/doc.pdf_438x622-0.png?v=/var/www/commbox.org/public/preview/68e2e91085303c7d1c7ebdc4/doc.pdf_438x622-0.png" alt=""/>
+            </div>
+    <div class="document-links un-decorate-links">
+                    <div class="document-link-item">
+                <a href="https://www.commbox.org/dl/68e2e91085303c7d1c7ebdc4" data-toggle="tooltip" class="download-pub" title="Download document">
+                    <i class="bi-download"> </i>
+                    &nbsp;Download
+                                            <span> &nbsp;(194)</span>
+                                    </a>
+
+            </div>
+        
+        
+        
+                
+
+        <div class="document-link-item">
+            <a class="docinfo-icons btn-modal"
+               href="https://www.commbox.org/mymedbox/addfavourite/68e2e91085303c7d1c7ebdc4">
+                <i class="bi-plus-square-fill"></i>
+                &nbsp;Add to my commbox
+            </a>
+        </div>
+            </div>
+</div>        </div>
+
+        <div class="col-sm-12 col-md-8 col-lg-9 document-detail-content">
+            <style>
+    .document-detail-header .publication-license a:hover {
+        text-decoration: underline !important; 
+    }
+</style>
+<div class="document-detail-header">
+    <h2 class="detail-title-line">
+                    <i class="bi-unlock-fill"></i>
+        
+                AI competency framework for students
+
+         
+                    
+            </h2>
+    <div class="document-detail-subheader">
+        
+                    <div class="line-authors">
+                <span class="publication-author">
+                    <a href="https://www.commbox.org/fsselected?authors=Miao%2C%20Fengchun&breadcrumb=Miao%2C%20Fengchun">Fengchun Miao</a>, <a href="https://www.commbox.org/fsselected?authors=Shiohira%2C%20Kelly&breadcrumb=Shiohira%2C%20Kelly">Kelly Shiohira</a>, <a href="https://www.commbox.org/fsselected?authors=Lao%2C%20Natalie&breadcrumb=Lao%2C%20Natalie">Natalie Lao et al.</a>
+                </span>
+            </div>
+                                                                <div class="line-publishing">
+                    Paris: <a href="https://www.commbox.org/fsselected?authors=UNESCO&breadcrumb=UNESCO">UNESCO</a> (2024), 80 pp.
+                </div>
+            
+                        </div>
+</div>
+                            <div class="document-detail-abstract commbox-document-detail-subheader">
+    
+    
+                        
+
+    
+            <p>ISBN 978-92-3-100709-5</p>
+    
+    
+            <p><i class="bi-c-circle"></i> <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA</a></p>
+    
+    
+    
+    
+    </div>            
+                            <div class="document-detail-abstract">
+                                            "Integrating AI learning objectives into official school curricula is crucial for students globally to engage safely and meaningfully with AI. The UNESCO AI competency framework for students aims to help educators in this integration, outlining 12 competencies across four dimensions: Human-centred mindset, Ethics of AI, AI techniques and applications, and AI system design. These competencies span three progression levels: Understand, Apply, and Create. The framework details curricular goals and domain-specific pedagogical methodologies. Grounded in a vision of students as AI co-creators and responsible citizens, the framework emphasizes critical judgement of AI solutions, awareness of citizenship responsibilities in the era of AI, foundational AI knowledge for lifelong learning, and inclusive, sustainable AI design." (Short summary)
+                                    </div>
+            
+                        
+            
+                            <div class="document-detail-abstract">
+                    <div class="contents-section">
+                        CHAPTER 1: INTRODUCTION, 12<br>Why an AI competency framework for students? -- Purpose and target audience<br>CHAPTER 2: KEY PRINCIPLES, 14<br>Fostering a critical approach to AI -- Prioritizing human-centred interaction with AI -- Encouraging environmentally sustainable AI -- Promoting inclusivity in AI competency development -- Building core AI competencies for lifelong learning<br>CHAPTER 3: STRUCTURE OF THE AI COMPETENCY FRAMEWORK FOR STUDENTS, 18<br>The framework -- Progression levels -- Aspects: Human-centred mindset -- Ethics of AI -- AI techniques and applications -- AI system design<br>CHAPTER 4: SPECIFICATIONS OF AI COMPETENCIES FOR STUDENTS, 27<br>Level 1: Understand -- Level 2: Apply -- Level 3: Create<br>CHAPTER 5: APPLYING THE FRAMEWORK, 53<br>Aligning AI competencies as the foundation for national AI strategies -- Building interdisciplinary core and cluster AI curricula for AI competency -- Framing future-proofing and locally feasible AI domains as carriers of the curriculum -- Tailoring age-appropriate spiral curricular sequences -- Building enabling learning environments for AI curricula -- Promoting the professionalization of AI teachers and streamlining their support -- Guiding the cohort-based design and organization of pedagogical activities -- Constructing competency-based assessments on the progression of key AI aspects<br>CONCLUSION, 78
+                    </div>
+                </div>
+            
+            <div class="document-detail-footer document-detail-abstract">
+                
+                
+                                    <div class="document-detail-footer-row">
+                        <div class="dd-footer-row-left">Topics:</div>
+                        <div class="dd-footer-row-right">
+                                                                                        <span class="keyword">
+                <a href="https://www.commbox.org/fsselected?keywords_ids=YSGJF4KA&breadcrumb=YSGJF4KA">AI Ethics</a>
+            </span><span class="keyword">
+                <a href="https://www.commbox.org/fsselected?keywords_ids=FEG0OLEI&breadcrumb=FEG0OLEI">AI Literacy</a>
+            </span><span class="keyword">
+                <a href="https://www.commbox.org/fsselected?keywords_ids=R2DE2PTZ&breadcrumb=R2DE2PTZ">Media Literacy: Curricula</a>
+            </span><span class="keyword">
+                <a href="https://www.commbox.org/fsselected?keywords_ids=G4RSHNDP&breadcrumb=G4RSHNDP">Media Literacy: Secondary Education</a>
+            </span>
+                                                    </div>
+                    </div>
+                
+                
+                                    <div class="document-detail-footer-row">
+                        <div class="dd-footer-row-left">Document Type:</div>
+                        <div class="dd-footer-row-right"><span class="keyword">
+                <a href="https://www.commbox.org/fsselected?doctype=O221KAHV&breadcrumb=O221KAHV">Workshop Modules, Curricula, Facilitator's Guides</a>
+            </span></div>
+                    </div>
+                
+                            </div>
+        </div>
+    </div>
+</div>
+<input type="hidden" name="_token" value="rSv7jMsrIkpXQyztUoFwFPVYgqFmwU5mMrTsxxhL">        </div>
+        <!-- Multisite -->
+<div class="background-color footer">
+    <div class="container">
+        <div class="col-sm-12 text-center">
+                            <ul class="line-menu menu-orange footer-action-menu">
+
+                    <li class="nav-item"><a href="https://www.commbox.org/web/register">
+                        Create your own commbox</a>
+                    </li>
+                    <li class="nav-item"><a href="https://www.commbox.org/web/login"> <i class="bi-box-arrow-in-right"></i>
+                            Login</a></li>
+                </ul>
+                    </div>
+        <div class="col-sm-12 text-center footer-menu">
+            <ul class="line-menu">
+                <li class="nav-item"><a href="https://www.commbox.org">Home</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/contact">Contact</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/dataPrivacy">Data privacy</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/legalnotice">Legal notice</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/faq">FAQ</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/about">About</a></li>
+                <li class="nav-item"><a href="https://www.commbox.org/sitemap">Sitemap</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="background-color sponsor-footer">
+    <div class="container ">
+        <div class="col-sm-12 text-center">
+            <div class="footer-logo-text footer-project">A Project by</div>
+            <div class="sponsor-logo">
+                                                    <a href="https://cameco.org" target="_blank">
+                        <img class="mi-logo" src="/commbox/svg/cameco-Logo-transp-white-RGB.svg" alt="Cameco">
+                    </a>
+                            </div>
+            <div class="footer-logo-text footer-copyright">commbox @ 2026</div>
+        </div>
+    </div>
+</div></div>
+
+
+<script type="text/javascript" src="https://www.commbox.org/mb/js/popper.min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/tree.jquery.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/bootstrap.min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/combotree.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/selectize.min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/underscore-min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/backbone-min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/chosen.jquery.min.js?v=1789492707"></script>
+<script type="text/javascript" src="https://www.commbox.org/mb/js/datatables.min.js?v=1789492707"></script>
+
+<script>
+    $(document).on('click', '.btn-modal', function () {
+        let href = $(this).attr('href');
+        let tx = document.getElementsByName("_token")[0].value;
+        $("#edit_add_fav").load(href);
+        $('#modal').modal('show');
+        return !1
+    })
+
+    $(document).on('click', '#edit_add_fav i.bi-x', function () {
+        $('#modal').modal('hide');
+    });
+
+
+    $(document).on('click', '#action', function () {
+        let form = $('#form-data');
+        let href = form.data('route');
+        let data = form.serialize();
+        $("#edit_add_fav").html('');
+        $.post(href, data, function (ret) {
+            $("#edit_add_fav").html(ret);
+            $('#modal').modal('show');
+        });
+    })
+
+</script>
+
+
+
+<script>
+    let $toggleButtons = $('.toggle-content');
+    let $fullTextWrappers = $('.fulltext');
+    let fullText;
+    let toggleButtonText;
+
+    $fullTextWrappers.attr('hidden', true);
+    $toggleButtons.removeAttr('hidden');
+    // add listener for each button
+    $toggleButtons.each(function () {
+        $(this).on('click', function () {
+            fullTextWrapper = $(this).parent().find('.fulltext');
+            toggleButtonText = $(this).find('.text');
+            // change attributes and text if full text is shown/hidden
+            if (!fullTextWrapper.attr('hidden')) {
+                toggleButtonText.text(' ... more');
+                fullTextWrapper.attr('hidden', true);
+                $(this).attr('aria-expanded', false);
+            } else {
+                toggleButtonText.text(' show less');
+                fullTextWrapper.removeAttr('hidden');
+                $(this).attr('aria-expanded', true);
+            }
+        });
+    });
+</script>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+
+    function goHome() {
+        alert(windows.location);
+        b = "/";
+    }
+</script>
+
+
+<script>
+    $(".chosen-select").chosen()
+    $('.selectpicker').selectpicker();
+    $(document).on('click', '#countryselect', function () {
+        let selectedItem = $('.selectpicker').val();
+        let target = 'https://www.commbox.org/isofilter';
+        if (selectedItem != '') {
+            top.location.href = target + '/' + selectedItem;
+        }
+    })
+</script>
+
+
+        <script src="https://www.google.com/recaptcha/api.js?render=6LcLpGErAAAAAJpiUl0QW2JF-qHX258Hyl7oS2YI"></script>
+        <script type="text/javascript" src="https://www.commbox.org/js/recaptcha.js?v=1789492707"></script>
+        <script type="text/javascript" src="https://www.commbox.org/js/publications-catalog/document-detail-left.js?v=1789492707"></script>
+    <script type="text/javascript" src="https://www.commbox.org/js/publications-catalog/document-detail.js?v=1789492707"></script>
+    <script type="text/javascript" src="https://www.commbox.org/js/header.js?v=1789492707"></script>
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/shared/css/profile/add-pub-favourites.css?v=1789492707">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/component/button.css?v=1789492706">
+    <link rel="stylesheet" type="text/css" href="https://www.commbox.org/shared/css/public/detail-view.css?v=1791547311">
+
+<div id="fb-root"></div>
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="ModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" id="edit_add_fav">
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

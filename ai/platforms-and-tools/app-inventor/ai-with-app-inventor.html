@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!--
+      Bootstrap 5.3.3, served from this site (was Bootstrap 4.3.1 until Sept
+      2026). The only Bootstrap features the site uses are the grid, cards,
+      the carousel and the header's collapse menu. v5 dropped .card-columns,
+      which the news/blog/event/people card lists use; mit_app_inventor.css
+      carries a replacement rule. See CHANGES.md.
+    -->
+    <link rel="stylesheet" href="/css/bootstrap5.min.css">
+    <!--
+      Font Awesome (/css/all.css) was requested here on every page. The only
+      element on the site using an fa- icon is _includes/headernodonate.html,
+      which no layout includes. The file and /webfonts are still in the repo;
+      load them from the page that needs an icon, not from every page.
+    -->
+    <link href="/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/mit_app_inventor.css?v=202611091141">
+    <!--
+      Poppins is the body face for the whole site (mit_app_inventor.css sets
+      it on .mit_app_inventor), but until Sept 2026 only the homepage asked
+      for it, so every other page fell back to the browser's default sans.
+
+      This request is byte-identical to the one in _layouts/home.html, so a
+      visitor arriving from the homepage reuses the cached stylesheet.
+
+      Italic 500/600/700 were added in Oct 2026 for the Apps for Action
+      banner, whose headline and outcome words are set in italic display
+      type. Google Fonts serves one @font-face per style and the browser
+      fetches only the faces a page actually uses, so pages with no italic
+      display text download nothing extra.
+
+      Poppins is the only family the site requests. Barlow and Roboto Flex
+      were dropped in Sept 2026: Barlow was referenced by nothing, and
+      Roboto Flex by a single rule (.display-text on the FAQ), which is now
+      Poppins. Both were render-blocking on every page.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700&amp;display=swap">
+    <!-- Header and footer styles, shared by every page. -->
+    <link rel="stylesheet" href="/css/ai2-chrome.css?v=202611091141">
+    <title>Artificial Intelligence with MIT App Inventor</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X8JVR7MNWD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-X8JVR7MNWD');
+    </script>
+</head>
+<body class="mit_app_inventor">
+
+
+<header class="ai2-header">
+  <a class="ai2-skip" href="#main">Skip to main content</a>
+
+  <nav class="ai2-nav" aria-label="Main">
+    <a class="ai2-brand" href="/">
+      <img src="/images/logo.png" alt="MIT App Inventor home" />
+    </a>
+
+    <a class="ai2-signin ai2-compact" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+
+    <a class="ai2-cta ai2-compact" href="/get-started">Build Your First App!</a>
+
+    <button
+      class="ai2-toggle"
+      type="button"
+      data-toggle="collapse"
+      data-target="#ai2Menu"
+      data-bs-toggle="collapse"
+      data-bs-target="#ai2Menu"
+      aria-controls="ai2Menu"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor"
+              stroke-width="2.2" stroke-linecap="round" fill="none" />
+      </svg>
+    </button>
+
+    <div class="collapse ai2-menu" id="ai2Menu">
+      <ul class="ai2-list">
+        <!--
+          To underline the current section, add aria-current="page" to the
+          matching link, e.g.
+          {% if page.url contains '/explore/teach' %}aria-current="page"{% endif %}
+        -->
+        <li><a class="ai2-link" href="/explore/who-we-are">Who We Are</a></li>
+        <li><a class="ai2-link" href="/explore/teach">For Teachers</a></li>
+        <li><a class="ai2-link" href="/explore/news">News &amp; Events</a></li>
+        <li><a class="ai2-link" href="/explore/research">Research</a></li>
+        <li class="ai2-signin-item">
+          <a class="ai2-link" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Desktop copies of the two actions; see "Desktop: brand | menu" in the styles above. -->
+    <a class="ai2-signin ai2-wide" href="http://ai2.appinventor.mit.edu/" target="_blank" rel="noopener">Sign In</a>
+
+    <a class="ai2-cta ai2-wide" href="/get-started">Build Your First App!</a>
+  </nav>
+</header>
+
+<script>
+  /* Keeps --ai2-header-h equal to the header's real height (see the
+     scroll-padding-top rule above). */
+  (function () {
+    var header = document.querySelector('.ai2-header');
+    if (!header) return;
+    function measure() {
+      document.documentElement.style.setProperty('--ai2-header-h', header.offsetHeight + 'px');
+    }
+    measure();
+    if (window.ResizeObserver) new ResizeObserver(measure).observe(header);
+    else window.addEventListener('resize', measure);
+  })();
+</script>
+<div class="default-page">
+            <!-- A page that carries its own headline (a banner, say) sets
+                 no_title_band: true in its front matter, so this grey band
+                 does not print the same words a second time. --><div class="header">
+	        <h1 class="fw-bold text-center offset-xl-2 col-xl-8"
+                    style="color: white;">Artificial Intelligence with MIT App Inventor</h1>
+            </div><!-- <main id="main"> is the target of the header's "Skip to main
+                 content" link and the main landmark screen readers jump to.
+                 It was only on the homepage until Sept 2026. -->
+            <main id="main" class="container-fluid">
+              <style type="text/css">
+h3.ai { color: #128BA8; font-weight: bold; font-size: 1.5em; }
+</style>
+<div class="row">
+	<div class="col-md-5 col-sm-12">
+		<img src="../images/ai-with-mitai.png" style="width: 100%;" />
+    </div>
+   <div class="col-md-7 col-sm-12">
+		<p>Artificial Intelligence (AI) has been part of computing since the 1950s. But it’s only been since 2000 that AI systems have been able to accomplish useful tasks like classifying images or understanding spoken language. And only very recently has Machine Learning advanced to a point such that significant AI computations can be performed on the smartphones and tablets available to students.</p>
+		<p>MIT is building tools into App Inventor that will enable even beginning students to create original AI applications that would have been advanced research a decade ago. This creates new opportunities for students to explore the possibilities of AI and empowers students as creators of the digital future.</p> 
+		<p><i>AI with MIT App Inventor</i> includes tutorial lessons as well as suggestions for student explorations and project work. Each unit also includes supplementary teaching materials: lesson plans, slides, unit outlines, assessments and alignment to the Computer Science Teachers of America (CSTA) K12 Computing Standards.</p>  
+		<p>As with all MIT App Inventor efforts, the emphasis is on active constructionist learning where students create projects and programs that instantiate their ideas.</p>
+		
+
+	</div>
+</div>
+
+		<div class="row news-cards">  
+			
+
+		
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/fake_voices_unit" target="_blank">Fake Voices: The Ethics of Deepfakes</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>beginner</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>curriculum unit</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        In this unit, students explore synthetic media by creating a smartphone app that can speak in different voices by changing the rate and pitch of the speech. Students work in groups to present arguments about the possible future impacts of various types of deepfake media, including ones in commerce and... &nbsp;<a href="/explore/resources/ai/fake_voices_unit" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/image-classification-look-extension" target="_blank">Introduction to Machine Learning: Image Classification</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>beginner</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>curriculum unit</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Students will learn about the basics of machine learning and create their own apps that implement these concepts through image classification. The students will take photos with their mobile devices and the apps will identify objects within those photos. Each classification comes with a confidence level, a value of how... &nbsp;<a href="/explore/resources/ai/image-classification-look-extension" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/picaboo" target="_blank">Personal Image Classifier: PICaboo</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        How can a machine learn about the world? In some ways computers are like very young babies, always soaking up new examples and trying to put what they sense into different buckets — dog, cat, familiar face, stranger. In this two-part tutorial, you will learn about a type of artificial... &nbsp;<a href="/explore/resources/ai/picaboo" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/voice-calculator" target="_blank">Voice Calculator Tutorial</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you ever wondered how conversational AI agents such as Alexa and Siri work? How do they interpret what you are saying to them and grasp your intent? How do they then know how to appropriately and meaningfully respond to you? In this project you are challenged to create your... &nbsp;<a href="/explore/resources/ai/voice-calculator" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/therapist-bot" target="_blank">Therapist Bot Tutorial</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Can an app on your phone be your next therapist? Our friends at YR Media reported on apps that use artificial intelligence to power therapy bots in their news story Could Your Next Therapist Be Your Phone? This tutorial will show you how to make your own therapist bot app... &nbsp;<a href="/explore/resources/ai/therapist-bot" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/aiDance" target="_blank">Awesome Dancing with AI Tutorial</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Our amazing friends at YR Media has published an intriguing interactive story on AI titled Can You Teach AI to Dance? which got us thinking. Is there an algorithm to describe, identify or measure an amazing dance? Can dance moves be quantified and measured? Can AI be used to help... &nbsp;<a href="/explore/resources/ai/aiDance" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/facemesh" target="_blank">Facemesh Filter Camera</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you taken photos with facial filters? Instagram and Snapchat facial filters have taken the internet by storm, but do you know how these filters work? Would you like to make your own facial filters? Our friends at YR Media have this excellent interactive article about facial recognition. In this... &nbsp;<a href="/explore/resources/ai/facemesh" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/simpleChatGPT" target="_blank">Simple ChatGPT App</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you ever wondered how it is possible to create your very own ChatGPT app that will allow you, wherever you are, to tap into a world of useful information? In this tutorial, you will build a simple app with MIT App Inventor that allows users to connect to ChatGPT,... &nbsp;<a href="/explore/resources/ai/simpleChatGPT" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/simpleImageBot" target="_blank">Simple ImageBot App </a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you ever wondered how to create your own generative AI app for wildly imaginative visualizations? In this tutorial, you will build a simple app with MIT App Inventor that allows users to connect to OpenAI’s DALL-E generative AI program, submit their own prompts, and see the result in exciting... &nbsp;<a href="/explore/resources/ai/simpleImageBot" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/GenAIDigitalDoodle" target="_blank">GenAI Digital Doodle App</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        
+
+	The Digital Doodle App allows users to draw on their mobile device screens. With the addition of generative AI tools, users can ask an AI model to generate a background image for them to draw on.
+
+
+		
+
+ &nbsp;<a href="/explore/resources/ai/GenAIDigitalDoodle" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/storyGPT" target="_blank">Hour of Code: StoryGPT</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>beginner</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>3-5</li>
+		                
+		                <li>6-8</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        
+
+	Students will be building an app where they can write keywords and/or select emojis that represent elements of a story (e.g., 🐉 for dragon, 🚀 for space, ❤️ for romance).  Students will then use a ChatBot (in this case Gemini) to generate a short story based on their choices.
+
+
+
+		
+
+ &nbsp;<a href="/explore/resources/ai/storyGPT" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/HistoricalCharacterAdvisor" target="_blank">GenAI: Historical Character Advisor App</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        In 1985 Steve Jobs shared a vision for an AI tool that could capture the “underlying worldview” of a historical figure like Aristotle and answer students’ questions as that character. Amazingly, in just 40 years, generative AI tools such as ChatGPT and Gemini have done that. Imagine that you could... &nbsp;<a href="/explore/resources/ai/HistoricalCharacterAdvisor" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/GenAIVisionAid" target="_blank">GenAI Vision Aid</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        The GenAI Vision Aid App is a computational action application accessibility tool that helps visually impaired users understand their surroundings. It allows users to take a photo with their device and then uses an AI model to generate a detailed, spoken and written description of the image’s contents. This enables... &nbsp;<a href="/explore/resources/ai/GenAIVisionAid" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/chatGPT" target="_blank">ChatGPT App</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>advanced</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you ever wondered how it is possible to create your very own ChatGPT app that will allow you, wherever you are, to tap into a world of useful information? In this tutorial, you will build an app with MIT App Inventor that allows users to connect to ChatGPT, ask... &nbsp;<a href="/explore/resources/ai/chatGPT" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/imageBot" target="_blank">ImageBot App</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>advanced</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-8</li>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Have you ever wondered how to create your own generative AI app for wildly imaginative visualizations? In this tutorial, you will build an app with MIT App Inventor that allows users to connect to OpenAI’s DALL-E generative AI program, submit their own prompts, and see the result in exciting artistic... &nbsp;<a href="/explore/resources/ai/imageBot" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/rl-tamethedog" target="_blank">Reinforcement Learning: Tame the Dog</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>advanced</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Learning is a mysterious phenomenon —the process through which humans and animals learn how to adopt certain behaviors in response to environmental stimuli. However, it is clear that introducing a feedback cycle into any learning process (rewards and penalties) can help solidify and speed it up. In this project, you... &nbsp;<a href="/explore/resources/ai/rl-tamethedog" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/rock-paper-scissors" target="_blank">Rock Paper Scissors Tutorial</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>advanced</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        These days Artificial Intelligence and Machine Learning are all the craze, but have you ever wondered how in the world is it really possible to teach a machine to learn something, anything really, and become, well, artificially intelligent? In this project, using the context of one of the simplest children's... &nbsp;<a href="/explore/resources/ai/rock-paper-scissors" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/alexa-hello-world" target="_blank">Alexa Hello World</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>beginner</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        In this tutorial, you will learn how to use the MIT App Inventor’s Conversational AI Interface to create your own Amazon Alexa skill for Alexa to say “Hello World” when prompted by the user. Note:Support for Alexa projects is discontinued following the conclusion of our Amazon Future Engineers collaboration. Some... &nbsp;<a href="/explore/resources/ai/alexa-hello-world" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/alexa-calculator" target="_blank">Alexa Calculator</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>beginner</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        In this tutorial, you will learn how to use the MIT App Inventor’s Conversational AI Interface to create your own multiplication calculator for Alexa to tell the user the answer when a basic multiplication question is asked. The Skill we will be making uses slots to keep track of what... &nbsp;<a href="/explore/resources/ai/alexa-calculator" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/alexa-number-guessing-game" target="_blank">Alexa Number Guessing Game</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>6-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        In this tutorial, you will be using the App Inventor Alexa Skills interface to create an interactive number guessing game, where the player tries to guess a random number selected by Alexa. After each guess, Alexa will give you feedback on whether your guess is too big, too small, or... &nbsp;<a href="/explore/resources/ai/alexa-number-guessing-game" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/alexa-messenger" target="_blank">Alexa Messenger</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>advanced</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Up to this point you have only seen App Inventor Alexa tutorials where App Inventor was only used to provide an easy block-based language environment to develop Alexa Skills. These may have given the wrong impression that Alexa does not really integrate with many of the native mobile app developing... &nbsp;<a href="/explore/resources/ai/alexa-messenger" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		    <div class="col-xl-12 card card-resources">
+		        <div class="card-body">
+		        <h3 class="card-title ai"><a href="/explore/resources/ai/ar-chickenbowling" target="_blank">Augmented Reality: Chicken Bowling</a></h3>
+		        
+		            <p class="card-text"><strong>Difficulty: </strong>intermediate</p>
+		        
+		        
+		            <p class="card-text"><strong>Resource Type: </strong>tutorial</p>
+		        
+		        
+		            <p class="card-text"><strong>Subject: </strong>computer science</p>
+		        
+		        
+		            <p class="card-text"><strong>Grade Level: </strong>
+		            <ul>
+		                
+		                <li>9-12</li>
+		                
+		            </ul>
+		        	</p>
+		        
+		        Augmented reality, or AR for short, is a human-computer interaction where 3D computer graphics are placed into the physical world around the user through a device. In this case, the user will utilize their phone. The AR Chicken Placement App is the first part of the AR Chicken Bowling App... &nbsp;<a href="/explore/resources/ai/ar-chickenbowling" target="_blank">More Details</a>
+		        </div>
+		    </div>
+		    
+		</div>
+	</div>
+</div>
+
+
+
+
+
+              
+            </main>
+            
+
+<footer class="ai2-footer">
+  <div class="ai2-footer__inner">
+
+    <div class="ai2-footer__brand">
+      <h2>MIT App Inventor</h2>
+      <div class="ai2-footer__logos">
+        <a href="https://raise.mit.edu" target="_blank" rel="noopener"><img class="ai2-footer__raise" src="/images/RAISE_sub-brand_lockup_two-level_rgb_black-and-silver-gray.svg" width="220" alt="MIT RAISE: Responsible AI for Social Empowerment and Education" loading="lazy"></a>
+        <a href="https://web.mit.edu" target="_blank" rel="noopener"><img src="/landing_page_assets/logos/MIT-logo-gray-ltgray-72x38.svg" width="120" alt="MIT" loading="lazy"></a>
+      </div>
+      <div class="ai2-footer__social">
+        <a href="https://www.youtube.com/@MITAppInventor" target="_blank" rel="noopener"><img src="/images/social_media/youtube.png" alt="MIT App Inventor on YouTube" loading="lazy"></a>
+        <a href="https://www.instagram.com/mitappinventorofficial/" target="_blank" rel="noopener"><img src="/images/social_media/instagram.png" alt="Instagram" loading="lazy"></a>
+        <a href="https://www.facebook.com/MITAppInventor" target="_blank" rel="noopener"><img src="/images/social_media/facebook.png" alt="Facebook" loading="lazy"></a>
+        <a href="https://www.linkedin.com/company/appinventorfoundation" target="_blank" rel="noopener"><img src="/images/social_media/linkedin.png" alt="LinkedIn" loading="lazy"></a>
+      </div>
+      <a class="ai2-footer__donate" href="https://giving.appinventor.mit.edu/button" target="_blank" rel="noopener">Donate</a>
+    </div>
+
+    <nav class="ai2-footer__cols" aria-label="Site">
+      <div>
+        <h3>Get help</h3>
+        <a class="ai2-footer__ask" href="https://community.appinventor.mit.edu" target="_blank" rel="noopener">Ask the Community</a>
+        <p class="ai2-footer__note">Our community experts answer questions about using App Inventor.</p>
+        <ul>
+          <li><a href="/FAQ">FAQ</a></li>
+          <li><a href="/explore/content/system-requirements">System Requirements</a></li>
+          <li><a href="/ios_tips">iPhone &amp; iPad</a></li>
+          <li><a href="/ai2/ReleaseNotes">Release Notes</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Learn</h3>
+        <ul>
+          <li><a href="/get-started">Get Started</a></li>
+          <li><a href="/explore/ai2/tutorials">Tutorials</a></li>
+          <li><a href="https://www.youtube.com/@MITAppInventor" target="_blank" rel="noopener">Video Tutorials</a></li>
+          <li><a href="/explore/books">Books</a></li>
+          <li><a href="/explore/teach">For Teachers</a></li>
+          <li><a href="/explore/expert-trainers">Expert Trainers</a></li>
+          <li><a href="/explore/apps-for-action">Apps for Action</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="/explore/news">News &amp; Events</a></li>
+          <li><a href="/explore/blog">Team Blog</a></li>
+          <li><a href="https://www.appinventor.org/appathons" target="_blank" rel="noopener">Appathons</a></li>
+          <li><a href="/explore/research">Research</a></li>
+          <li><a href="https://github.com/mit-cml/appinventor-sources" target="_blank" rel="noopener">Open Source Code</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>About</h3>
+        <ul>
+          <li><a href="/explore/who-we-are">Who We Are</a></li>
+          <li>
+            <a href="mailto:appinventor@mit.edu">Workshops &amp; Collaborations</a>
+            <p class="ai2-footer__note">For schools, districts, and organizations: <a href="mailto:appinventor@mit.edu">Email Us</a>.</p>
+          </li>
+          <li><a href="/about/termsofservice">Terms &amp; Privacy</a></li>
+          <li><a href="https://accessibility.mit.edu" target="_blank" rel="noopener">Accessibility</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+  <div class="ai2-footer__legal">
+    &copy; 2012&ndash;2026 Massachusetts Institute of Technology
+    <img alt="" src="/images/cc80x15.png" width="80" height="15">
+    This work is licensed under a
+    <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+  </div>
+</footer>
+
+	<!--
+	  One Bootstrap bundle (5.3.3; Popper is inside it), replacing jQuery +
+	  Popper + Bootstrap 4 JS. The homepage used to load this bundle again
+	  from a CDN on top of those three. Nothing on the site calls jQuery
+	  except pages that load their own copy.
+	-->
+	<script src="/js/bootstrap5.bundle.min.js" defer></script>
+	<!--
+	  Twitter's widgets.js (95 KB) used to load here on every page. Nothing on
+	  the site embeds a tweet or a timeline; the file is still in /js if a page
+	  ever needs it, and should then be loaded by that page alone.
+	-->
+	
+</div>
+    </body>
+</html>

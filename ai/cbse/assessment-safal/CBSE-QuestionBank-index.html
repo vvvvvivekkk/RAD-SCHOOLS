@@ -1,0 +1,241 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--========= Basic Page Needs =========-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!--========== Specific Meta ==========-->
+  <meta name="description" content="Online Education template Based on HTML5.">
+  <meta name="keywords" content="HTML5, Template, Design, Development, education, edulab, online cources, training, online education, best education template">
+  <!--======== Page Title===========-->
+  <title>Question Bank | Central Board of Secondary Education</title>
+  <link rel="icon" type="image/x-icon" href="images/cbse_logo.png">
+  <!--========== Favicons =========-->
+  <!--======== Font icon Css ============-->
+  <link href="font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/themify-icons.css" rel="stylesheet">
+  <!--======= Bootstrap Main Css =============-->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!--====== Plugins Css ================-->
+  <link href="css/plugins.css" rel="stylesheet">
+  <!--====== Custom CSS for themes =======-->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/css1/default.css" />
+  <link rel="stylesheet" type="text/css" href="css/css1/component.css" />
+  <link rel="stylesheet" type="text/css" href="css/newNavStyle.css" />
+  <script src="js/js2/modernizr.custom.js"></script> <!--  images before media-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    function showTime(){
+        var date = new Date();
+        var h = date.getHours(); // 0 - 23
+        var m = date.getMinutes(); // 0 - 59
+        var s = date.getSeconds(); // 0 - 59
+            var session = "PM";
+            
+            if(h == 0){
+                h = 12;
+            }
+            
+            if(h > 12){
+               
+                session = "PM";
+            }
+            if(h < 12) {
+        session = "AM"
+        }
+        
+        h = (h < 10) ? "0" + h : h;
+        m = (m < 10) ? "0" + m : m;
+        s = (s < 10) ? "0" + s : s;
+        
+        var time = h + ":" + m + ":" + s + " " + session;
+        document.getElementById("MyClockDisplay").innerText = time;
+        document.getElementById("MyClockDisplay").textContent = time;
+        
+        setTimeout(showTime, 1000);
+        
+    }
+    
+  </script>
+  <script>
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+  </script>
+  <script type="text/javascript">
+    function confirm_alert(node) {
+        return confirm("This link will take you to an external website. \nयह लिंक आपको एक बाहरी वेबसाइट पर ले जायेगा | ");
+    }
+  </script>
+  <style>
+    *[tabindex]:focus {
+     border: solid rgb(34, 34, 34) 1px;
+    }
+  </style>
+  <style>
+    input[type=text] {
+    width: 30px;
+    box-sizing: border-box;
+    border: 0px solid #f8f9fa;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url('img//searchicon.png');
+    background-color: #fff;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    
+    }
+    
+    input[type=text]:focus {
+      
+    width: 100%;
+    }
+  </style>
+</head>
+
+<body onload="showTime()" id="fontSize">
+  <!--code goes here-->
+  <!--Start code for top strip header-->
+  <section class="top-header">
+    <div class="container-fluid">
+      <div id="myTopSection" class="row align-items-center">
+        <!----Top Header---->
+      </div>
+    </div>
+  </section>
+  <!--End code for top strip header-->
+  <!--====Header Area
+  ====================================-->
+  <!--copy starts here -->
+  <header id="site-header" class="header-area">
+    <div class="header-inner">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12">
+            <div id="myHeaderLogo" class="logo-menu-wrap hidden-xs hidden-sm">
+              <!---Header Logo----->
+            </div>
+          </div>
+        </div>
+        <div class="row navigation" id="skipCont">
+          <div class="col-lg-12">
+            <nav id="myNewNav" class="navbar navbar-expand-lg myNewNavMain"> <a class="navbar-brand" href="#"></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <!--Header Navigation-->
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sticky-header"></div>
+    <div class="mobile-menu myMobMenuMain"> <a class="mobile-logo" href="#"> <img src="img/cbse-logo-with-name.png" alt="CBSE logo" style="height:40px; width:200px;"> </a> </div>
+  </header>
+  <!--/.header-area-->
+  <!-- Page Content -->
+  <div class="courses-page page-wrapper">
+    <div class="courses-page-content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 col-xs-12 breadcrumb" tabindex="0">Question Bank</div>
+        </div>
+      </div>
+      <!--tab section start here-->
+      <div class="empty-space"> </div>
+      <div class="container">
+        <div id="accordionExample">
+          <div class="accordCardMainNew">
+            <div id="headingOne"> <button class="btn btn-link btn-block accordion collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> Question Bank </button> </div>
+            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+              <div class="card-body">
+                <div class="subAccordionMain" id="sub-accordionExample">
+                  <div class="accordCardMainNew">
+                    <div id="sub-headingOne"> <button class="btn btn-link btn-block accordion collapsed" type="button" data-toggle="collapse" data-target="#sub-collapseOne" aria-expanded="true" aria-controls="sub-collapseOne"> Class XII </button> </div>
+                    <div id="sub-collapseOne" class="accordion-collapse collapse" aria-labelledby="sub-headingOne" data-parent="#sub-accordionExample">
+                      <div class="card-body">
+                        <h2 style="font-size:23px;color:#000; text-align: center;"> <a href="https://cbseacademic.nic.in/qbclass12.html" target="_blank">CBSE Academic <br>Class XII Question Bank</a></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordCardMainNew">
+                    <div id="sub-headingTwo"> <button class="btn btn-link btn-block accordion collapsed" type="button" data-toggle="collapse" data-target="#sub-collapseTwo" aria-expanded="false" aria-controls="sub-collapseTwo"> Class X </button> </div>
+                    <div id="sub-collapseTwo" class="accordion-collapse collapse" aria-labelledby="sub-headingTwo" data-parent="#sub-accordionExample">
+                      <div class="card-body">
+                        <h2 style="font-size:23px;color:#000; text-align: center;"> <a href="https://cbseacademic.nic.in/qbclass10.html" target="_blank">CBSE Academic <br>Class X Question Bank</a></h2>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordCardMainNew">
+                    <div id="sub-headingThree"> <button class="btn btn-link btn-block accordion collapsed" type="button" data-toggle="collapse" data-target="#sub-collapseThree" aria-expanded="false" aria-controls="sub-collapseThree"> Additional Practice Questions for Class X and XII </button> </div>
+                    <div id="sub-collapseThree" class="accordion-collapse collapse" aria-labelledby="sub-headingThree" data-parent="#sub-accordionExample">
+                      <div class="card-body">
+                        <h2 style="font-size:23px;color:#000; text-align: center;"> <a href="https://cbseacademic.nic.in/additionalPQ.html" target="_blank">CBSE Academic <br>Additional Practice Questions for Class X and XII</a></h2>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="empty-space"> </div> <br />
+      </div> <!-- container ends here -->
+    </div>
+  </div>
+  <!--footer Code Starts Here -->
+  <footer id="footerdiv"></footer> <!-- Footer Code Ends Here -->
+  <!--=========== JS FILE DECLARATION  ==============-->
+  <!-- jQuery Latest Version -->
+  <script src="js/modernizr-2.8.3.min.js"></script> <!-- <script src="js/jquery.slim.min.js"></script> -->
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <!--<script src="js/jquery-v3.2.1.min.js"></script>-->
+  <!--Latest JQuery v3.6.0-->
+  <script src="js/ui/jquery-3.7.1.slim.min.js"></script>
+  <script src="js/ui/jquery.min.js"></script> <!-- PopperJS -->
+  <script src="js/popper.min.js"></script> <!-- Bootstrap framework JS -->
+  <script src="js/bootstrap.min.js"></script> <!-- All JS plugins included in this file. -->
+  <script src="js/plugins.js"></script> <!-- Main JS file that contents all jQuery Plugins activation. -->
+  <script src="js/main.js"></script>
+  <script src="js/cbse-accordion.js"></script>
+  <script src="js/swithcer.js"></script>
+  <script src="js/font-size.js"></script>
+  <script src="header_logo_new.js"></script>
+  <script src="top_header_new.js"></script>
+  <script src="load_essentials_tabindex.js"></script> <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script src="js/js2/jquery.cbpNTAccordion.min.js"></script>
+  <script>
+    $( function() {
+        /*
+        - how to call the plugin:
+        $( selector ).cbpNTAccordion( [options] );
+        - destroy:
+        $( selector ).cbpNTAccordion( 'destroy' );
+        */
+    
+        $( '#cbp-ntaccordion' ).cbpNTAccordion();
+    
+    } );
+  </script>
+</body>
+
+</html>
