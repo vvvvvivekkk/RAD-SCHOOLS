@@ -1,0 +1,55 @@
+# Sorting Network (Map) | Computational Thinking | Mathematics | CCL IIT Gandhinagar
+
+**YouTube ID:** `txZ4cxbdsR4`  
+**URL:** https://www.youtube.com/watch?v=txZ4cxbdsR4  
+**Uploader:** CCL IITGN (https://www.youtube.com/channel/UC0XMtgp0H7vlzAG8u2pWkYg)  
+**Duration:** 155 sec (2:35)  
+**Upload date:** 20250818  
+**View count:** 1,974  
+**Tags:** critical thinking, creative learning, problem solving, STEM, education, hands-on, experiential, science, math, @HackerOm, @MRINDIANHACKER, @3blue1brown, @numberphile, @khanacademy, @mathologer
+
+## Description
+
+🎥 Learning Sorting Networks through Play | Computational Thinking with Langadi Tang
+
+A hands-on learning video by CCL IIT Gandhinagar
+
+How can children understand complex computer science ideas without screens or coding? 🤔
+In this video, we explore Sorting Networks using the traditional Langadi Tang game, transforming play into a powerful learning experience.
+
+This activity introduces Computational Thinking concepts such as:
+Logical sequencing
+Comparison and decision-making
+Parallel processing
+Pattern recognition
+
+Using toy-based and movement-based pedagogy, learners physically enact sorting steps, making abstract ideas visible, intuitive, and memorable.
+
+🧠 What students learn
+What is a Sorting Network and how it works
+How algorithms can be represented through physical movement
+Core principles of Computational Thinking without computers
+Collaboration, strategy, and problem-solving through play
+
+🎯 Who is this video for?
+
+School teachers (Grades 3–8)
+STEM educators & teacher trainers
+Parents interested in activity-based learning
+Anyone exploring unplugged computer science education
+This video is part of CCL IIT Gandhinagar’s mission to make STEM learning experiential, inclusive, and joyful, aligned with NEP 2020 and Foundational Literacy & Numeracy (FLN) goals.
+
+🔔 Don’t forget to like, share, and subscribe for more hands-on STEM learning videos!
+
+About the Activity : 
+Ever wondered how computers sort random things into order so quickly?
+We often work with ordered lists, making information easier to find. Telephone directories, dictionaries, and book indexes use alphabetical order for convenience.
+Without sorting, finding information would be much more complicated.
+Despite their speed, computers have limits on how quickly they can solve problems, but they sort things with the help of a sorting map.
+
+Ref. Document: https://docs.google.com/document/d/1ANUylbbkL7tYVgGmSlW5sRAiMyt_9YzJm8Jxdw44hh0/edit?usp=sharing
+
+2. Download Templates : https://drive.google.com/file/d/1oa0IHV6dsfAFm76YPWQZyz1WHv78WSPt/view?usp=sharing
+
+## Available auto-captions (languages)
+aa, ab, af, ak, am, ar, as, ay, az, ba, be, bg, bho, bn, bo, br, bs, ca, ceb, co

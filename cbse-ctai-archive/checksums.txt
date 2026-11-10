@@ -1,0 +1,16 @@
+1e82b5398755273c9cd6edb9151d508e638fdbbacc83215b3375d11f069e673d  ./activity-resources/grade-4/coin-flip-magic-video-context.md
+e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855  ./activity-resources/grade-4/coin-flip-magic.description
+c4a74683369850061e27634ca0948ef356f2916606449ba6767128e97043f6af  ./activity-resources/grade-4/coin-flip-magic.info.json
+8bf1619132367a7fa6415198806302f5be84ae0f4f7089863561b4ca7236be49  ./activity-resources/grade-4/sorting-network-video-context.md
+518b04105daf0730ab6448a20898a736419aee787016247fd384d97940395cfc  ./activity-resources/grade-4/sorting-network.description
+f4fadc9d7c39d0319cdc322dcd5abdca7987f8f6dfe75cc436849a79e048b71e  ./activity-resources/grade-4/sorting-network.info.json
+daf0c51439b02715ce51413b583d89f5038efb8e01918d4699acf6be945071c2  ./activity-resources/grade-5/eklavya-tarazu-ep6-video-context.md
+b5fcea48465bf7557aea0943ae0f3395516b70c94cfac7bef2470fcfcb6b1c5b  ./activity-resources/grade-5/eklavya-tarazu-ep6.description
+7f111e2431a6da4efdb6de1cc92e4323120f4a55733003004b6bfe14ad1a2e64  ./activity-resources/grade-5/eklavya-tarazu-ep6.info.json
+47636206a6b727d948a835a389a59e88aaf218c726e0a76739de702cfbeb2af1  ./activity-resources/grade-6/12-point-circle-video-context.md
+aa54756d3d5bed61e271aea5e3f5e74bb5f2dbe5bb23099049eb4301caf73f88  ./activity-resources/grade-6/12-point-circle-video.description
+0a6a94d4ec4181623495a561e434749f398c7ee1025788327a5efbf4448b16f7  ./activity-resources/grade-6/12-point-circle-video.info.json
+76def9e17002f60e862e19e2efad89f01f99cda764ea0afb15b6533f75315d8f  ./activity-resources/grade-7/punched-cards-video-context.md
+f0f89fe78f73a0347683a549f290db2c7d018943b70131b162ca9fb1d3d4951b  ./activity-resources/grade-7/punched-cards-video.description
+1dda199c02b49561977cc63bf1148312309acdecce608eea890efd43adc1406e  ./activity-resources/grade-7/punched-cards-video.info.json
+aebbe6d3090f3595a69a056e5625ac412354215c701cabfd1d5269aa751feaec  ./checksums.txt
