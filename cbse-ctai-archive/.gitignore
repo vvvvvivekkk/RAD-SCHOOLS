@@ -1,0 +1,6 @@
+# Oversized source zips (unzipped chapter PDFs are kept)
+ncert-maths-companion/**/*.zip
+# Pre-NCF (2023-era) Math Magic Class 5 — 2026-27 companion is Math Mela
+ncert-maths-companion/grade-5/eemh1*.pdf
+# TLS workaround / scratchpad artefacts
+*.tmp

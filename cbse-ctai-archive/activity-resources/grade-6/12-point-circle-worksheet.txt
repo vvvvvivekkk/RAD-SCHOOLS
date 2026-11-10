@@ -1,0 +1,134 @@
+﻿Grade 6: Prime time
+String Art
+  
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Activity 
+You are given a circle with 12 equally spaced points. 
+You have to connect these points using a rule. 
+
+
+
+
+Rule:
+1. Starting from 2, add 2 to it and connect it with the next number i.e., 4.
+2. Add 2 to 4, then connect it to the next. 
+3. Keep adding 2 until you reach the starting point. 
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1.1 How many steps did it take to reach the starting point?
+  
+
+1. Three
+2. Four
+3. Five
+4. Six
+
+
+Now starting from 3, add 3 to it and join to the next point. Keep adding 3 until you reach the starting point. 
+
+
+
+
+1.2 How many steps did you take to reach the starting point? 
+1. Two 
+2. Three
+3. Four
+4. Five
+
+
+Repeat the same process by 
+1. Starting from 4 and adding 4 
+2. Starting from 5 and adding 5
+3. Starting from 6 and adding 6
+
+
+Until you reach the starting point. 
+   
+What shapes do you get? Record your answers in the table below. 
+
+
+Number added
+	No. of steps till the starting point
+	Shape formed
+	2
+	6
+	Hexagon
+	3
+	4
+	Square
+	4
+	
+
+	
+
+	5
+	
+
+	
+
+	6
+	
+
+	
+
+	
+
+Do you notice any patterns in the numbers we are adding, the number of points on the circle, and the shape being formed in the circle?
+
+
+Why did you get polygons on adding 2, 3, and 4, while a star on adding 5? Is there any relationship between these numbers and 12, the number of points on the circle? 
+
+
+Explorations
+1. What shapes will you get when you add 7, 8, 9, 10, and 11 until you reach the starting point? 
+Try to find out the relationship between the numbers and the number of points on a circle. 
+2.  Two circles, one with 16 points and the other with 20 points, are given. Which of the two will give a square when added to which number?     
+  
+  
+
+1. The 16-point circle, on adding 4
+2. The 16-point circle, on adding 12
+3. The 20-point circle, on adding 5
+4. The 20-point circle, on adding 15

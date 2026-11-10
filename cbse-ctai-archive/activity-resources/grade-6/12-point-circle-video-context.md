@@ -46,5 +46,3 @@ Visit our website: https://ccl.iitgn.ac.in/
 
 #creativelearning #experientiallearning #science #sciencevideos #sciencevideo #math #physics
 
-## Available auto-captions (languages)
-aa, ab, af, ak, am, ar, as, ay, az, ba, be, bg, bho, bn, bo, br, bs, ca, ceb, co

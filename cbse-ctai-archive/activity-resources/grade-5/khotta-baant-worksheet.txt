@@ -1,0 +1,67 @@
+﻿Grade 5: Weight and Capacity
+Searching for the Fake weight
+
+Activity: Searching with a Weighing Scale
+
+Imagine we have 9 identical-looking weights out, of which one is Lighter, a fake weight. We have to figure out which one is lighter using only a weighing scale (and nothing else).  Our goal is to find the fake in the least number of weighings.
+  
+                  
+How will we figure this out? What process will we use to determine the fewest weighings needed to identify the lighter fake weight? Always assume that you have the worst luck and will get the fake weight in the last possible step.
+
+
+1: Initial attempt 
+Let’s take two weights at a time and compare. Taking two weights at a time can be done in two different ways:
+* In the first method, we keep the weight on one side constant (let’s say the right) and choose a new weight for the left side at each weighing. 
+* Second method, we chose two new weights for very weighing.         
+  
+          
+1. Is one of the methods above faster (fewer weighings) than the other, and if yes which one?
+   1. Yes, method one is faster
+   2. Yes, method two is faster
+   3. No, both take the same number of weighings
+
+   2. How many minimum weighings will it take to guarantee figuring out the fake (lighter) weight when you compare two weights at a time? 
+(This means we are assuming you always have bad luck and get the fake one in the last possible step)
+      1. 5 weighings
+      2. 8 weighings
+      3. 4 weighings
+      4. 7 weighs
+2: A faster way (Binary search)
+To do it faster, we need to remove as many weights as possible in each round and use divide-and-conquer better. Can we divide the 9 weights more effectively? Maybe into groups of 4.
+  
+
+      3. After one weighing, how many weights remain?
+      1. 1
+      2. 4
+      3. 5
+      4. 8
+________________
+         4.  If the fake is among the 4 remaining weights, how many more weighings are needed (minimum) to find the fake weight?
+         1. 1
+         2. 2
+         3. 3
+         4. 4
+
+We figured out the fake weight in 3 weighings. This method of dividing a problem into two parts and then finding a solution is known as Binary search.
+Can we find the fake weight in fewer weighings than this?
+3: Fastest possible algorithm in a three-state system    
+Can we do this faster than the binary search? Let’s bring together the various points we observed above. Let’s try dividing into 3 equal parts, and now we will weigh two groups of three.
+  
+
+            5. How many weights get removed after the first weighing?
+            1. 2
+            2. 4
+            3. 3
+            4. 6
+
+               6. How many steps does this method require to determine the fake weight?
+               1. 1
+               2. 2
+               3. 3
+               4. 4
+
+
+We see that if we have three equal groups, we can find the lightest group in one step. If these groups each have three weights, then in the second weighing, we get the lightest weight.
+Conclusion:
+We see that dividing the search space into three parts is faster for finding the fake weight using a balance. This happens because in a three-state system, “ternary search” is a faster searching algorithm.
+We broke the problem into 3-weight chunks, understood the pattern, saw how it gets solved, and used the same algorithm to solve the bigger 9-weight problem.

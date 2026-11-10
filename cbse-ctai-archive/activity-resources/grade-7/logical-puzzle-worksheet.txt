@@ -1,0 +1,140 @@
+﻿Grade 7: Number Play
+Logical Puzzle Punch Cards
+
+
+Introduction
+Solving puzzles always seems complex. But have you wondered how computers solve puzzles? We will see a simplified way to solve some puzzles by following simple instructions and using the binary computer language. This will give us insight into how we can break complex problems into smaller pieces that can  easily be solved. By combining smaller problems, computers can solve a larger one.
+
+Activity: Logical puzzle punch cards
+
+
+In this activity, you will use punched cards to solve logical puzzles. By stacking, aligning, and filtering the cards, we will see how complex reasoning can be built from simple decisions - True or False, mirroring how binary logic works inside a computer.
+The scenario is that you have the following lights in the room: Yellow Y, Pink P, Red R, Green G, and Blue B. By following the clues given in the Case Cards, you have to figure out which lights are ON in the given Puzzle. To solve these puzzles, we have a deck of cards representing all possible combinations of these lights being ON or OFF.  
+
+
+Understanding the cards 
+To solve these puzzles, we have a deck of cards representing all possible combinations of these lights being ON or OFF. Each card has five positions for holes on the top, and each position corresponds to a coloured light mentioned above in the given order. 
+
+        Each position has two possible hole types: U-shaped or O-shaped. Each card represents one possible combination. If a light is ON  in a card, then the hole corresponding to it is U-shaped. If a light is OFF in a card, then the hole corresponding to it is O-shaped.
+Eg: Yellow Y is OFF, Pink P is ON, Red R is ON, Green G is OFF, Blue B is OFF is the card where the holes are  O U U O O.
+
+Each hole, thus, has 2 possible states. If we have two holes, then we have  possible states. Likewise, if we have 3 holes, we have  states. Therefore, if we have 5 holes, we will have  states. That is the number of distinct cards we have.
+
+
+  
+
+Figure: All the possible three-hole states and how it comes from the two-hole states
+
+
+  
+                                          
+Figure: Some possible cards with 5 binary digits 
+
+
+Procedure 
+If the puzzle says a light is ON, we need to remove all cards where that light is OFF. For that, we put the stick into the deck of cards through the hole corresponding to that light and pull out all the cards that get stuck to it. We remove these cards because they got stuck due to O-shaped holes that indicate the light is OFF.
+ 
+If we know some light is OFF in the puzzle, we remove all the cards that do not come out with the stick; these are the cards with U-shaped holes in positions corresponding to the given colour, which indicate that the light is ON. Ensuring the above helps us solve the logical puzzles through punch cards.
+
+Let’s get familiar with the cards and the rules. 
+  
+
+1. Can you identify which bulbs are ‘OFF’ based on the card?
+   1. Blue B and Yellow Y bulbs
+   2. Green G and Red R bulbs
+   3. Red R and Yellow Y bulbs 
+   4. All bulbs are OFF
+
+
+Understanding using a case
+The operation of the cards is explained by showing how they can be used for solving a problem in two-valued logic.   
+
+We can start by taking Case 1, which contains the first 8 cards (0-7), and focus only on the Red R, Green G, and Blue B lights. Three statements are given containing simple assertions and negation statements. The aim is to determine which bulbs are on or off among these. 
+
+
+To solve this problem, let’s establish some notation. Only three terms are involved, so we shall be concerned with only the Red R, Green G, and Blue B holes. 
+
+
+Red bulb ‘ON’, 1st position will be U
+	Red bulb ‘OFF’, 1st position will be O
+	Green bulb ‘ON’, 2nd position will be U
+	Green  bulb ‘OFF’, 2nd position will be O
+	Blue bulb ‘ON’, 3rd position will be U        
+	Blue  bulb ‘OFF’, 3rd position will be O
+	
+
+If all lights are ON, then RGB = U U U
+If all lights are OFF, then RGB = O O O
+If Red is OFF, Green is ON, Blue is OFF, then RGB = O U O
+If Red and Green are ON, but Blue can be anything, then RGB = U U X
+
+1. Can you identify which bulb is OFF based on this pattern: RGB = U U O? 
+   1. Red bulb 
+   2. Blue Bulb
+   3. Green bulb
+   4. All bulbs are OFF
+
+________________
+Case 1: Focusing on RGB cards only 
+(with 8 cards only)  
+
+
+Statements 
+I. The Red light is ON 
+II. The Blue light is OFF 
+III. ON light only has OFF Neighbour 
+
+The problem has three statements. 
+
+   * The statement I: "The Red light is ON”  
+
+
+   2. After performing an action using Statement I, how many cards are left in the pack? 
+   1. 8
+   2. 4
+   3. 2
+   4. 1
+
+      * The second statement, II, “The Blue light is OFF” 
+
+         3. After performing the action using Statement II, among these, which card will not be discarded?  
+         1. RGB = X X O
+         2. RGB = U O U  
+         3. RGB = X X U
+         4. All will be eliminated
+
+
+
+            * The third statement, III, “ON light only has OFF Neighbour” 
+
+After this action, only one card will be left, and that will be the solution to the logical puzzle. 
+
+
+               4. What is the pattern of the last card (solution)? 
+               1. RGB = U U O
+               2. RGB = U O U
+               3. RGB = O U U
+               4. RGB = U O O
+
+
+
+
+
+Case 2: Focusing on RGB cards only 
+(with 8 cards only)  
+
+
+Statements 
+I. The Red light is ON
+II. The Lights are either all ON or all OFF
+
+
+               5. Among these, what would be the pattern of the solution?
+               1. RGB = U O O
+               2. RGB = O O O
+               3. RGB = U O U
+               4. RGB = U U U
+
+
+More Puzzles
+Below are three progressively harder cases. They introduce additional logic and multi-step filtering to mimic advanced truth-table-based reasoning. Each ends with one solution card.

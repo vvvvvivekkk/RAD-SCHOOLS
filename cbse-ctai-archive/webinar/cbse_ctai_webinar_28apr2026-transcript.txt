@@ -1,0 +1,1626 @@
+webinar on the curriculum.
+I welcome you all uh to this webinar
+today. Uh with us we have our uh
+respected chairperson sia singing gi. We
+have expert committee membershart
+raman who is a member of co- leadership
+IIT Madras both foundation as well as
+professor department data science and AI
+Badwani school of data science at IIT
+Madras. We also have with us our field
+expert Shimik Nala GI who is an element
+of IIT Riy and IIT and IM Kolkata. We
+have with us director training Shrimas
+Shivas GI we have with us Dr. Vishari
+Saha director skill education. My team
+members Anjeli Ara Singh and Ramandi and
+of course our expert Dh. So uh with this
+I would request chair of sensor for the
+keynote address.
+&gt;&gt; Thank you Prager and warm welcome to all
+who are in the YouTube channel and
+to professor Karthik Mikin and all
+officials of CBSC.
+So
+as Pragya said the curriculum has
+already been launched. Today's webinar
+is essentially targeted to in a way
+interacting with schools so that we are
+able to chart out a course as to how to
+implement it. What is the implementation
+methodology that is going to be
+followed? Which teacher is going to be
+transacting it and other things.
+But first a brief about the subject as
+such.
+The NEP and the NCF talk about
+computational thinking and they also
+place a focus on imparting knowledge of
+emerging technologies and amongst them
+artificial intelligence is it figures
+extremely prominently.
+So when we set out to design this
+curriculum,
+we roped in experts and I'm extremely
+grateful to all the experts who sat down
+and
+without any
+I would say they gave their sweat to
+this curriculum
+and the books have come out extremely
+well at least in my opinion. It's being
+debated still.
+So there are two parts to it. One is
+computational thinking and introducing
+it at class 3 level.
+The objective is not only to teach let's
+say pattern matching recosition but also
+to unlock the unlock the cognitive
+understanding amongst children so that
+they can appreciate all other subjects.
+It's not only it's not only a part of
+mathematics that computition thinking
+won't assist a child in solving a
+geometry problem or algebra problem. It
+will help them in understanding lots of
+other things
+and it will stand them in goodstead when
+they are reaching senior levels or
+senior classes. The AI curriculum in
+contrast is slightly more rigid and
+limited in its scope. In the curriculum
+at the school level
+at least from what I understand the
+target is essentially demystification of
+AI. So our children are aware for what
+AI is, what AI is trying to mimic or do
+and a bit of exposure about how it does
+along with some exposure of what are the
+pitfalls recognizing
+the problems which are inherent when we
+are trusting let's say AI solution
+implicitly. So what I would like to term
+something like automation bias.
+So this is so the all the 12 modules of
+AI essentially progress from
+the basic intelligence models and then
+they progress
+to more slightly more deep understanding
+of AI.
+In contrast, if we look at what China is
+attempting,
+China is asking its children to for
+example work with models and create
+projects from a very early age.
+So that's a different approach.
+What we feel is children are exposed to
+AI in some form of the other. Especially
+elements
+is an area where children are exposed
+very early. So what you want is children
+should understand how these elements
+function. what is the way they are
+designed and then in process 9th and
+10th the curriculum as we are
+visualizing it right now it should go on
+to enabling them to create their own
+models along the way in classes six 7th
+8th we have envisaged but it's not part
+of the published curriculum yet but two
+projects on data every year the children
+get exposure to data and to get
+comfortable with data so that is the
+essential object objective
+how it's going to be transacted. What is
+the objective? Is it is the student
+resource book an exercise book? No, of
+course it's not. It's not an exercise
+book at all. It is essentially meant for
+teachers to use as a resource in the
+classroom to guide thinking of students,
+gauge how they are thinking or how they
+are trying to solve a problem and guide
+them towards a solution. So it's not an
+exercise book in that sense of the word
+but yes they are illust illustrative and
+targeted to ignite cognition among
+children. I think the webinar today when
+Dr. Karthik and Mik they are addressing
+this audience it'll become more clear
+and I would urge all schools to
+commence transacting these subjects at
+classes 6th 7th and 8th the books are
+already published on the website the
+teachers resources are also available so
+after this webinar we would also
+commence in a way monitoring of this
+entire transaction and our objective is
+that every child be exposed to it this I
+wish you all the rest. Thank you very
+much.
+&gt;&gt; Thank you sir. Uh so we begin today's
+proceedings with and this would be in
+the form of question answers and uh my
+first question is to professor Karthik.
+Uh sir, what is the current landscape
+and the global picture with regard to
+AI? Can you please elaborate upon that?
+&gt;&gt; Sure. Um thanks a lot Ryan G. I hope my
+screen's clearly visible. So what is the
+current landscape and where are we
+today? I think the most important thing
+we need to remember is that uh a is not
+some future thing right it is not a
+future that we are preparing for but it
+is a present which we have to quickly
+tackle and all our students have already
+started using AI heavily right so in
+some places very heavily some children
+more heavily than others there may be
+you know differences across you know
+urban and rural or whatever but no
+matter what students everybody uses
+YouTube uh they you know they are used
+to recommendation engines.
+They are using LLMs for homework
+increasingly common, voice assistants on
+the phone and so on. Maybe you know some
+translation, image searches and
+navigation and so on. But the catch is
+that there's very little awareness of
+what AI actually is, right? So it's like
+a black box. That's what sort of lots of
+surveys have shown us that students
+don't understand AI and they think it's
+some black box. And uh the whole idea as
+Chadanso was saying is that we want to
+demystify AI for the students. And the
+question therefore even at the very
+start of the design of the curriculum
+was not should we teach AI in schools
+but how do we teach it well? How do we
+teach it in such a way that it is not
+restricted to those who like math not
+those who are adept at math but
+everybody should get a feel for this.
+They could be h having their best
+interest in humanities or arts and
+language but can these students still
+appreciate AI and that's what the
+curriculum set out to do. And what have
+other countries done? A lot of countries
+have already embraced AI. Uh so
+Singapore has an edtech master plan 2030
+which is focused on structured AI
+learning across schools. Finland was one
+of the earlier countries to to introduce
+it. UAE already has it as a mandatory
+subject from the previous academic year.
+UK, US, US has several states have
+followed this and China of course has
+tried to introduce it from class one in
+a different fashion and so on. But the
+point is a lot of school systems have
+already embraced computational thinking
+and AI in the curriculum and it's a
+great opportunity for India to also do
+the same and impact our students in a
+big way because there are lots of
+surveys and studies and think tanks
+which have shown that India has a very
+high capability simply because of the
+nature of its workforce and the ability
+to adapt uh quickly
+and uh this is not like a sudden jump
+right so this was very Well, um very
+precient if one might add because even
+before
+Chad GPT and other LLMs took the world
+by storm, the NEP 2020 expressly made
+this statement calling for India to
+pioneer in key areas such as a IML um
+big data computational thinking which is
+actually one of the most important
+things right and uh we'll have talk
+about it a little later as well and the
+idea is to integrate all of this through
+school education definitely you know
+there is a lot the higher education
+institutes can do in the space and so
+on. But what is more important is to
+make sure that school education
+emphasizes on computational thinking and
+AI and the national curriculum
+curriculum framework for school
+education also states the same thing. Uh
+it carries the NEP recommendation
+forward for implementation and
+recognizes that CTI and computational
+thinking and AI is a an important
+curricular area that should be in
+schools, right? Not just as an
+afterthought, not just as a side
+subject, but as a key subject that is
+taught to all students.
+And how does this curriculum do that?
+The the key aspect is that we want to
+emphasize computational thinking because
+computational thinking is not restricted
+to AI. It is not restricted to computers
+even. It it focuses on basic problem
+solving and really breaking a problem
+piece by piece. And this is something
+that the surprisingly the LLMs have
+started doing very well today. And the
+the progression is from basic sol
+problem solving to computational
+thinking to AI awareness or AI literacy
+and ultimately you know AI skills AI
+application and so on with ethics all
+along woven into the framework because I
+think students need to understand that
+there are biases there are risks of
+using AI. There are many benefits
+undoubtedly but responsible AI is
+definitely not an afterthought for any
+of us and we wanted it integrated into
+the curriculum very very carefully and
+we have a deliberate phased progression
+and we have several CT computational
+thinking skills like pattern recognition
+or decomposition, abstraction,
+debugging, algorithmic thinking which
+are so important as a child develops, as
+a young child develops to give them the
+cognitive abilities to tackle
+harder problems either in real life or
+as thrown by AI as well. So with that
+let me uh you know start talking about
+computational thinking and pass it over
+to Mkin who's done a lot of work in the
+space and the idea is to uh see how
+computational thinking forms the basis
+for a lot of cognitive abilities in the
+child and more importantly for AI uh
+literacy as well.
+Yeah, thank you professor Karthik. Uh
+hello everyone. Thank you for joining
+today. So as uh you know chairman sir
+talked about computational thinking is
+essentially about breaking larger
+problems, complex problems into smaller
+logical pieces and building stepby-step
+solutions that a either a person or a
+computer can follow.
+uh think of these not as computer skills
+but essentially as cognitive skills
+which we are helping children build
+broadly there are four pieces globally
+which people talk about as far as CT is
+concerned we have added two more to it
+which is data analysis and
+troubleshooting let me just kind of
+quickly explain you what these skills
+really mean the first one is
+decomposition right this is something
+which you experience let's say when you
+are planning your annual
+concert in the school, right? Overall,
+the annual day is a huge logistical
+challenge. It's a huge logistical
+problem. But as school leaders, as
+educators, you essentially break it down
+into different problems like venue,
+student performance, costumes, guest
+invitations and so on. And then you
+tackle each of these problems
+differently through different themes,
+which essentially helps you solve the
+larger problem. This is essentially what
+decomposition is all about. And as you
+as I just explained, this is not
+necessarily an example of how you use it
+in computers. We use it in our
+day-to-day life as well. Similarly,
+pattern recognition is about once you
+have broken down a problem, can you look
+at historical data? Can you look at
+similarities with what you have,
+whatever you have learned so far and
+figure out a solution to that, right? Is
+there anything which fits into this?
+Abstraction is probably one of the most
+critical aspect today. This is what
+children these days face a lot when they
+get into informationheavy world. Right?
+It is their ability to filter out the
+noise and focus purely on the essential
+information which is required to solve
+the problem. Like you know whenever I
+give you anything let's say if you have
+to draw a map of the school you don't
+draw everything around that right you
+only focus on the root and that is what
+is essential. Algorithmic thinking is
+nothing but once you have broken it
+down, once you have figured out what is
+the step, putting it into a step-by-step
+procedure and solving it and of course
+data analysis and troubleshooting is
+where we get the child to learn that how
+do we draw meaningful information from
+data which is given to you. Lot of times
+the data may not feel related. Lot of
+times the data may not feel structured
+but the child is able to do it. you know
+the child is able to put it in a
+structured form and solve it. And
+lastly, troubleshooting is all about how
+do you figure out what is wrong in your
+entire process and do you have the
+capability to figure out the mistake and
+solve it. Uh let me give a very quick
+example to kind of explain how all of
+this comes together in the kind of
+booklet or in the kind of resource book
+which we have put together. I have a
+question for you all. Uh you see a grid
+over here, right? Can you tell me how do
+what is the largest four-digit number
+which you can form here? You can put in
+your answers in the chat box on YouTube.
+Which is the largest four-digit number
+you can form here. If you can use only
+one number for from every row or column.
+What I mean is if you have chosen seven
+supposedly you can't pick anything else
+from this row nor can you pick any
+anything else from this column. Right?
+This is not maths. This is not very
+complex maths or you know any complex
+concept which I'm using here but it's a
+great example of a computational
+thinking problem. Uh yeah I see some of
+the answers coming out in the chat box
+but haven't seen the right answer so
+far. Right. I'll just pause for a minute
+before I go on. It's a four-digit
+number. You can use it in any order as
+you want.
+Yeah. So I think uh there are a lot of
+answers which have come in. I have not
+got the answer which I was looking for.
+The right answer here is 9852.
+Now let me explain how we put into play
+the computational thinking concepts
+which we uh spoke about. The first thing
+was decomposition. Right? Can we break
+down this problem into small steps one
+by one and solve it. You are supposed to
+find the largest four-digit number.
+There is a nine in the grid. Of course
+you have to pick nine as the first
+digit. So if we are now breaking it down
+instead of four digit let's do it step
+by step. One digit at a time.
+Now we know that there are two nines
+over here but both are in the same
+column. I can only pick one. So based on
+your history based on your knowledge you
+know that 98 will always be bigger than
+97 or any other number after that.
+Right? 98xy will always be bigger than
+97xy. So 8 is what I will choose over
+here which is essentially where we are
+leveraging our historical knowledge or
+trend. So I will choose 98 as you can
+see in the next slide.
+The moment I see 98 over here uh and
+again the next slide you will see now we
+use abstraction. So as we have solved
+two parts of the problem we eliminate
+what is not relevant for us. Everything
+in the purple colored box or a blue
+colored box is now out of bounds for us
+because it is either in the same row or
+the same column. So we don't look at
+those boxes. We only look at what is
+left. And now again we pick the largest
+number which is five. The moment you
+pick five, you're left with two. And
+that is your answer. See, it was not a
+difficult one. I still see a lot of
+answers coming around. Very few have
+come up with 9852. This is a classic
+example of one, what computational
+thinking is and how do we use it into
+practice. Second, why it is not just
+maths, right? I mean, what we use is
+very very basic concept. Now, why are we
+learning computational thinking, right?
+I mean we talk about AI but as I think
+you know chairman spoke about at the
+beginning of the session computational
+thinking and artificial intelligence are
+very very closely linked.
+uh the way a child breaks down a
+problem. The way we are trying to build
+that capability in a child to break down
+a problem step by step look into
+patterns, figure out what those patterns
+mean and then design stepby-step
+procedures to solve that is exactly how
+an AI IML system also operates. Right?
+uh this is how when you use AI this is
+exactly how AI leverages past data
+historical data to figure out the trend
+and that is how intelligence is built
+but having said that it is not that AI
+ML or uh
+is the only reason why you learn CT
+is essentially something which will be
+used by child across right when you put
+all the pillars of CT together you don't
+just get a good coder you You get a
+logical thinker. You get a citizen who
+is equipped to handle all the complex
+problems which an AIdriven world will
+throw at him. Not necessarily related to
+tech. And this is what CT is truly
+about. It is actually a habit of mind
+not just a school topic. And I think
+that is what we're trying to build here
+by exposing kids to these kind of
+problems gradually year after year. Can
+we build that thinking ability in them
+which will be very essential for them as
+they navigate the future?
+I think uh now as we have understood
+what let me just quickly take you
+through what the resource books are
+about
+can we go to the next slide?
+Yeah, we have already covered how CT is
+used in all subjects not just really AI.
+We have covered about how CT uh is kind
+of essential skill for life how we use
+it. Now uh we understand right that uh
+this kind of approach is essential for a
+child and is something which we want to
+build.
+What we have tried to develop here is we
+have tried to develop this through a
+companion book principle here where we
+have given you a handbook which follows
+the same chapter sequence at the maths
+textbook but it leverages concepts
+across subjects. It is not that CT is
+only maths. It is not that it is
+supposed to cover only mathematics
+concepts. We are actually leveraging
+concepts across t uh the world around us
+even arts as I will show you in some of
+the examples to cover this. It is very
+essential that we start integrating CT
+into your daily instruction. Right? You
+need not have a separate session. You
+need not have a separate chapter for
+this.
+Uh we have got four CT skill threads as
+we look at all these books which is what
+I spoke about. abstraction, pattern
+recognition, decomposition and
+algorithmic thinking. And this is
+something which we have interwoven
+across each question as you move from
+grade three to grade six. Let me just
+quickly take you through some examples.
+Right now this is a question from a
+class 3 resource book which we have
+given you from chapter 14 the surajun
+fair. What we're trying to do here is we
+have given you know some grayed out
+areas and some boxes. The child has to
+put together the pathway and figure out
+what the path would be. Which
+destination will the child reach if he
+builds a continuous pathway across that?
+Right? Uh we are not asking any coding
+or software or any new vocabulary which
+is unfamiliar to the child. But what we
+are doing is we are interlinking two
+concepts here. uh the first one is
+basically the suraj fair which is a
+mathematics chapter which they are
+covering around maps and all that.
+Second is the TWWA chapter 2 uh of grade
+three which basically again gets the
+child to understand directions and maps
+and this is what we have put together to
+come up with a question which requires a
+child to think and do it in a
+step-by-step way. Let's go to the next
+uh problem once. This is another problem
+which essentially uses concepts of arts
+or kti one. Uh it is again a question
+where the child has to identify a
+pattern but it's a visual pattern right?
+It is a pattern where the child has to
+think about you know uh things like
+paper folding and paper uh uh you know
+transformation
+which is essentially what is covered in
+chapter 4 of ki one in grade three. So
+this is another example where we have
+used inter we have interwoven one what
+is given to you uh through different
+subjects and you have to cover this. Uh
+sir next one please
+&gt;&gt; I would like to uh interrupt you here.
+Can you please elaborate on the
+interdisciplinary approach in the books
+a little more?
+&gt;&gt; Sure. Sure. So uh as I was explaining we
+have essentially uh covered questions we
+have built-in questions which cover
+different concepts of the topics which
+you are covering right now. Uh these are
+just examples which you can use when you
+are trying to kind of build in some sort
+of concepts in the child related to CT.
+Now uh what we have shared here like can
+you go to the previous slide please?
+Right? So for instance, right here when
+you look at it, uh what we have given is
+we have given three examples to a child.
+We are trying for him to find out the
+fourth example. What is the knowledge he
+is using? He is actually using the
+knowledge of arts as I spoke about as
+well as the knowledge of pattern
+recognition which he has to build and
+symmetry which is coming in in maths. So
+we have linked ki and maths together in
+the same question in the same uh problem
+which you're doing here.
+uh when you cover these concepts we
+reiterate while the resource book is
+linked to math chapters these are
+questions which can be covered in other
+chapters as well and you can also
+formulate similar problems on this basis
+and ask it as and when you cover the
+respective chapter in your subject.
+Yeah. Uh shall we go to the next one?
+I think uh this is again similar problem
+in class 6. I'll not elaborate here
+further. I think we have given you an
+idea of how we have used multiple
+concepts across subjects. It's not just
+maths to build computational thinking
+skill set in the child. Uh we have also
+given something called the thinking spot
+uh which doesn't really leverage a lot
+of academic concepts. It is a very
+interesting puzzle which a child can
+solve. uh it gives him lot of
+instructions and essentially puts every
+CT skill to play that can the child
+decompose and you know process these
+instructions step by step figure out
+what is the right procedure to solve it
+and so on and so forth. As you can see
+across these booklets uh there is no
+plugged activity which is needed here.
+Everything has been presented in a very
+unplugged way. Right? None of these uh
+use you to kind of require you to use
+computers to solve this. Besides this,
+we have also built in some activities
+again which leverage multiple I mean
+concepts from multiple subjects uh which
+you could cover in your classes. Now I
+will just summarize with one last piece
+uh before I go further is that the there
+are two books over here. One is a
+student handbook, the other is a teacher
+handbook, the teachers resource book.
+The student handbook covers questions
+which involves various CT concepts. It
+has activities. It also have questions
+of varying difficulty level. The way we
+have typically given is we start with an
+easy question and then kind of take it
+ahead. Again these are examples for you.
+You can always formulate questions which
+are simpler than that if need be or more
+difficult than that. Uh the other is the
+teachers handbook. The teacher's
+handbook has everything which is given
+in the student handbook. In addition to
+that, it also provides detailed
+solutions with the reasoning of how do
+you arrive at the solution. It involves
+what is the pedagogical basis and how do
+you approach these problems. Right?
+Again when we talk of CT it is not what
+which is important, it is how which is
+important. Right? approach to solve uh
+the discussion to solve the kind of
+exercise which the child goes through
+that becomes extremely important and
+that is what the entire teacher handbook
+focuses on at certain places. It also
+has several discussion prompts for
+teachers which you could leverage when
+you're discussing certain questions with
+the child in order to give their uh
+brain a little bit more exercise. Right?
+uh the entire structure over here is we
+understand that CT is something which
+will be successful once the teacher is
+able to implement it effectively and
+that is what we have tried to do here uh
+through this. So can we go to the next
+slide please?
+Uh in terms of assessment to match the
+pedagogy as far as CT is concerned the
+curriculum is very clear. Uh we need to
+move from road testing road learning to
+formative and capability based
+evaluation. The curriculum says
+assessment approaches need to move away
+from traditional summitative assessment
+to continuous formative and competency
+based assessment. What we have given you
+is essentially certain questions uh and
+some activities and think and apply
+based on those activities. You can
+further leverage these things. You can
+use multiple approaches to evaluate the
+child's ability across this. What is
+important is that there is no write a
+program, no memorization of definition,
+no question which leverages a set
+formula to solve that. Only thing which
+is important here is can the child
+think. Uh I'll just kind of end with one
+last pieces as you saw computational
+thinking is about structuring a thought
+process. The handbooks we have released
+are designed to weave that structured
+thought invisibly into the classes you
+are already running using a companion
+book principle. Right? So that there's
+no added burden on the time table.
+&gt;&gt; I really really encourage you to look at
+these handbook not as a rigid set of
+rules but as a toolkit which will
+further help you you know foster
+curiosity and logic in the kids. I think
+with this I will now pass on further to
+my colleague professor Karthik
+&gt;&gt; to talk about what is covered as in the
+handbooks as far as AI is there. Over to
+you professor Karthik.
+&gt;&gt; Yeah just want to add one more thing
+here Mik if we
+from the the slides which you have just
+shown. So do we need additional extra
+teachers to transact CT uh books or
+resource books in the classroom or will
+the existing teacher would be sufficient
+for this?
+&gt;&gt; Ma'am the existing teachers would be
+able to do it. I mean that is why we
+have only used concepts which are
+already covered in the respective
+classrooms. There is no need for an
+additional teacher or an additional
+class to cover this.
+&gt;&gt; Thank you Mik. Over to you professor
+Kartik. Please share the details
+regarding the AI curriculum which are
+given in the handbooks.
+&gt;&gt; Sure. So I think this is again something
+that a lot of people are interested in
+and perhaps worried about right what is
+the AI that you're going to teach to a
+sixth grader or a seventh grader and um
+I've always believed that you can teach
+any concept uh to to anyone provided you
+simp simplify it sufficiently and also
+provided you don't uh have painful
+examinations that accompany it right so
+the idea is to make sure that you uh
+give students a simple simplified idea
+which they can relate to something that
+they already know and what we have is a
+very clear arc here. So we start with an
+introduction to AI. What is intelligence
+and what is AI with some everyday
+examples and then very importantly what
+is data? What are the different kinds of
+data? There is audio data, video data
+you know and data can be represented in
+pie charts, bar charts, uh you know you
+can have rainfall data, lot of kinds of
+data that the student can appreciate uh
+easily and then we have several basic u
+then pattern recognition and decision
+making. So how does AI identify
+structure in a problem and then how does
+it you know come up with u decisions or
+classifications and things like that and
+also expose them to certain key domains
+and applications like computer vision
+where it is used self-driving cars and
+so on natural language processing voice
+translation voice recognition automatic
+speech recognition and so on and of
+course data science at an age
+appropriate depth right so we keep
+increasing the complexity of the things
+that we teach from class 6 to 7 to 8 and
+but all along ethics and responsible use
+are woven into every chapter you know
+not just as an afterthought but for
+example students need to know about bias
+fairness privacy and general digital
+citizenship.
+Okay. So here is a simple uh page from
+the handbook. This introduces machine
+learning where it a very classic concept
+in machine learning is what is labeled
+versus unlabelled data. This is like a
+very very simple way to introduce
+students to that right. So if um uh if
+every notebook has the student's name
+written on it, the teacher knows whose
+notebook is it before they open it.
+Otherwise a teacher has to figure it out
+based on the handwriting. Right? So from
+the unlabelled data, you have to map
+back to the label and so on. Right? So,
+so very very simple uh but you know and
+this is a step-by-step way to introduce
+students to AI and for example the most
+common question I get from people is
+that can you really teach supervised
+learning unsupervised learning and
+reinforcement learning in classics and
+the idea is just to connect them to
+things that they already know right so
+for example your your teacher solved
+several maths problems and by learning
+the pattern you learn to solve the next
+right so so this is uh uh and you've
+already learned how the things go. And
+then the second one is in unsupervised
+learning you group by patterns. You sort
+clothes in your shelf into shirts and
+pants and socks without anyone telling
+you that you know this should be kept
+separately and so on. You just group by
+shapes or group by the nature of the
+object and so on. and reinforcement
+learning. This is more complex but uh
+this is always introduced with the
+classic example of a bicycle where no no
+matter how much you read about how to
+drive a bicycle or how how much your
+parents tell you how to cycle you need
+to get out of a cycle balance know which
+by moving this side you lose balance by
+moving that side you gain balance and
+these are the kind of uh rewards that
+you get right so when you learn that
+you've balanced you try to keep maintain
+the position and so on and these are the
+most similar ideas that are used by uh
+like an RL agent for instance and these
+examples are again woven into the book.
+So for example look at this. So now you
+have shapes which tell you this is a
+triangle, this is a diamond, this is a
+circle things that are very commonly
+appreciated by students, right? And and
+then by by saying that by giving these
+data sets you can teach an an AI a model
+to learn whether a particular shape is a
+triangle or a diamond. But then you
+extrapolate it immediately to more
+complex examples. So the real world
+examples involve can you do spam
+detection? Can you do image recognition
+or can you do medical diagnosis? Right?
+So how do you build from the smaller
+pieces to larger problems? Right? And
+that's what even computational thinking
+is all about. Right? You first figure
+out how to decompose the problem into
+very simple sub problems and then by
+assembling the solutions to the sub
+problem you're able to uh do something
+bigger. And now if you want to switch to
+to supervised learning
+um
+we uh to unsupervised learning we now
+get rid of the labels. We only have the
+shapes but then the students can try to
+do an exercise where they just group
+shapes based on the number of sides.
+Right? So all sides with all shapes with
+three sides will go into a triangle box.
+All shapes with four sides will go into
+a into a square box and so on. Right? So
+they are able to see patterns group
+based on patterns and this is done in a
+you know we don't need to let the
+students know already that this is done
+in a complex vector space. What the
+student needs to do is there are ways to
+do this and this helps them put together
+problem a toolkit to solve these kinds
+of problems. Right? So how one how does
+one do it and you can also go to you
+know uh reinforcement learning and you
+have a very visual pairing of
+unsupervised and supervised. On the one
+hand you have um uh supervised learning
+where you have all the shapes with the
+labels and so on and then you just
+manage the labels and you try to group
+them cluster and start understanding the
+basics of unsupervised learning. So this
+is a very simplified way to uh make the
+students understand and what we are also
+going to do I'm going to mention that in
+the end but I'm going to already get
+your interest up is that we are going to
+make very simple handouts which the
+teacher can use right so the handout
+will be how do you explain supervised
+learning to a sixth class student and
+the teacher can then use the the the
+detailed explanations that we give in
+those handouts to further simplify
+what's there in the handbooks of to the
+student because the handbooks need to be
+of a certain length. We we cannot get
+into all the details. So it is simple.
+Yeah. But what we can do in a handout
+will be a deeper dive which will help
+the students and the which will help the
+teachers make sure the students really
+really embibbe the concept and again we
+follow everything with real world
+examples and this is to reinforce what
+already said about the uh assessment.
+So uh what we do is we also give a lot
+of questions to the students that are
+MCQs, fill in the plants and short
+answer questions but this is not too
+memory driven right and the idea is to
+recognize so how do you for example
+group customers by shopping habits that
+becomes unsupervised learning. What does
+uh uh what a game AI improving based on
+winning or losing or learning from
+whether a move was good or bad in chess
+that would go into reinforcement
+learning. So the idea is the student is
+asked to reason about AI as an informed
+observer. They don't yet need to write
+code or train models that can be
+reserved for much later classes uh and
+so on or even the complex mathematics
+that underly these problems. The idea is
+to help them start making the
+connections because they're anyway
+seeing these things happen around us,
+right? Because they are interacting with
+AI on a daily basis today. And the most
+important thing is we have several
+interdisciplinary projects. So we want
+the students to put in 40 hours per year
+across two projects in real world
+contexts and um it it could be something
+that is very related to their community
+and so on. They could draw on
+mathematics for analysis some scientific
+concepts for understanding phenomena
+even social studies and of course you
+know they need to really communicate
+communication of any any science or any
+uh technology related aspects is an
+important skill that children must
+develop. So one example in grade six
+could be exploring weather and and its
+impact across states. So for this they
+would need to to basically collect
+weather data from various sources and
+then try to draw inferences across
+regions. Is this place getting higher
+rainfall than this place? What is the
+year-over-year increase or decrease?
+These kinds of questions the students
+can just simple data analysis that they
+can be made to think about or can in a
+in a later grade can you design a
+balanced meal based on certain
+constraints based on certain food habits
+and things like that or daily routines
+and so on and sports participation
+performance data. So students can be
+given some data from sports uh you know
+number of runs scored, number of goals
+scored or so on and then the students
+can start understanding uh what are the
+outcomes and things like that. So all
+these projects will help students
+integrate data from different sources,
+think about different ways to look at a
+a simple problem and so on. And these
+projects are very important because they
+will they will help computation speaking
+and AI from just simple concepts to
+actual capabilities that the students
+can cultivate and use in the future.
+&gt;&gt; And the a couple of other quick notes
+about the curriculum. It is very
+platform agnostic. So there is you don't
+need to be using chat GPT or cloud or
+Gemini or anything like that. So you can
+and many in fact this is LLMs aren't a
+very integral part of the curriculum at
+all. The curriculum just recommends
+harnessing mostly free and open source
+tools which are accessible to all
+institutions. And we also are very vary
+of tech. Uh this curriculum is largely
+unplugged. For instance, a lot of
+computational thinking portions happen
+with paper puzzles and so on. So at
+least classes 3 to five uh there is very
+little reason for them to get onto a
+computer. as far as this curriculum is
+uh concerned and even the AI activities
+use simple tools. they don't have to do
+much. They don't have to do any coding.
+Uh and the idea is to be able to use
+other kinds of tools which can help them
+do the job without doing uh too much
+coding. And then to reiterate, we also
+want to make sure that uh the assessment
+is meaningful. Uh I think we can already
+mention that I'm not going to uh you
+know labor that. But we don't have write
+a program to do this, right? That's
+definitely part not part of the
+assessment and uh there is no
+expectation of comput computer access
+for assessment either. The idea is for
+students to reason to to connect
+concepts to understand what a particular
+scenario is likely talking about and so
+on. Okay. So ultimately the grand aim of
+this curriculum is we do not want to
+have uh learners who merely consume
+technology who who have this wow factor
+with tools and enjoy using tools but
+they want we want them to be informed.
+We want them to be capable and
+responsible digital citizens
+who can critically question and
+eventually some of them will also shape
+our AI rich future. We are going we are
+definitely already in the in a very AI
+heavy future AI heavy present and it's
+it's going to just increase as we go
+into the future and this is something
+very uh important and this is a
+foundation we will evolve this we will
+learn from how it lands in classrooms we
+will continually improve it but uh this
+is very important to make India highly
+AI capable and uh we need our students
+to be capable confident and critical
+with AI and this begins now with this
+curriculum and I hope all of us can take
+this forward in in various ways. With
+this, I will hand it over back to Pragya
+Gi who can talk about the architecture
+of the curriculum, certain key aspects
+and how we have thought this through
+right from uh what differs from classes
+3 to 5 to classes 6 to 8 and uh also the
+learning standards and so on. Pragya G
+over to you.
+&gt;&gt; Thank you professor Karthik. So um as
+far as the curriculum progression is
+concerned there are two stages which are
+which are uh with deliberate progression
+and uh this curriculum scaffolds
+learning across six grades in a phase
+manner. Classes third, fourth, fifth at
+the first phase and the second phase is
+class 6th, 7th and 8th. Now we go for
+the preparative stage that is classes
+third to fifth. Uh 50 hours per year
+have been allocated to each class. It
+would be only computational thinking no
+AI. We had been observing the comments
+on the YouTube. So there was one comment
+that are you teaching AI from class 3.
+It is as our expert members have said
+that computational thinking would be the
+foundation for learning the AI. So uh
+for class third to fifth it would be
+computational thinking only which would
+be integrated into mathematics and the
+world around us concepts. Mikin has
+already uh explained how it has been
+integrated with the world around us as
+well as mathematics chapters. There
+would be worksheets and the puzzle based
+learning and the resource books are
+available on a website. After this
+webinar, we will also show where they
+are where these are available and as we
+have just informed that these would be
+taught by the existing subject teachers.
+So there would be no additional load as
+far as the teaching staff is concerned
+and it could be embedded to reiterate it
+could be embedded into mathematics and
+the world around us periods. Now when we
+go to the middle stages classes 6 to 8
+100 hours have been allocated per year
+and these hours are indicative and the
+schools can adjust based on their
+context. Now out of these 100 hours
+there could be advanced computational
+thinking concepts allocated 40 hours
+introductory artificial intelligent
+concepts allocated 20 hours and two
+interdisipline project as professor
+Karthik just explained and these would
+be 40 hours two projects. So these 40
+hours can be attributed to the summer
+vacations and the other vacations
+therein where you can have this for the
+formative assessment components. Now uh
+the subject teachers and the computer
+teachers can do it in collaboration. So
+our schools are already aware how to do
+the collaborative teaching when we
+introduce art art integrated learning
+and uh sports integrated learning
+wherein all teachers used to sit
+together and prepare the lesson plans
+for all the subjects. So the same
+approach is to be adopted here as well.
+Now we go to what is the base for this
+curriculum and how do the learning
+standards are der how are the learning
+standard derived from the national
+curriculum frameworks. So uh our
+educators are aware about the curricular
+goals which are translated into specific
+competencies and measurable learning
+outcomes. So we have the first
+curricular goal which uh refers to what
+a learner should achieve by the end of
+the stage. Then which is broken down
+into competencies which are the
+capacities a learner must build to reach
+the goals and finally we have the
+learning outcomes which are the specific
+observable evidence of learning in the
+classroom. So to take an example if we
+have the curricular goal or CG develop
+CT skills to solve problems where uh
+where these techniques are effective
+then the competency would be approach
+problems using iteration symbolic
+representation or logical operations and
+the learning outcome for this CGN
+competency would be the student is able
+to identify extend and justify complex
+patterns involving multiple changes. So
+which means there is a three- tier
+progress three- tier structure uh which
+means every classroom activity is
+connected to a curricular goal and every
+goal has a measurable evidence in the
+classroom. So for all the exercises and
+activities that you have you have a
+stage wise curricular goal and
+competencies and allows listed in the
+curriculum paperwork document. Now who
+will teach what this is the most
+important aspect as far as the practical
+aspects of the curriculum is concerned.
+So uh although uh we have already
+informed about this but to reiterate
+multiple subject teachers can lead for
+classes third to fifth leverage CT
+questions across topics to build
+foundational CD competency refer the
+worksheets which are given and handbooks
+provided by CBSC. Now these CD
+activities should be integrated into the
+existing chapter sickness not added as a
+separate block. So uh be informed that
+uh it is not to be done as a separate
+block or separate worksheet or separate
+activity which might create an
+additional load if you do it that way.
+So integrate into the existing
+mathematics and science concepts only
+for classes 6 to 8 subject teachers and
+computer teacher in collaboration have
+to do it and uh this could be this
+component of CT can be delivered through
+mathematics science and social sciences
+the respective subject teacher similar
+to art integrated learning as we just
+explained the AI literacy part and
+interdisciplinary projects component are
+to be anchored by the computer teacher.
+So for details please refer to the
+curriculum framework as well as the
+students handbook and the teachers
+handbook available on a website. Now as
+far as resources are concerned uh dish
+if you can show the website.
+So you go to the cbsacademy.nic.in
+previous previous page homeage.
+Yeah, please show where the CJ app is.
+&gt;&gt; I think it's not shared. If you could
+share D sir your screen,
+&gt;&gt; you could stop sharing your screen and
+maybe um he could take over.
+Now we go to the CTI tab and there you
+can see all the resources which are
+available the curriculum framework for
+classes third to 8th and student
+handbook and the teachers handbook for
+all the classes third fourth fifth and
+sixth 7th and 8th. You can download and
+start using that book in the classrooms
+and over the coming months we would have
+a dedicated uh page on this and
+consolidating all resources as we
+already done. We have started that doing
+doing that. There would be concept
+handouts which would have short focus
+supplements to the AI AI sections and
+also we would have the exemplar AI
+projects with rubrics uh for the
+artificial intelligence
+interdiscipation.
+Now I would request the director
+training sir to uh throw some light on
+teacher training and support.
+&gt;&gt; Thank you. We did a very elaborate
+presentation and it was uh needed to
+listen to Mr. Karthik and
+Mr. Mckin and uh the whole idea is to
+make sure that uh you know our
+understanding regardless of the position
+we hold as teacher, educator, trainer,
+vice princip, principal, manager or
+parent or student that we should have
+one common uniform understanding of our
+CTI curriculum. This 32page document I
+have personally gone through and I
+realized that it has almost everything
+that is required to ensure a seamless
+curriculum transaction grade specific
+uh to specifically point to uh if you
+see the syllabus because I have just
+formed a committee for the design and
+development of uh trading module and uh
+I wanted the members to look at the
+syllabus part because this being the
+introductory
+We we don't have to be experimentative.
+We need to be very clear in terms of
+syllabus in terms of curricular goals
+and competency that we're talking about
+grade wise. So if you see grade three,
+grade four, grade uh five and eight page
+number 19 the grade specifics have
+already been defined and and same is the
+case with syllabus also. What is the
+pedagogy to be used
+know for curriculum transaction at point
+number 9.1 page 18 it is defined. So we
+need to be very specific in terms of the
+uh curriculum transaction grade wise.
+The role of training comes in in terms
+&gt;&gt; the role of training comes in in terms
+of creating a learning environment and
+uh we had an ideas from the
+respective chairman that this year uh we
+thought we will uh assign you know the
+computational thinking and artificial
+intelligence as the national theme for
+the uh for focusing the training
+activities throughout the year and the
+whole idea is to create a national level
+you know environment And that can only
+be created when we have people and you
+know the schools to onboard with us in
+terms of creating a cohesive learning
+group. And that is what we have decided
+that we'll have three activities
+throughout the year. We are calling
+activity one as a district level
+deliberations because CTI is a very new
+curriculum and we we have we are
+conscious of the fact that the cities
+that that are trees are not you know
+overlooked. Therefore there is an
+attempt that every district should have
+a district level deliberations and the
+idea is that the district training
+coordinators or the soda worthy members
+can you know volunteer or encourage a
+school and then form a cohort of school
+which can take up the uh you know uh the
+discussion on the topic which are which
+we have uh very recently notified in our
+circular. So we have issued a
+notification to the theme and there are
+seven uh theatic pathways which we have
+uh uh defined that is available on the
+screen also and the whole idea is that
+these schools because you know schools
+have to come forward. So they have a
+syllabus, they have a pedagogical
+approach, they have a curricular goals
+and competencies within that they need
+to create prompt because you know how do
+you create an intelligence
+whether it is human intelligence or
+artificial intelligence or machine
+intelligence you've got to be thinking
+and to be able to think you need to have
+prompt then there are adult educators
+teachers are there they need to create
+very thoughtfully designed prompt which
+you know triggers thinking in the mind
+of the children and then we are creating
+environment The schools are supposed to
+create environment. That means you need
+to provide them the space. You need to
+you know very smartly and you know very
+suitably inter interpersing allocation
+for both teachers that we have been
+research in the curriculum document also
+you know provide access to the uh TM
+materials and a good use of the two
+handbooks both for teachers and student
+handbook. I have gone through the
+document and I found them very very
+enlightening. they are using the
+examples you know they're so a and grade
+appropriate and that is where it appears
+to me that they're very coherently
+designed I think I would urge that all
+school who are going to you know the
+teachers who are going to take up this
+subject should actually carefully go
+through the entire document so that
+there is an appropriate delivery of the
+transaction then we have also in massage
+an activity too and which is we are
+targeting to hold expertly discuss
+question. Can we move to the next slide
+here?
+Yes.
+Uh in the district level, go to the
+previous one.
+No, the second.
+So in the district level deliveration,
+we have tried to also integrate with
+this you know the capacity the CPD uh
+obligatory requirement of 50 hours of
+CPD. So this is going to be a one day
+workshop mode where there will be
+cohesive learning and uh school will
+come and they will share the best
+practices on CTI within the context of
+the curriculum. We are not expecting any
+science exit any robotics any model or
+anything any any anything of that sort.
+Very clearly I think he mentioned that
+in grade 3 to five it is only CT we are
+not talking about AI but that has to be
+kept in mind. Then uh
+then it is going to be for 6 hours. So
+we have also accounted for as far as CBD
+compliances are concerned. Then we move
+to the next slide which is about an
+expertled talks in which we are
+encouraging the schools to invite the
+the expert who are in the area of
+computational thinking in AI to come and
+deliver a talk and this can be organized
+by again with the help of DPCs or the
+soya group members. One school can
+volunteer to be a lead school
+lead school and this would be
+facilitated by either a school uh
+internal expertise or they can invite
+somebody from the local vicinity college
+or engineering college or IIT or if they
+have an expert around they can deliver a
+lecture can be both online and offline
+and with this we are targeting as a half
+day duration exercise counting them as a
+3 hours of CPD school based and u we
+have also O tried to ensure that there
+will be you know a short duration video
+modules which we would be developing
+with the help of the academic team and
+also with the experts of likes of
+professor Karthik and Mr. Mikin and that
+video also we would also be you know
+broadcasting in the PME media channel.
+So that means there is whole gamut of
+thing that is there in the pipeline to
+create an environment of supportive
+learning. The third activity that we
+have targeted is to create uh to conduct
+in a regional level workshop and uh that
+will be conducted in offline mode and
+this would be initiated by the CBSC
+through a registration process and will
+be coordinated by the center of
+excellence. The whole idea is that and
+India there is a very aggressive plan
+and we conduct the this 1 hour you know
+substantive discussion on this topic
+again within the context of curriculum
+framework released by the board. This is
+these are the things we thought and then
+uh uh if I could share that you know the
+expert discussion in certain situ has
+already started today because this also
+becomes some kind of experted discussion
+uh post announcement of the uh annual
+theme as CTI as the uh theme for the
+training for current year. So I I would
+urge that you know the team that are out
+there the schools the the principles and
+the educators they should come forward
+and uh you know initiate a discussion
+which would uh eventually lead to you
+know create an environment where you
+know all of us uh you know decode this
+CTI curriculum exactly the way it
+intends to and the competencies are
+built exactly the way it targets to. I
+think uh we we need your support and uh
+school are great resources for us and
+we'll be reaching out to you for in the
+course of time. Thank you so much.
+&gt;&gt; Thank you sir. So uh on the basis of the
+questions or the queries on the chat we
+have actually summarized or we've taken
+up four or five questions here. So first
+uh and a question is from where to get
+the books. So we have just shown and uh
+the the link from where you can access
+these and download these handbooks and
+there was one more query to share the
+link of these resources on the chat box.
+I would request leaders to do that.
+Please you can share it. And second way
+is the are any extra books to be
+purchased? No, there's no extra book
+needs to be purchased for this. Only the
+books which are proed on CBSC websites
+are sufficient. Then do we need to
+conduct any separate exams? So we have
+already explained that for classes third
+to fifth there is no separated exam. So
+um this assessment is to be integrated
+in the regular mathematics and the world
+around us periods and for classes 6 to 8
+it is formative uh continuous assessment
+for capacity building and which could be
+a part of projects or presentations or
+some group discussions etc which can be
+supported by the clear rubrics. As far
+as the 3D projects are concerned, we
+will soon be sharing those example
+projects on on the website and uh then
+one important question was how will
+class 8 child be able to cover the
+topics of AI for class 6 7. So for this
+we will be preparing the bridge course
+and that would also be available on a
+website and also we'll be sharing with
+the training department which to take it
+further and uh um these are the major
+queries which were available on the
+&gt;&gt; so one query is that they want the PPT I
+think we can host the PPT on the same
+resource page where we have hosted that
+then one question is who will be
+teaching these this particular course
+and at what levels So I think that's
+been answered already. But for let's say
+in the absence of any other teacher the
+math teacher can actually teach
+computational thinking all through with
+some capacity building and AI largely
+the computer science teacher because
+they are comfortable with data either
+them or math teachers can teach.
+Then one loaded question
+should the schools discontinue computer
+science because now many schools they
+begin teaching computer science from
+early ages lots of it is essentially
+learning about some particular
+softwares. So this is how the board also
+took it. It's but now I think the
+thinking is that rather than enabling
+children or teaching them how to use
+particular softwares or let's say office
+suites
+we can we should rather capacitate them
+so that they able to understand what
+goes on
+in a way in the backdrop of it how they
+are built and all that
+but we have taken note of this and in
+one of our competencies we have said
+that children should be comfortable with
+digital techn technologies. So we are
+still mulling it over. Maybe we
+introduce some elementary programming
+skills
+and augment the existing textbooks from
+the coming years. But that will depend
+on the feedback. But as of now we feel
+that this is the curriculum that needs
+to be transacted in schools.
+So we are not seeing much uh uh value in
+continuing both the streams in parallel
+the existing computer science books
+along with this. This is more important
+to us to our mind to our minds rather
+this is one of the most momentous
+changes that we are trying to wreak over
+here.
+Then somebody has pointed out that some
+answers in the handbooks are wrong. if
+that could be emailed to the academic
+unit. I think that can be seen and
+there's some anxiety about the class 9th
+curriculum. So some teachers were asking
+when the class 9th and 10th books will
+be available.
+So I think the road map that's been
+charted charted out is that we introduce
+CT and AI as a compulsory subject in
+class 9 for the academic session 202728.
+So there's a gap of one year and in CBSC
+we are considering whether we can
+reintroduce the AI's offering the
+earlier AI offering in class 9. So that
+is just for information of the schools.
+No decision has yet been taken but we're
+in the process of deciding as regards
+assessment. I think there would be still
+some lingering doubts
+that teachers won't have expertise in
+designing assessment items for CT
+especially at the CT component of the
+curriculum.
+So I think for both the interdisiplinary
+data projects as well as for the CT part
+the academic wing will be bringing out
+certain exemplars for assessments and
+all that which will be available as a
+teacher resource. The teachers may use
+those for data projects. In any event,
+detailed rubrics would be made available
+when we are bringing out the rubrics of
+the projects. How? And so some teacher
+also asked that will students be
+overloaded with screen time. So as
+professor Karthik Raman very he put it
+very well that this entire curriculum is
+designed to be unplugged
+whether the school has computers or not
+whether the child has access to
+computers or not.
+The child should first be able to work
+out how the system is working when
+computers now are mechanical.
+30 years back they were not mechanical.
+Putting so using computers was a skill
+but it's mechanical. But first the child
+needs to learn how it is happening on
+work it out on pen and paper and then
+use machines. So the entire curriculum
+is designed to reduce the screen time
+and in any event as I said next year we
+are thinking mulling over whether to
+introduce the scratch programming at an
+early stage. I think this is
+what more or less it is and the current
+IT offerings at classes 9th and 10th
+will obviously be discontinued once the
+CT and AI curriculum comes in from the
+academic session 202728 for class 9th.
+So that is there will be a sunset for
+that. So the current class 9th the
+cohort which went into class 9 in 2026
+27 that is the last batch which which
+will which will use the current IT and
+the AI curriculum at most. So I think
+this is
+more or less the question that I had
+noted down from the questions that are
+coming in. Wish you all the best and I
+think there's lots of appreciation as
+well. I hope it is not only for the
+vanity
+and I sincerely hope that schools
+actually transacted in all seriousness.
+I was told that most schools are still
+have not really introduced the
+curriculum even at lower classes. I
+would urge upon all schools to begin
+transacting it immediately. You will see
+the returns very soon. Wish you all the
+best.
+&gt;&gt; Thank you sir. I request Dr. Vishri Saha
+to propose vote of thanks.
+Thank you.
+I think uh we at the frag end of this uh
+wonderful session. Respected
+chairperson, distinguished uh speaker of
+the session both professor Karthik and
+uh Mckin
+uh my colleague uh
+gi director training and director
+academic
+and other officers and of course Jim
+session all the principal teachers
+educator who have joined us through
+YouTube channel and also those who will
+join us uh and see the recording later
+on. It is really a great session. I
+think a lot of queries and both both the
+speaker has tried to uh demystify and
+give an enormous clarity. So special
+thanks to uh both the speaker and of
+course my sincere gratitude to
+chairperson CBSC because of him uh these
+early introductions of CT and AI is
+really it is very much in the curriculum
+today and I strongly believe and appeal
+all the school uh to introduce it and
+and there is a lot of Easy nom lee has
+been uh discussed today in this event
+and uh of course uh from team CBSC uh
+definitely from the organizing team
+especially our IT department uh DJ and
+others a special thanks to all of you
+for flawless conduct of these sessions.
+I strongly believe these interactions
+would be helpful and it is going to show
+enormous way how to forward and how a
+school can innovate for the future
+school goers. Thank you.
+Thank you sir.

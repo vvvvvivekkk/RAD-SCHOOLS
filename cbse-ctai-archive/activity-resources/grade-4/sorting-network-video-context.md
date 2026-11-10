@@ -51,5 +51,3 @@ Ref. Document: https://docs.google.com/document/d/1ANUylbbkL7tYVgGmSlW5sRAiMyt_9
 
 2. Download Templates : https://drive.google.com/file/d/1oa0IHV6dsfAFm76YPWQZyz1WHv78WSPt/view?usp=sharing
 
-## Available auto-captions (languages)
-aa, ab, af, ak, am, ar, as, ay, az, ba, be, bg, bho, bn, bo, br, bs, ca, ceb, co

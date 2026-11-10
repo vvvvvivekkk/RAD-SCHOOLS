@@ -1,0 +1,1099 @@
+CBSE WEBINAR
+
+Computational Thinking &
+Artificial Intelligence
+Vision and Design of the CT-AI Curriculum for Classes 3–8
+
+TEAM CBSE
+28th April 2026
+
+1
+Current Landscape
+
+Where are we today?
+
+KR
+
+AI is no longer a future to prepare for but it is a present to address!
+
+Students are already using AI
+
+•
+•
+•
+•
+
+Recommendation engines on YouTube
+Generative tools for homework: increasingly common
+Voice assistants on phones at home
+Translation, image search, navigation
+
+…but with very low awareness of what AI is, how it works,
+or how to use it well.
+
+The real question is not:
+
+“Should we teach AI in schools?”
+
+The real question is:
+
+“How do we teach it well — to every
+learner, across Bharat?”
+
+That is the question this curriculum answers.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+3
+
+What other countries have already done
+
+Singapore
+
+Finland
+
+United States
+
+EdTech Masterplan 2030 — structured AI
+learning across schools
+
+Generation AI Project — AI literacy
+across the K–12 system
+
+AI4K12 framework shaping curricula and
+teacher training
+
+United Arab Emirates
+
+Australia
+
+China
+
+AI as a mandatory subject across all
+government schools from 2025-26
+academic year
+
+National Framework for Generative AI in
+Schools
+
+“AI + Education Plan”: literacy embedded
+into compulsory education
+
+Many school systems have recently embraced CT & AI in their curriculum — great opportunity for India, given NEP focus
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+4
+
+Why this curriculum, why now: A look at the policy mandates
+
+KR
+
+This curriculum operationalises the policy mandates from NEP 2020/NCF-SE 2023
+
+NEP 2020
+
+NCF-SE 2023
+
+National Education Policy
+
+National Curriculum Framework for School Education
+
+Calls for India to pioneer emerging knowledge areas —
+Artificial Intelligence, Machine Learning, Big Data, Coding,
+and Computational Thinking — through integration into
+school education.
+
+Carries the NEP recommendation forward for
+implementation. Recognises CT & AI as a curricular area
+that must find a place in school curricula.
+
+Reference: Para 4.25, NEP 2020
+
+Reference: Section 2.3.4.2 Part A, NCF-SE 2023
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+5
+
+Gradual progression: CT → AI
+Computational Thinking is the foundation. AI builds on it.
+
+Basic
+problem-solving
+
+Computational
+Thinking
+
+AI
+awareness
+
+Application of AI
+& ethics
+
+This is a deliberate, phased progression. CT skills such as decomposition, pattern recognition, abstraction,
+algorithmic thinking are the cognitive structures that make meaningful AI literacy possible later.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+6
+
+2
+Key Concepts: What is CT?
+
+What is Computational Thinking?
+
+ML
+
+A structured approach to problem-solving that pre-dates computers
+
+CT breaks larger problems into smaller, logical pieces — building precise, step-by-step solutions that either a person or a
+machine can follow.
+
+Decomposition
+
+Pattern Recognition
+
+Abstraction
+
+Breaking a big problem into smaller,
+manageable parts
+
+Spotting similarities and recurring
+structures
+
+Filtering out detail to focus on what
+matters
+
+Algorithmic Thinking
+
+Data Analysis
+
+Troubleshooting
+
+Designing clear, step-by-step procedures
+
+Drawing meaning from organised
+information
+
+Finding and fixing what isn't working
+
+These six skills are recognisable in any well-taught Mathematics, Science, or even Language class
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+8
+
+What is Computational Thinking?
+Let’s take an example to understand CT better
+
+What is the largest 4-digit number that can be formed using ONLY ONE digit from each row and
+column?
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+9
+
+What is the largest 4-digit number that can be formed using ONLY ONE digit from each row and
+column?
+
+To form the largest possible 4-digit number,
+we must prioritize the highest digit for the
+thousands place.
+Since there are two 9s visible in the grid,
+one of them must be chosen as the
+thousands digit.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+10
+
+What is the largest 4-digit number that can be formed using ONLY ONE digit from each row and
+column?
+
+Choosing the lower 9 will block the entire
+row and column, preventing us from using
+other digits.
+Hence, we’ll choose the upper 9, letting us
+select the 8 in the last row.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+11
+
+What is the largest 4-digit number that can be formed using ONLY ONE digit from each row and
+column?
+
+After selecting 8 and 9, we are left with only
+a few digits to choose from
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+12
+
+What is the largest 4-digit number that can be formed using ONLY ONE digit from each row and
+column?
+
+Therefore, the largest 4-digit number that
+can be formed using ONLY ONE digit from
+each row and column is ‘9852’.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+13
+
+Why CT is the foundation for AI
+The same reasoning processes that build problem-solvers build AI thinkers
+
+What a child does in CT
+
+What an AI/ML system does
+
+•
+
+Breaks a problem into pieces
+
+•
+
+Decomposes complex tasks into sub-problems
+
+•
+
+Spots patterns in numbers, shapes, sequences
+
+•
+
+Detects patterns in vast datasets
+
+•
+
+Filters out what doesn't matter
+
+•
+
+Abstracts features that matter for prediction
+
+•
+
+Designs step-by-step procedures
+
+•
+
+Follows precise algorithms over many steps
+
+•
+
+Draws conclusions from organised data
+
+•
+
+Learns from data and produces predictions
+
+•
+
+Debugs and tries again when something fails
+
+•
+
+Iterates and updates when its outputs are wrong
+
+CT in school builds the scaffolding on which meaningful AI literacy can stand
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+14
+
+CT is also valuable in its own right
+Even without AI, the curriculum strengthens reasoning across every subject
+
+Mathematics
+
+Science
+
+From procedural fluency to genuine reasoning — solving puzzles,
+sequencing operations, generalising rules
+
+Decomposing observations, recognising patterns in data, building
+structured explanations
+
+Language & Social Sciences
+
+Everyday life
+
+Sequencing arguments, identifying narrative patterns, organising
+information for clear communication
+
+Approaching unfamiliar problems methodically — a habit of mind,
+not a school topic
+
+CT is being taught in this curriculum as a foundational capacity integrated into existing subjects
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+15
+
+3
+Inside the Handbooks: CT for Classes 3–8
+
+How the handbooks are designed
+CT aligns with the Mathematics chapter sequence
+
+The companion-book principle
+
+Four CT skill threads, all six grades
+Abstract Thinking
+
+•
+
+Handbooks follow the same chapter sequence as the
+Mathematics textbook but leverages concepts across
+subjects
+
+Hidden parts, viewpoints, transformations
+
+•
+
+Teachers can integrate CT questions seamlessly into
+daily instruction
+
+Sequences in numbers, shapes, letters
+
+•
+
+Each chapter introduces CT-flavoured questions tied to
+the concepts being taught
+
+Decomposition
+
+•
+
+No new schedule required: accommodated in the
+existing periods
+
+Pattern Recognition
+
+Breaking multi-clue problems apart
+
+Algorithmic Thinking
+Step-by-step rules and procedures
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+17
+
+What CT looks like in Class 3
+From the actual handbook: example questions that build reasoning, not recall
+
+Chapter 14: The Surajkund Fair
+
+Reasoning embedded in a Mathematics chapter
+What is being asked
+Pattern recognition/ Decomposition / Abstraction.
+
+What is NOT being asked
+No coding/software; also no new vocabulary unfamiliar to the Mathematics teacher.
+
+Which concepts are interlinked
+This question requires students to trace and map a path by visualizing the given
+pathway blocks. The same concept of directions and maps is explored through
+activities in TWAU Chapter 2, highlighting the interdisciplinary nature of such
+questions.
+
+Why this works
+Students use visualization and spatial reasoning to connect pathway blocks logically skills that are also fundamental in AI for pathfinding, navigation, and mapping
+problems.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+18
+
+What CT looks like in Class 6
+From the actual handbook: example questions that build reasoning, not recall
+
+Chapter 9: Symmtery
+
+Reasoning embedded in a Mathematics chapter
+What is being asked
+Pattern recognition / Decomposition.
+
+What is NOT being asked
+No numerical calculations; no direct application of formulas; no new or advanced
+mathematical concepts; no coding or technical knowledge required
+
+Which concepts are interlinked
+The concept of paper folding is introduced in Chapter 4 of Kirti – I (Arts). The given
+question applies similar ideas of folding and transformation, and is therefore mapped
+to this concept, highlighting the interdisciplinary connection.
+
+Why this works
+Students visualize folds and transformations, building spatial reasoning and
+abstraction - key computational thinking skills also used in AI for image
+transformation and pattern recognition
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+19
+
+What CT looks like in Class 6
+From the actual handbook: example questions that build reasoning, not recall
+
+Chapter 7: Fractions
+
+Reasoning embedded in a Mathematics chapter
+What is being asked
+Pattern recognition
+
+What is NOT being asked
+No complex calculations or operations; no new mathematical concepts beyond basic
+fractions; no coding or technical knowledge required.
+
+Which concepts are interlinked
+The visualization used in this question is similar to that used to understand the
+composition of air in Chapter 11 of Curiosity (Science). The question leverages this
+same idea of visualizing fractions, thereby creating a clear interdisciplinary
+connection.
+
+Why this works
+Students link visual patterns to fractions, building computational thinking skills like
+pattern recognition and abstraction also used in AI for image and pattern analysis.
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+20
+
+Algorithmic thinking in Class 6
+Multi-step reasoning under constraints (no computer needed!)
+
+“The Thinking Spot”
+
+A puzzle a 12-year-old will enjoy — and learn from
+The student must:
+•
+
+Read and understand a multi-clause rule
+
+•
+
+Decompose the grid into states they can track
+
+•
+
+Plan a sequence of moves toward a goal
+
+•
+
+Find the minimum — not just any answer
+
+This is computational thinking in action: decomposition, algorithmic reasoning, and
+optimisation, but wrapped in a puzzle that children will enjoy.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+21
+
+The student's handbook versus the teacher's
+
+Student Handbook
+
+•
+
+Questions involving various CT concepts
+
+•
+
+Activites with select questions
+
+•
+
+Practice questions of varying difficulty
+
+•
+
+“Think and apply” for transfer of learning
+
+Teacher's Handbook
+
+Everything in the student handbook, plus:
+•
+
+Detailed solutions with reasoning shown
+
+•
+
+Pedagogical focus — how each question should be
+approached
+
+•
+
+Suggested discussion prompts for classroom
+activities
+
+The curriculum's success rests on the teacher — and the teacher's handbook is built to support that
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+22
+
+Assessment to match the pedagogy
+From rote testing to formative, capability-based evaluation
+
+Assessment Goal
+“Assessment approaches need to move away from traditional summative assessment to continuous, formative, and competency-based
+assessment”
+
+Multiple question types, scaffolded by depth
+•
+
+MCQs — recognition of concepts
+
+•
+
+Activities — application of concepts
+
+•
+
+“Think and apply” — transfer of learning
+
+Notice what is absent
+There is no “write a program”, no “memorise this definition”, no expectation of computer access for assessment. The questions push the student to reason, name,
+and apply.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+23
+
+Inside the Handbooks: AI for Classes 6–8
+
+How AI is introduced
+Concept first, then domains, then ethics
+
+1
+2
+3
+4
+5
+
+Introduction to AI
+What is intelligence? What is AI? Everyday examples.
+
+Basic Data Concepts
+What is data? What are the different types of data? How do machines work with it?
+
+Pattern Recognition & Decision-Making
+How AI finds structure and acts on it.
+
+AI Domains & Applications
+Computer Vision, NLP, Data Science, at an age-appropriate depth.
+
+Ethics & Responsible Use
+Bias, fairness, privacy, digital citizenship — woven carefully.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+25
+
+“How does AI learn?”
+
+Notice the analogy
+
+Labelled vs. unlabelled data — explained through notebooks
+If every notebook has the student’s name written on it...
+the teacher knows whose notebook it is = labelled data.
+
+If the notebooks have no names...
+the teacher must figure it out from handwriting = unlabelled data.
+This is how a Class 6 student meets one of the foundational concepts in
+machine learning: without equations/code, but an analogy from a simple
+context they encounter every day.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+26
+
+Can we really teach Supervised, Unsupervised, and Reinforcement learning to Class 6?
+
+KR
+
+Yes — by naming and connecting to what they already understand intuitively
+
+Supervised Learning
+
+Unsupervised Learning
+
+Reinforcement Learning
+
+Learning from examples
+
+Grouping by patterns
+
+Learning from rewards
+
+“Your teacher shows you 50 solved sums.
+You learn how to do the 51st.”
+
+“You sort clothes in your cupboard into
+shirts, pants, and socks, without anyone
+telling you which is which.”
+
+“You learn to ride a bicycle. You balance by
+trial-and-error without explicit
+instructions.”
+
+This is not teaching AI to a child. This is naming concepts the child already lives with.
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+27
+
+Supervised learning in the handbook
+
+Page 55, Class 6 handbook
+
+Building concepts slowly, based on simple familiar things
+
+•
+
+Labelled training data (left): triangles, circles, squares,
+diamonds — each tagged.
+
+•
+
+Model training (centre): the system learns the pattern
+that links shape to label.
+
+•
+
+Predictions (right): given new, untagged shapes, the
+system predicts the label.
+
+Real-world examples follow on the same page: spam
+detection, image recognition, medical diagnosis. The
+student moves from the toy example to the world.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+28
+
+Unsupervised learning — quick contrast with no labels
+
+Page 56, Class 6 handbook
+
+The same shapes — but now without labels
+•
+
+The model is shown a jumble of shapes with no labels.
+
+•
+
+It looks for similarities and groups things that
+resemble each other.
+
+•
+
+The result: clusters — discovered, not given.
+
+The visual pairing of supervised and unsupervised — same
+shapes, different process — does the conceptual heavy
+lifting in seconds.
+Real examples on the same page: customer segmentation,
+document clustering, anomaly detection.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+29
+
+What we ask Class 6 students to do
+“Think and Apply” — recognise the type of learning at play
+
+Page 58, Class 6 handbook — exercise
+
+This is what the curriculum asks of an 11- or 12-year-old
+
+Recognise — not build:
+• Grouping customers by shopping habits: Unsupervised
+• Predicting house prices from past data: Supervised
+• Game AI improving after winning or losing:
+Reinforcement
+• Sorting emails into spam: Supervised
+The student is being asked to reason about AI as an
+informed observer of the world.
+They don’t need to write code or train models, or do
+mathematics they aren't ready for.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+30
+
+Interdisciplinary Projects — where it all comes together
+40 hours per year, two projects, real-world contexts
+
+What an Interdisciplinary Project looks like
+Students take a real problem from their community or context — and apply CT and AI thinking to it. They draw on Mathematics for analysis,
+Science for understanding the phenomenon, Social Studies for community context, and English for communication. The project culminates in a
+presentation, not a written exam.
+
+Grade 6
+
+Grade 7
+
+Grade 8
+
+Exploring Weather and its Impact across
+States
+
+Nutri-Quest: Weekly Food Planner
+
+Sports Participation and Performance
+Data
+
+Collecting weather data, observing
+patterns, drawing inferences across
+regions.
+
+Designing a balanced meal plan using
+data on nutrition, food preferences, daily
+routines, and activity levels.
+
+Collecting and analysing data from
+various sports, drawing conclusions
+about preferences and outcomes.
+
+Projects are a critical vehicle for the curriculum to turn CT and AI from concepts into solid capabilities for a child
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+31
+
+Platform agnostic curriculum
+
+Free and open-source first
+
+The curriculum recommends harnessing free and open-source tools to ensure accessibility for every institution.
+
+Largely unplugged
+
+A significant portion of CT learning happens with paper, puzzles, and discussion — no computer required. AI activities use simple digital
+tools where available.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+32
+
+Assessment to match the pedagogy
+From rote testing to formative, capability-based evaluation
+
+End-of-chapter exercise
+
+Multiple question types, scaffolded by depth
+•
+
+MCQs — recognition of concepts
+
+•
+
+Fill in the blanks — comprehension
+
+•
+
+Short answer — articulation in own words
+
+•
+
+“Think and apply” — transfer of learning
+
+Notice what is absent
+There is no “write a program”, no “memorise this definition”, no expectation of
+computer access for assessment. The questions push the student to reason, name,
+and apply.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+33
+
+The grand aim
+
+To develop learners who do not merely consume technology, but are
+informed, capable and responsible digital citizens — who can critically
+question, analyse, and even create, shaping our AI-rich future.
+
+4
+Architecture of the Curriculum
+
+Two stages, with deliberate progression
+The curriculum scaffolds learning across six grades in a phased manner
+
+Preparatory Stage
+
+Middle Stage
+
+Classes 3 – 5
+
+Classes 6 – 8
+
+50 hours per year
+
+100 hours per year
+
+•
+
+CT only — no AI yet
+
+•
+
+Integrated into Mathematics & The World Around Us
+(TWAU)
+
+•
+
+Worksheet- and puzzle-based learning
+
+•
+
+Taught by existing subject teachers
+
+No additional load — embedded into existing Mathematics &
+TWAU periods.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+•
+
+Advanced CT (40 hrs)
+
+•
+
+Introductory AI (20 hrs)
+
+•
+
+Interdisciplinary projects (40 hrs, two projects)
+
+•
+
+Subject teachers + Computer teachers, in collaboration
+
+Hours are indicative — schools can adjust based on their context.
+
+36
+
+Learning standards — derived from NCF-SE 2023
+Curricular Goals are translated into specific Competencies and measurable Learning Outcomes
+
+1
+
+Curricular Goals
+
+2
+
+Competencies
+
+3
+
+Learning Outcomes
+
+What a learner should achieve by the
+end of a stage.
+
+The capacities a learner must build to
+reach the goals.
+
+Specific, observable evidence of
+learning in the classroom.
+
+Example
+
+Example
+
+Example
+
+Develop CT skills to solve problems
+where these techniques are effective.
+
+Approach problems using iteration,
+symbolic representation, logical
+operations.
+
+Identifies, extends, and justifies complex
+patterns involving multiple changes.
+
+This three-tier structure means every classroom activity is connected to a curricular goal; every goal has measurable evidence in the classroom
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+37
+
+Who will teach what
+An interdisciplinary, collaborative model
+
+Classes 3 – 5
+Covered Across Subjects
+Leverage CT questions across topics to build foundational CT competency. Refer the CT worksheets and handbooks provided by CBSE. CT activities should be
+integrated into the existing chapter sequence and not added as a separate block.
+
+Classes 6 – 8
+Subject teachers + Computer teacher, in collaboration
+CT components delivered through Mathematics, Science, and Social Sciences with respective subject teachers (similar to art-integrated learning). The AI Literacy
+and Interdisciplinary Project components are anchored by the Computer teacher.
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+38
+
+Resources
+
+AVAILABLE NOW
+
+COMING SOON
+
+Live on the CBSE website
+
+Over the coming months
+
+•
+
+Curriculum Framework, Classes 3–8
+
+•
+
+Teacher's Handbook, per grade
+
+•
+
+Student's Handbook, per grade
+
+•
+
+Implementation circulars and FAQs
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+•
+
+A dedicated CT & AI page on the CBSE website
+consolidating all resources
+
+•
+
+Concept Handouts — short, focused supplements to the AI
+sections
+
+•
+
+AI Project list with rubrics (40 hours, two projects per
+grade)
+
+39
+
+5
+Teacher Training & Support
+
+Training Strategies focused on CT & AI
+Annual Training Theme 2026-27
+
+Computational Thinking and Understanding AI
+Foundations of
+Computational Thinking
+(CT) and AI Readiness
+
+From Play to Abstraction:
+Progressive Pedagogy for
+Computational Thinking
+
+AI in Real-World Contexts
+
+Mathematics as the
+Cornerstone of
+Computational Thinking
+and AI readiness
+
+Assessment and
+Pedagogy in CT and AI
+
+Interdisciplinary
+Connections: CT across
+Subjects at Middle Stage
+
+Ethics and Responsible
+use of AI
+
+41
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+District Level Deliberations
+
+Mode
+
+•
+
+Workshop Mode (Offline)
+
+•
+
+Duration: 1 Day
+
+•
+
+CPD Hours: 6
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+Focus
+
+•
+
+Sharing of best educational practices on CT & AI
+and discussed within the ambit of Board’s
+curriculum
+
+•
+
+CT and AI across Preparatory / Middle Stage (s)
+to be focussed
+
+•
+
+Peer Learning
+
+42
+
+Expert Led Talks
+Online/Offline Mode
+
+01
+
+To be organised by Lead schools on CT/AI topics (aligned with any of the listed sub-themes)
+
+02
+
+To be facilitated by Internal or External experts invited by the Lead school
+
+03
+
+Half-Day duration (To be counted as 3 Hours of School based CPD)
+
+04
+
+Online CT/AI Education sessions offered / facilitated by the Board
+
+05
+
+Watching educational videos on CT/AI aired on DD PM e-Vidya Channel CBSE 15
+
+43
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+Regional Workshops/Orientation Programmes
+Will be conducted by Board
+
+Offline Mode
+
+One Day
+Programme
+
+Participation
+through online
+registration
+process
+
+6 CPD Hours of
+Board
+conducted CPD
+
+CBSE Webinar | Computational Thinking & Artificial Intelligence, Classes 3–8
+
+44
+
+Thank you!
+
+

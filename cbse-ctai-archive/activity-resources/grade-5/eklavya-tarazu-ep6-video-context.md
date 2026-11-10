@@ -133,6 +133,3 @@ Follow us on Instagram: https://www.instagram.com/ccl_iitgn/
 - **56:05** — Basic gates & transistors
 - **57:55** — Homework & Assignment
 - **58:50** — End and Thank you speech
-
-## Available auto-captions (languages)
-aa, ab, af, ak, am, ar, as, ay, az, ba, be, bg, bho, bn, bn-orig, bo, br, bs, ca, ceb

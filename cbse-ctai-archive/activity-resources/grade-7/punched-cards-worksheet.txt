@@ -1,0 +1,134 @@
+﻿Class  7: Peak Beyond A Point 
+Binary Punch Cards
+
+
+Activity 
+  
+
+  
+  
+  
+
+Consider a set of cards with the alphabet written on them, and we shuffle them. The objective is to arrange them in alphabetical order. 
+
+
+One method is to find the card A first, then B and so on. This might take some time.
+ 
+Now, notice that the cards have been punched on the top. There are an O-shaped and a U-shaped punch, and using these holes, we can sort the cards in an interesting way.  Insert a stick in the set of cards starting from the rightmost hole. Once you lift the stick, some will come along with it. Now, bring them in front & repeat this for all sets of holes. Magically, the cards are sorted.
+
+In our day-to-day life, we use the decimal number system, which uses the numbers 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. The decimal number system is based on bundles of ten (Powers of 10 which is 1,10,100,1000,.....). Similarly, the binary number system is based on bundles of two (Power of 2 which is 1,2,4,8,.....). So if we compare the two numbering systems for place values, this is what it looks like….
+
+
+	Decimal (Bundles of Ten)
+	Binary (Bundles of Two)
+	Units Place
+	1
+	1
+	First Bundle
+	10 = 10
+	2 = 2 
+	Second Bundle
+	10x10 = 100
+	2x2 = 4
+	Third Bundle
+	10x10x10 = 1000
+	2x2x2 = 8
+	
+
+The binary number system (popularly known as the language of computers) deals with only two numbers: 0 and 1. We can convert any decimal number to its binary equivalent and vice versa. You can convert any decimal number into a binary representation by writing it with the power of 2. 
+
+For example, 23 = 16 +  4 + 2 + 1. 
+23 in decimal
+	
+	
+	23
+	2
+	3
+	
+
+23 in binary
+	
+	
+	
+	
+	
+	
+	1
+	0
+	1
+	1
+	1
+	
+
+Q.What will be the binary representation for the decimal number 14?
+
+
+1. 1010
+2. 1100
+3. 1110
+4. 1111                   
+
+
+The number of digits or bits (binary digits) in a binary number depends on the number. For example, numbers up to 7 can be represented in a 3-bit binary number, numbers from 8 to 15 in a 4-bit binary number, numbers from 16 to 31 similarly need an additional bit, hence a  5-bit binary number, and so on. There are 26 letters in English; hence, 5 sets of holes on each card for sorting.
+
+Q. You want to perform a similar punched card activity with Hindi alphabets. How many holes are needed on each card?
+1. 5
+2. 6
+3. 8
+4. 10
+
+
+Punching Pattern on the Card
+Every alphabet can correspond to a number, and every number can be represented in the binary system. The following table contains the corresponding conversion from decimal to binary. 
+Letter
+	Corresponding Decimal Number
+	Corresponding Binary Number
+	A
+	1
+	00001
+	B
+	2
+	00010
+	C
+	3
+	00011
+	D
+	4
+	00100
+	E 
+	5
+	00101
+	..
+	..
+	..
+	..
+	..
+	..
+	Y
+	25
+	11001
+	Z
+	26
+	11010
+	
+
+These binary numbers indicate to us a unique way to punch. Where there is 0, punch an O-shaped hole, and where there is 1, punch a U-shaped hole. For example: 01010 is the binary equivalent of J, so the holes on card J from left to right will be O U O U O.
+Q. Can you identify which card the binary pattern 10101 belongs to?
+
+
+1. P
+2. S
+3. T
+4. U
+
+
+Q. The alphabet R comes 18th in the order starting from A as 1. What will be the punching pattern on Card R ?
+
+
+1. U0U0U
+2. UU0U0
+3. U00U0
+4. 0UU00
+
+
+Punched cards, utilising binary choices is analogous to their role in powering early computing machines such as IBM sorters and Turing's Bombe. This binary concept has its roots in study of poetry in ancient India, which was well studied by Acharya Pingala's and documented in his work Chandaḥśāstra (~2 BCE).

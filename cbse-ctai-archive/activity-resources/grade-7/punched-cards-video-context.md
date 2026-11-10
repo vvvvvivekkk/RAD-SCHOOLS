@@ -50,5 +50,3 @@ Visit our website: https://ccl.iitgn.ac.in/
 
 #cardsorting #ramayan #creativelearning #experientiallearning #science #sciencevideos #sciencevideo #ramayana #mathematics #math #mathisfun #mathstricks #mathskills #maths #learningthroughplay
 
-## Available auto-captions (languages)
-aa, ab, af, ak, am, ar, as, ay, az, ba, be, bg, bho, bn, bo, br, bs, ca, ceb, co

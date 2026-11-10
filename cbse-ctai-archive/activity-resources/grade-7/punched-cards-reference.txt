@@ -1,0 +1,629 @@
+﻿Introduction 
+________________
+
+
+
+
+Consider a set of cards with the alphabet on top & you want to sort the shuffled cards. One way to go is to find the card A, then B and so on. The cards you have are punched on the top, and there is an interesting way to sort them. Insert a stick in the set of cards starting from the rightmost. Once you lift the stick, some will come along with it. Now, bring them in front & repeat this for all sets of holes. Magically, the cards are sorted !! Watch the video to discover the patterns in punching & the principle behind the trick.
+The Punched Card Trick
+
+
+Punched cards have a long history in computing, from the 19th century in data processing, machine control, and early computing, to the 20th century in early digital computers. The card used here has two types of holes in the top: a circular hole (denoted as 0) and a U slit (denoted as 1). It's a binary way of punching. The module starts with number representation in binary, its root in the Indian knowledge system (binary in the context of Sanskrit grammar & binary arithmetic by Acharya Pingala in Chandaḥśāstra 2 BCE) [1], sorting algorithm, various base representations in the punched card trick, and logical reasoning with cards.
+Content
+1. Binary Number Presentation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+
+
+[1] Chandaḥśāstra by Acharya Pingala: https://en.wikipedia.org/wiki/Pingala 
+________________
+Binary Number Presentation
+________________
+
+
+
+
+Decimal to Binary Conversion
+In our day-to-day life, we use the decimal number system, which uses the numbers 0, 1, 2, 3, 4, 5, 6, 7, 8, and 9. The binary number system (popularly known as the language of computers) deals with only two numbers: 0 and 1. We can convert any decimal number to its binary equivalent and vice versa. An example of converting a decimal number (base 10) into its equivalent binary number (base 2) is presented here:
+1. Divide the decimal number by the base (2) of the binary number.
+2. Note the remainder from the first step till the end of the division process.
+3. The remainders obtained as 0 or 1 are written in order from the last step to the first step of division.
+Let’s find out the binary equivalent of the decimal number 11.
+Divisor
+	Decimal Number 
+	Corresponding Remainder
+	2
+	11
+	1
+	2
+	5
+	1
+	2
+	2
+	0
+	
+
+	1
+	
+
+	Table 1
+The highlighted cells represent the binary representation, written from bottom to top. So, 11 = (1011)2. The binary number 1011 can be changed to its corresponding decimal number as:
+A
+	B
+	C
+	D
+	23 x 1
+	22 x 0
+	21 x 1
+	20 x 1
+	Table 2
+Decimal number = A+B+C+D = 1 x 23 + 0 x 22 + 1 x 21 + 1 x 20 
+                                                  = (1x8)+ (0 x 4) + (1 x 2) + (1 x 1 ) =8+2+1 = 11      
+
+
+What will be the binary representation for the decimal number 14?
+
+
+1. 1010
+2. 1100
+3. 1110
+4. 1111
+	                                                                                                                                                                                                                        
+________________
+
+
+The number of digits or bits in a binary number depends on the decimal number. For example, decimal numbers up to 7 can be represented in a 3-bit binary number, decimal numbers from 8 to 15 in a 4-bit binary number, decimal numbers from 16 to 31 in a 5-bit binary number, and so on. There are 26 alphabets in English, hence 5 sets of holes in each card for sorting.
+Consider you want to perform sorting activity with Hindi alphabets punched in binary form. How many holes are on top of each card?
+
+
+1. 5
+2. 6
+3. 8
+4. 10
+
+
+	
+
+If you have 7 sets of binary holes in the card, how many maximum cards are possible?
+
+
+1. 64
+2. 100
+3. 128
+4. 256
+
+
+	
+
+________________
+
+
+Punching Patterns
+Every alphabet can correspond to a decimal number, and every decimal number can correspond to a binary number. Consequently, every alphabet can correspond to a binary number. The following table summarises it. For this, we generated the binary equivalent of every decimal number from 1 to 26.
+Letter
+	Corresponding Decimal Number
+	Corresponding Binary Number
+	A
+	1
+	00001
+	B
+	2
+	00010
+	C
+	3
+	00011
+	D
+	4
+	00100
+	E
+	5
+	00101
+	F
+	6
+	00110
+	G
+	7
+	00111
+	H
+	8
+	01000
+	I
+	9
+	01001
+	J
+	10
+	01011
+	..
+	..
+	..
+	..
+	..
+	..
+	X
+	24
+	11000
+	Y
+	25
+	11001
+	Z
+	26
+	11010
+	Table 3
+Can you identify which card the binary pattern 10101 belongs to?
+
+
+* P
+* S
+* T
+* U
+	  
+
+These binary numbers indicate to us a unique way to punch holes in cards of the corresponding alphabet. A ‘0’ indicates a hole (i.e. a complete circular hole, where a stick can be inserted horizontally but can’t escape vertically) and a ‘1’ indicates a slit (i.e. a hole which is open and lets a stick escape through it vertically, irrespective of its entry- horizontal or vertical). For example: 00001 is the binary equivalent for A, so all holes on card A will be punched according to this binary number (see Image 1: the first 4 punches are complete holes and the last punch is a slit according to binary representation). Holes and slits in all other cards have been punched according to their respective binary representation (see image here). 
+                              
+The alphabet R comes 18th in the order starting from A as 1. What will be the punching pattern on Card R ?
+
+
+1. U0U0U
+2. UU0U0
+3. U00U0
+4. 0UU00
+	
+
+Make your own set of punched cards from any deck of playing cards !!
+Sorting Cards
+Pick the deck of cards in your palm and shuffle them until they are well mixed and the order is disturbed. Now, follow these steps to get these cards in their right order:
+1. Insert a stick into the rightmost hole or slit (whichever is on the right) and pull the cards up.
+2. Some cards (say Type I) will get attached to the stick, and the rest of the cards tend to fall down (say Type II), which you hold up in your palm.
+3. Place these cards (Type I) ahead (in front) of the remaining cards (Type II).
+4. Now, place the stick in the second-rightmost hole; again, there will be some Type I cards and some Type II cards. Repeat step iii.
+5. Repeat the process until the stick makes way to the leftmost hole/slit and club the Type I cards and place these cards ahead of the remaining cards. The cards will be arranged in order.
+Understand the Sorting Algorithm
+The explanation lies in the video itself. Let’s understand how the stick trick works to sort the cards in the right way (The pictures represent sorting for cards numbered from 1 to 8):
+1. Before inserting the stick in the rightmost hole/slit. (Image 2)
+2. After inserting the stick in the rightmost hole/slit and clubbing the hanging cards (Type I) together. (Image 3)
+  
+  
+
+Image 2                                        Image 3
+
+
+So after this step, the numbers 0, 2, 4, 6, which have a 0 in the rightmost place in their binary representation, will be before 1, 3, 5, 7, respectively, which have a 1 in the rightmost place.
+(iii) Before inserting the stick in the second rightmost hole/slit (or middle hole/slit)(Image 4) .
+  
+  
+
+Image 4                        Image 5
+ (iv) After inserting the stick in the second rightmost hole/slit and clubbing the Type I cards together (Image 5). 
+After this step, the numbers 0 and 1 will be placed before the numbers 2 and 3. Similarly, 4 and 5 will be placed before 6 and 7. This placement does not disturb the order established in step ii.
+   (v) Before inserting the stick in the leftmost hole  (last hole/slit) (Image 6).
+  
+  
+
+Image 6                        Image 7
+(vi) After inserting the stick in the leftmost hole and clubbing the Type I cards together
+After this step, the numbers 0, 1, 2, 3 will be placed before the numbers 4, 5, 6, 7, thus sorting the cards and without disturbing the previous order. 
+
+
+The whole transformation can be summarised as:
+  
+
+Image 8
+________________
+
+
+Any-base Sorting Cards 
+So far, we have used the binary approach (two types of holes: a proper hole and a slit, representing 0 and 1, respectively) to punch the cards. Suppose you have again shuffled 26 cards (alphabet). You already know about the binary approach, but you need to punch at 5 places on the card. This time, you would like to reduce the number of punched holes on cards, and you can do so by using the ternary (also called base-3) number system.
+In the previously discussed activities, we converted decimal numbers to binary numbers. In the same way, we generate ternary equivalents for decimal numbers (See Table 4). 
+Letter
+	Corresponding Decimal Number
+	Corresponding Ternary Number
+	A
+	1
+	001
+	B
+	2
+	002
+	C
+	3
+	010
+	D
+	4
+	011
+	E
+	5
+	012
+	F
+	6
+	020
+	G
+	7
+	021
+	H
+	8
+	022
+	I
+	9
+	100
+	J
+	10
+	101
+	K
+	11
+	102
+	L
+	12
+	110
+	M
+	13
+	111
+	N
+	14
+	112
+	O
+	15
+	120
+	P
+	16
+	121
+	Q
+	17
+	122
+	R
+	18
+	200
+	S
+	19
+	201
+	T
+	20
+	202
+	U
+	21
+	210
+	V
+	22
+	211
+	W
+	23
+	212
+	X
+	24
+	220
+	Y
+	25
+	221
+	Z
+	26
+	222
+	Table 4
+In addition to binary, the alphabet cards in Image 1 are also punched in the ternary number system at the other end. Image 9 displays ternary-based punching of cards numbered from 0-23. 
+  
+
+Image 9
+Table 5 shows the correspondence of the design of holes/slit with numbers 0, 1 and 2:
+Number
+	Type of Hole/Slit
+	0
+	Hole (H)
+	1
+	Half Slit (S1)
+	2
+	Complete Slit (S2)
+	Table 5
+ In ternary approach, we would use two different sticks: one stick/needle ( say ST1) which can be inserted in the hole (H), half slit (S1) and complete slit (S2) but can escape (vertically) only through S1 and S2; and another stick (say ST2) which can be inserted in H, S1 and S2 but can escape (vertically) only through S2.
+
+
+	ST1
+	ST2
+	H
+	X
+	X
+	S1
+	O
+	O
+	S2
+	O
+	X
+	Table 6 (Relationship between sticks and holes/slits)
+Can’t escape: X; Can escape: O
+Make punches corresponding to the three holes (see Image 1) in your alphabet cards, then shuffle the cards. Follow these steps to get your cards in the right order:
+1. Insert ST1 into the rightmost hole/slit, then club Type I cards together and place them ahead of the remaining cards.
+2. Insert ST2 again into the rightmost hole/slit, then club Type I cards together and place them ahead of the remaining cards.
+3. Repeat the steps (i) and (ii) (first ST1 and then ST2) for the middle hole/slit, club the Type I cards together and place them ahead of the remaining cards.
+4. Repeat the process until ST2 reaches the leftmost hole/slit, clubbing the Type I cards together and placing them ahead of the remaining cards. The cards will get arranged in proper order.
+References
+
+
+1. https://en.wikipedia.org/wiki/Pingala 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Logical Reasoning using Punched Cards
+________________
+
+
+In this activity, you will use punched cards to solve logical puzzles. Each hole on a card stands for a simple true/false (ON/OFF) condition, and each card represents one possible combination, like a row in a truth table. By stacking, aligning, and filtering the cards, we will see how complex reasoning can be built from simple binary decisions, mirroring how binary logic works inside a computer.
+
+
+Binary System
+On & Off
+The five bulbs, Yellow, Pink, Red, Green, and Blue, are represented by the five holes, which in turn represent binary digits. Each 1 (or U slit hole) corresponds to a true term, or ‘ON’ state; each 0 (or O hole), to a false term, or ‘OFF’ state. Each card is a unique combination of true and false terms, and since the 32 cards exhaust all possible combinations, they are the equivalent of what is called a "truth table'' for the five terms. 
+  
+  
+  
+
+Figure: All possible cards with 5 binary digits 
+  
+
+Can you identify which bulbs are ‘OFF’ based on the card below? 
+
+
+
+   1. Blue bulb 
+   2. Green bulb
+   3. Red Bulb
+   4. All bulbs are OFF
+	
+
+The operation of the cards is explained by showing how they can be used for solving a problem in two-valued logic. We can start by taking case 1, which contains 8 cards and focusing only on Red, Green, and Blue light. Three statements are given containing simple assertions and negation statements. The aim is to determine which bulbs are on or off among these. 
+
+
+To solve this problem, start with the punch cards in any order. Only three terms are involved, so we shall be concerned with only the R, G, and B holes. 
+
+
+R = Red bulb is ‘ON’ 
+R̅ = Red bulb is ‘OFF’
+G = Green bulb is ‘ON’
+G̅ = Green bulb is ‘OFF’
+B = Blue bulb is ‘ON’
+B̅ = Blue bulb is ‘OFF’
+
+
+Can you identify which bulb is OFF based on this pattern: RGB̅? 
+
+
+   1. Red bulb 
+   2. Green bulb
+   3. Blue Bulb
+   4. All bulbs are OFF
+	  
+
+Case : 1 RGB (with 8 cards only)
+
+
+Statements 
+A. The Red light is ‘ON’ 
+B. The Blue light is ‘OFF’ 
+C. ‘ON’ light only has ‘OFF’ Neighbour 
+
+
+The problem has three statements. The first statement, A, "The red light is ‘ON’,” tells us that the combination R̅XX cards are not permitted, so we must eliminate all cards bearing this combination. It is done as follows. Insert the stick in the R position and lift. The stick will raise all cards bearing R̅ cards, the invalid combination, so these cards are discarded. All remaining cards are assembled into a pack once more (in any order), and we are ready for the second statement. 
+
+After performing an action using Statement A, how many cards are left in the pack? 
+
+
+   1. 8 
+   2. 4
+   3. 2
+   4. 1
+	
+
+The second statement, B, "The Blue light is ‘ON’,” tells us that the XXB combination is not permitted, so we must eliminate all cards bearing this combination. Similarly to the statement A, insert the stick in the B position and lift. The stick will raise all cards bearing B̅ cards, the valid combination, so these cards we need to keep; the cards in other hands need to be discarded. All remaining cards are assembled into a pack once more (in any order), and we are ready for the third statement. 
+
+
+After performing the action using Statement B, among these, which card will not be eliminated?  
+
+
+   1. RGB
+   2. RG̅B
+   3. RGB̅
+   4. All will be eliminated 
+	
+
+The third statement, C, "‘ON’ light only has ‘OFF’ Neighbour,” here we need to recall the first statement that “The red light is ‘ON’,”  tells us that the Green bulb neighbouring the Red bulb should be ‘OFF’, that is, we need to eliminate the X1X combinations. Insert the stick in the G position and lift. The stick will raise all cards bearing G̅ cards, the invalid combination, so these cards are discarded. 
+
+After this action, only one card will be left, and that will be the solution to the logical puzzle. 
+
+
+Write down the pattern of the last card (solution).  
+
+
+	
+
+We can now take case 2, which contains 8 cards again. Instead of three statements, there are now only two, and instead of simple assertions and negations, we are introducing the Either/Or statement.  
+
+
+Case : 2 RGB (with 8 cards only)
+
+
+Statements 
+A. The Red light is ‘ON’
+B. The Lights are either all ‘ON’ or all ‘OFF’
+
+
+The first statement is the same as we have done in the earlier step. The second statement, B, "The Lights are either all ‘ON’ or all ‘OFF’," tells us that the value is either 111 or 000. Using the previous statement, we need to eliminate the X00 combinations. 
+
+
+Among these, what would be the pattern of the solution?  
+
+   1. RGB̅
+   2. RGB
+   3. RG̅B
+   4. R̅G̅B̅
+	
+
+So far, we have covered two cases in the section, using 8 cards for RGB bulbs (3 bits; 2^3 = 8 combinations). Case 1 uses three statements (Red ON, Blue OFF, ON light has OFF neighbour) with stick insertions to filter invalid combinations step-by-step, leaving one solution card. Case 2 introduces an Either-Or statement (Red ON, all ON or all OFF), again filtering to a single solution.
+
+
+Below are three progressively harder cases. They introduce additional logic and multi-step filtering to mimic advanced truth-table-based reasoning. Each ends with one solution card.
+
+
+  
+  
+  
+
+
+
+Ternary System
+Gold, Silver & Rock
+So far, we have used the binary approach (two hole types: O slit hole and U hole, representing 0 and 1, respectively) for logical reasoning. This time, we would like to explore logical reasoning using the ternary (also called base-3) number system.
+
+The three treasures, A, B and C, are represented by the three positions. Each 0 (or O slit hole) corresponds to the presence of Gold in the treasure; each 1 (or V hole) corresponds to the presence of Silver in the treasure; and each 2 (or U hole) corresponds to the presence of Rock in the treasure, which represents the ternary system. 
+  
+
+Figure: Representation for Ternary system
+
+
+Each card is a unique combination of these, and since the 27 cards exhaust all possible combinations, they are equivalent to a "truth table" for the three terms in ternary. 
+
+
+  
+  
+  
+
+Figure: All possible cards with 3 ternary digits 
+
+
+In the ternary approach, we would use two different sticks: Needle stick which can be inserted in all three (O, V, U) holes but can escape (vertically) only through two (V, U) holes; and Wooden stick which can be inserted in all three (O, V, U) holes but can escape (vertically) only through one (U) hole.
+  
+
+Can you identify which treasure has what based on the given card? 
+
+
+
+
+
+   1. A→Gold, B→Rock, C→Silver
+   2. A→Gold, B→Gold, C→Gold
+   3. A→Gold, B→Silver, C→Rock
+   4. A→Silver, B→Rock, C→Gold
+	
+The operation of the cards is explained by showing how they can be used for solving a problem in three-valued logic. We can start by taking case 1, which contains 9 cards and focusing only on Treasure B and C. Three statements are given containing simple assertions and negation statements. The aim is to determine which Treasure has what.
+
+
+To solve this problem, start with the punch cards in any order. Only two terms are involved, so we shall be concerned with only the B and C holes. 
+
+
+Ȧ = Treasure ‘A’ has Gold 
+Ḃ = Treasure ‘B’ has Gold
+Ċ = Treasure ‘C’ has Gold
+Ã = Treasure ‘A’ has Silver
+B̃ = Treasure ‘B’ has Silver
+C̃ = Treasure ‘C’ has Silver
+Ă = Treasure ‘A’ has Rock
+B̆ = Treasure ‘B’ has Rock
+C̆ = Treasure ‘C’ has Rock
+
+
+Can you identify which treasure has what based on this pattern: ÃḂĊ? 
+
+
+   1. A→Gold, B→Silver, C→Rock
+   2. A→Rock, B→Gold, C→Gold
+   3. A→Gold, B→Rock, C→Rock
+   4. A→Silver, B→Gold, C→Gold
+	  
+
+Case: 1 B&C (with 9 cards only)
+Statements 
+1. Rock is in Safe C
+2. Rock is not in Safe B
+3. Silver is not in Safe B
+
+
+The problem has three statements. The first statement, 1, "Rock is in Safe C”, tells us that the combination XĊ and  XC̃ cards are not permitted, so we must eliminate all cards bearing this combination. It is done as follows. Take the wooden stick. Insert the wooden stick in the C position and lift. Wooden stick inserted in all three (O, V, U) holes, but can escape (vertically) only through one (U) hole, which is cards containing Rock. The stick will raise all cards bearing XĊ and XC̃ cards, the invalid combination, so these cards are discarded. All remaining cards are assembled into a pack once more (in any order), and we are ready for the second statement. 
+
+After performing an action using Statement 1, how many cards are left in the pack? 
+
+
+   1. 6
+   2. 3
+   3. 1
+   4. 9
+	
+
+The second statement, 2, " Rock is not in Safe B”, tells us that the B̆X combination is not permitted, so we must eliminate all cards bearing this combination. Similarly to statement 1, insert the wooden stick in the B position and lift. The wooden stick will escape from all cards bearing B̆X cards, the valid combination, so these cards we need to keep; the cards raised with the wooden stick need to be discarded. All remaining cards are assembled into a pack once more (in any order), and we are ready for the third statement. 
+
+
+After performing the action using Statement 2, among these, which card will not be eliminated?  
+
+
+   1. B̆C̃ 
+   2. ḂC̆
+   3. B̆C̆
+   4. All will be eliminated 
+	
+
+The third statement, 3, "‘Silver is not in Safe B”, tells us that the combination B̃X cards are not permitted, so we must eliminate all cards bearing this combination. Insert the needle stick in the B position and lift. The stick will leave all cards bearing B̃X cards, the invalid combination, so these cards are discarded. 
+
+After this action, only one card will be left, and that will be the solution to the logical puzzle. 
+
+
+Write down the pattern of the last card (solution).  
+
+
+	
+
+Below are two more progressively harder cases. They introduce additional logic and multi-step filtering to mimic advanced truth-table-based reasoning with a ternary system. Each ends with one solution card.
+
+
+  
+  
+
+
+
+Conclusion 
+Punched cards, utilising binary choices represented by ON/OFF holes, enable the solution of logical puzzles in a manner analogous to their role in powering early computing machines such as IBM sorters and Turing's Bombe. Originating from Acharya Pingala's ancient binary concepts in the Chhandasutra (~200 BCE), this unplugged methodology promotes the development of logical reasoning and intuition.
