@@ -23,3 +23,4 @@
 - https://digitalsky.dgca.gov.in/ — curl fail
 - https://pjtsau.edu.in/pjtsau-mou-marut-drones-12-10-2022.html — curl fail
 - https://menglish.sakshi.com/news/telangana/telangana-state-aviation-academy-offers-dronerpa-pilot-training-programmes-152111 — curl fail
+- https://ncert.nic.in/pdf/An_Introductory_Module_AI_CT_UN514.pdf — curl fail (TLS chain not in sandbox CA bundle; same eMudhra pattern as cbseacademic.nic.in). NCERT CT&AI module for Classes 9-12, 23 Oct 2026. Needed as the Track B spine for research/ai-grades-5-10/01. Structure captured from secondary sources only — re-download from a normal network and diff.
