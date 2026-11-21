@@ -17,6 +17,33 @@ Everything this research pack does **not** know, consolidated from all nine file
 | **5** | **417 Class IX 2026-27 curriculum PDF** | The repo holds only `417-AI-IX_2025-26.pdf`. A secondary source says the 2026-27 version is word-for-word identical, which is plausible but unverified. All of `01` Grade 9 Track A is built on the 2025-26 PDF | Download and diff the two |
 | **6** | **Does Audacity 3.7.x or 4.x go in the lab?** | `02` found the brief's specified **v3.7.1 is superseded — current is 4.0.2** — and that Audacity 4 adds cloud sign-up, audio.com publishing and a paid-effects storefront, none of which belongs in front of a 15-year-old on a shared PC. OpenVINO plugin support for Audacity 4 could not be verified because GitHub is unreachable here | **Pin 3.7.x and write the version into the lab build sheet.** Re-verify OpenVINO support from a network that can reach GitHub before ever upgrading |
 
+| **7** | **Non-commercial licences on free curricula** | `02` rates this **the single most expensive finding in the research**, and it is a legal risk rather than a content gap. See §1A immediately below |
+
+---
+
+## 1A. The licence risk — and a correction to earlier advice
+
+**This reverses something I told you earlier.** In the project's `ai-tools-capability-research.md`, **Day of AI** was recommended as the backbone of the Grades 5-6 stack and described as *"the only item here that cannot break."* That was wrong, and in the most expensive possible way.
+
+**What `02` found by reading MIT's own live terms page on 21 Nov 2026.** Day of AI materials are licensed **CC BY-NC-SA 4.0**, and MIT publishes its own interpretation of "non-commercial" on the same page: users may not sell, profit from or commercialise Day of AI materials or works derived from them, and **the determination is based on the use, not the user.** MIT then gives an example which is this business model almost word for word — *a commercial education or training business may not offer courses based on Day of AI materials if students pay a fee for those courses and the business intends to profit.* MIT does permit use for **internal professional development**.
+
+**Consequence.** A programme charging roughly ₹5,000 per student **cannot be built on Day of AI materials.** Day of AI moves to the do-not-use list for student-facing delivery, and stays on the reading list for **trainer induction**, which MIT's own wording permits. If you want it in the classroom, `contact@dayofai.org` is the address on their page — **write and get written permission; do not proceed on an assumed yes.**
+
+**The same trap, three other owners:**
+
+| Resource | Licence position | What is still allowed |
+|---|---|---|
+| **Day of AI (MIT RAISE)** | CC BY-NC-SA 4.0, with MIT's own published example prohibiting fee-charging training businesses | Internal trainer development only |
+| **CodeAI curriculum and tutorial materials** | CC BY-NC-SA 4.0; **videos** CC BY-NC-ND 4.0; trademarks need express written permission | **Sending students to the free CodeAI website during a paid class is a different thing and remains in the kit.** Never paste a CodeAI slide or worksheet into our own materials |
+| **Bhashini** | Government terms restrict it to non-commercial use unless specifically authorised, and the public APIs are **proof-of-concept only, not production** | Showing it to students. Build nothing on it. Use **IndicTrans2** (AI4Bharat), permissively licensed — re-verify its licence text first |
+| **Experience AI (Raspberry Pi Foundation + Google DeepMind)** | **Licence not yet read.** After what CodeAI and Day of AI turned out to say, assume nothing | — |
+
+**`02`'s judgement, which I agree with:** CC BY-NC-SA is the *default* choice of university and charity publishers, so a large share of free K-12 AI curricula carries it. **Add a licence check to the intake process for every free resource** — find the licence line, write it down, and refuse NC-licensed material for student-facing use.
+
+**One piece of good news.** `01-ai-syllabus-by-grade.md` does not depend on any NC-licensed material. Its tools are Teachable Machine, Machine Learning for Kids, Orange, Thonny, `playground.tensorflow.org`, `setosa.io`, Datawrapper, spreadsheets and unplugged work, plus CBSE's and NCERT's own published activities. **The syllabus as written is clean.** That was partly luck, and it is why the intake check matters from here on.
+
+**Queue item:** a lawyer's view on using free NC-licensed curricula alongside a fee-charging programme. `02` calls this the largest unpriced risk it found, and MIT's published interpretation removes any defence of ambiguity.
+
 ---
 
 ## 2. Unbuilt work — the honest inventory
