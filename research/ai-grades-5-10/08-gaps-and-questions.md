@@ -60,6 +60,10 @@ What exists after this pack is research and design. What does not exist yet, in 
 | 6 | **Local mirrors of every external URL** | ~13 CBSE activity URLs plus the tool pages | CBSE's own activity worksheets sit on Google Drive, Google Docs, YouTube and tinyurl — four or five third-party servers. Mirror on day one |
 | 7 | **Lab build sheet** | One document | CBSE's own Class X minimum spec is in `01` §6 and is the number to quote. Add the pinned Audacity version, Thonny portable, Orange and the no-admin-rights workarounds from `02` |
 
+**One cost finding worth keeping in view.** Microsoft is the only vendor in `02` that ships prices in readable HTML, so these are the **only verified INR figures in the whole pack**: Microsoft 365 Personal ₹689/month or ₹6,899/year; Family ₹819/month or ₹8,199/year; **Premium ₹1,999/month or ₹19,999/year including GST**; Office Home 2024 ₹10,999 one-time. Also noted: **"Copilot Pro" appears to no longer exist as a standalone consumer SKU in India** — that store path now serves Microsoft 365 Premium, with Copilot folded into the tiers. At ₹19,999/year a single Premium licence is roughly four students' fees, and **the kit in `02` needs no Microsoft licence at all.** Every other price in the pack is marked unverified because all other vendors render prices client-side.
+
+**And one piece of evidence discipline worth knowing about.** Of the 114 vendor pages saved under `ai/platforms-and-tools/`, **13 are error or Cloudflare-challenge pages rather than real content.** `02`'s closing appendix lists those 13 by filename with what each actually contains, so that nobody later cites a 404 as evidence. The primary source for the whole Machine Learning for Kids dossier is `machine-learning-for-kids/mlforkids-strings-en-2026-11-21.json` — that file, not the rendered site, is where the product's rules actually live.
+
 ---
 
 ## 3. Research claims that must not reach a school or a parent yet
@@ -104,6 +108,13 @@ These are the ones where being wrong costs credibility rather than time.
 17. **Microsoft LUIS demo** (retired), **Semantris** (abandoned), **GAN Paint** (likely offline) — 417 Class IX. Substitutes are in `01` §5.
 18. **`my-goodness.net`** — 417 Class X Unit 1.
 19. **Quick Draw** — still serving but structurally abandoned. `01` §0.4 now restricts it to a hook, never an artefact.
+
+**One lead worth chasing before Grades 9-10 is finalised**
+19a. **Raspberry Pi Foundation's "Code Classroom."** Described in RPF's own privacy policy as **teacher-created and teacher-managed student accounts for children aged 9+, with the school as the responsible data controller.** That is precisely the shape the Two-Account Rule needs, and it would give students logins **without buying a Google Workspace or Microsoft 365 tenant** — which would remove the single biggest cost line and the single biggest consent complication from `01` Grade 9 Track B B5. Its own site was unreachable from this sandbox, so **the age rule, the price and India availability are all unverified.** Check this before June 2027; if it works, it changes the Grade 9-10 account architecture.
+
+**Two tools recommended out of the kit, pending re-check**
+19b. **Adobe Express / Firefly — recommend dropping.** Every Adobe page returned HTTP 403, so there is **no verified age rule**, and we should not put a tool in front of minors whose age clause we have not read.
+19c. **PictoBlox — provisionally do-not-use.** `thestempedia.com` timed out on four attempts and every public listing says "price on request". Needs a re-check from an Indian network **plus a real install test on a school PC** before it goes anywhere near a proposal.
 
 **Market**
 20. **TSBIE Class 11 subject combinations** at `tgbie.cgg.gov.in` — no primary source located, and `07` §4 gives real families real advice about this.
