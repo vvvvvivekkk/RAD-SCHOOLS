@@ -1,0 +1,79 @@
+<!--
+  (c) 2023, Center for Computational Thinking and Design at Aarhus University and contributors
+
+  SPDX-License-Identifier: MIT
+ -->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi, viewport-fit=cover"
+    />
+    <title>micro:bit CreateAI</title>
+    <meta property="og:title" content="micro:bit CreateAI" />
+    <link rel="canonical" href="https://createai.microbit.org/"  />
+    <meta property="og:url" content="https://createai.microbit.org/" />
+    
+    <meta property="og:description" content="Create AI on your BBC micro:bit using movement and machine learning" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@microbit_edu" />
+    
+    <meta name="description" content="Create AI by training a machine learning model with your movement data, testing it to see if it works, then writing your own code to use it on a BBC micro:bit" />
+    
+    <meta property="og:image" content="https://createai.microbit.org/social.png" />
+    
+    <meta
+      name="apple-itunes-app"
+      content="app-id=6757603093, app-argument=https://createai.microbit.org/"
+    />
+    <script>
+      // Point app-argument at the landing URL rather than the canonical one
+      // baked in above: Safari reads this tag on load, before React mounts,
+      // so useSmartAppBanner is too late for the first read. It takes over
+      // for the client-side navigations that follow.
+      (function () {
+        var meta = document.querySelector('meta[name="apple-itunes-app"]');
+        meta.content = meta.content.replace(/app-argument=.*$/, function () {
+          return "app-argument=" + window.location.href;
+        });
+      })();
+    </script>
+    
+    <link rel="shortcut icon" href="https://createai.microbit.org/imgs/favicon.ico" />
+    
+    <script
+      src="https://shared-assets.microbit.org/common/v3/common.js"
+      async
+    ></script>
+    <script>
+      // GA config itself is via the common assets config depending on consent.
+      window.dataLayer = window.dataLayer || [];
+      window.gtag =
+        window.gtag ||
+        function () {
+          window.dataLayer.push(arguments);
+        };
+    </script>
+    
+    <script type="text/javascript" id="crowdin-jipt-config">
+      (function () {
+        function escape() {
+          window.location.href = "https://createai.microbit.org/";
+        }
+        window._jipt = [
+          ["project", "microbitorg"],
+          ["escape", escape],
+        ];
+      })();
+    </script>
+    <script type="module" crossorigin src="/assets/index-T68eLrii.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BjwJ5ndu.css">
+  </head>
+
+  <body style="overscroll-behavior-y: none; height: 100%">
+    <div id="root" style="overscroll-behavior-y: none; height: 100%"></div>
+  </body>
+</html>

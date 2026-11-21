@@ -1,0 +1,460 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+<html class="h-full overflow-y-scroll">
+  <head>
+    <title>Privacy Policy</title>
+
+    <meta charset="utf-8" />
+    <meta name="description" content="Learn how Ollama handles data for local models, cloud-hosted models, accounts, and website use."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:title" content="Privacy Policy" />
+    <meta property="og:description" content="Learn how Ollama handles data for local models, cloud-hosted models, accounts, and website use." />
+    <meta property="og:url" content="https://ollama.com/privacy" />
+    <meta property="og:image" content="https://ollama.com/public/og.png" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta property="og:image:alt" content="Ollama's black-and-white logo" />
+    <meta property="og:type" content="website" />
+
+    <meta name="robots" content="index, follow" />
+
+    <meta property="twitter:card" content="summary" />
+    <meta property="twitter:title" content="Ollama" />
+    <meta property="twitter:description" content="Get up and running with large language models." />
+    <meta property="twitter:site" content="ollama" />
+
+    <meta property="twitter:image:src" content="https://ollama.com/public/og-twitter.png" />
+    <meta property="twitter:image:width" content="1200" />
+    <meta property="twitter:image:height" content="628" />
+    <meta property="twitter:image:alt" content="Ollama's black-and-white logo" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/public/icon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/icon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/public/icon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="64x64" href="/public/icon-64x64.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/public/android-chrome-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/public/android-chrome-icon-512x512.png" />
+
+    <link rel="canonical" href="https://ollama.com/privacy" />
+    
+
+    <link href="/public/tailwind.css?v=c3f4edf32afb30830f1adcd77f700f29" rel="stylesheet" />
+    <link href="/public/vendor/prism/prism.css?v=c3f4edf32afb30830f1adcd77f700f29" rel="stylesheet" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://ollama.com/#organization",
+            "name": "Ollama",
+            "legalName": "Ollama Inc.",
+            "url": "https://ollama.com",
+            "logo": "https://ollama.com/public/ollama.png",
+            "sameAs": ["https://github.com/ollama/ollama", "https://twitter.com/ollama"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://ollama.com/#website",
+            "name": "Ollama",
+            "url": "https://ollama.com",
+            "publisher": { "@id": "https://ollama.com/#organization" }
+          }
+        ]
+      }
+    </script>
+
+    <script type="text/javascript">
+      function copyToClipboard(element) {
+        let commandElement = null;
+        const preElement = element.closest('pre');
+        const languageNoneElement = element.closest('.language-none');
+
+        if (preElement) {
+          commandElement = preElement.querySelector('code');
+        } else if (languageNoneElement) {
+          commandElement = languageNoneElement.querySelector('.command');
+        } else {
+          const parent = element.parentElement;
+          if (parent) {
+            commandElement = parent.querySelector('.command');
+          }
+        }
+
+        if (!commandElement) {
+          console.error('No code or command element found');
+          return;
+        }
+
+        const code = commandElement.textContent ? commandElement.textContent.trim() : commandElement.value;
+
+        navigator.clipboard
+          .writeText(code)
+          .then(() => {
+            const copyIcon = element.querySelector('.copy-icon')
+            const checkIcon = element.querySelector('.check-icon')
+
+            copyIcon.classList.add('hidden')
+            checkIcon.classList.remove('hidden')
+
+            setTimeout(() => {
+              copyIcon.classList.remove('hidden')
+              checkIcon.classList.add('hidden')
+            }, 2000)
+          })
+      }
+    </script>
+    
+    <script>
+      
+      function getIcon(url) {
+        url = url.toLowerCase();
+        if (url.includes('x.com') || url.includes('twitter.com')) return 'x';
+        if (url.includes('github.com')) return 'github';
+        if (url.includes('linkedin.com')) return 'linkedin';
+        if (url.includes('youtube.com')) return 'youtube';
+        if (url.includes('hf.co') || url.includes('huggingface.co') || url.includes('huggingface.com')) return 'hugging-face';
+        return 'default';
+      }
+
+      function setInputIcon(input) {
+        const icon = getIcon(input.value);
+        const img = input.previousElementSibling.querySelector('img');
+        img.src = `/public/social/${icon}.svg`;
+        img.alt = `${icon} icon`;
+      }
+
+      function setDisplayIcon(imgElement, url) {
+        const icon = getIcon(url);
+        imgElement.src = `/public/social/${icon}.svg`;
+        imgElement.alt = `${icon} icon`;
+      }
+    </script>
+    
+    <script src="/public/vendor/htmx/bundle.js"></script>
+  </head>
+
+  <body
+    class="
+      antialiased
+      bg-white
+      min-h-screen
+      w-full
+      m-0
+      flex
+      flex-col
+    "
+    hx-on:keydown="
+      if (event.target.tagName === 'INPUT' || event.target.tagName === 'TEXTAREA') {
+        // Ignore key events in input fields.
+        return;
+      }
+      if ((event.metaKey && event.key === 'k') || event.key === '/') {
+        const sp = htmx.find('#search') || htmx.find('#form-input') || htmx.find('#filter');
+        if (sp) {
+          event.preventDefault();
+          sp.focus();
+        }
+      }
+    "
+  >
+    
+      
+<header class="sticky top-0 z-40 flex h-20 shrink-0 items-center border-b border-transparent bg-white px-5 sm:px-6 lg:px-8 text-black data-[scrolled]:border-black/[0.12] lg:static lg:border-b-0">
+  <nav aria-label="Main navigation" class="flex w-full items-center justify-between gap-6 text-lg leading-6 tracking-tight font-normal">
+    <div class="flex min-w-0 flex-1 items-center gap-6">
+      <a href="/" aria-label="Ollama home" class="-ml-0.5 flex-none"><img src="/public/ollama-nav.png" alt="Ollama logo" width="37" height="43" class="h-auto w-[37px]" /></a>
+      
+    </div>
+    <div class="hidden items-center gap-7 md:flex">
+      <a href="https://github.com/ollama/ollama" class="flex items-center gap-1.5 text-[17px]">
+        <svg class="h-[18px] w-[18px] flex-none" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z" /></svg>
+        <span class="sr-only">GitHub</span>
+        <span class="tabular-nums">187.8K</span>
+      </a>
+      <a href="/download" class="underline-offset-4 hover:underline">Download</a>
+      <a href="/search" class="underline-offset-4 hover:underline">Models</a>
+      <a href="https://docs.ollama.com" class="underline-offset-4 hover:underline">Docs</a>
+      <a href="/pricing" class="underline-offset-4 hover:underline">Pricing</a>
+      
+        <a href="/signin" class="underline-offset-4 hover:underline">Sign in</a>
+      
+    </div>
+    <div class="flex items-center md:hidden">
+      <input type="checkbox" id="menu" class="peer hidden" />
+      <label for="menu" aria-label="Open menu" class="z-50 block cursor-pointer peer-checked:hidden">
+        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+      </label>
+      <label for="menu" aria-label="Close menu" class="fixed right-5 sm:right-6 lg:right-8 top-[26px] z-50 hidden cursor-pointer peer-checked:block">
+        <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+      </label>
+      <div class="fixed inset-0 z-40 hidden overflow-y-auto bg-white peer-checked:block">
+        <div class="flex flex-col space-y-5 px-5 sm:px-6 lg:px-8 pb-8 pt-[5.5rem] text-3xl">
+          
+          <a href="/download">Download</a>
+          <a href="/search">Models</a>
+          <a href="https://docs.ollama.com">Docs</a>
+          <a href="/pricing">Pricing</a>
+          
+            <a href="/signin">Sign in</a>
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<script>
+  (function (header) {
+    function update() { header.toggleAttribute('data-scrolled', window.scrollY > 0); }
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+  })(document.currentScript.previousElementSibling);
+</script>
+
+    
+
+    <main class="mx-auto max-w-3xl px-6 py-12">
+  <h1 class="mb-8 text-3xl font-medium tracking-tight">Privacy Policy</h1>
+  <p class="mb-8 text-neutral-500">Last updated: March 2026</p>
+
+  <div class="space-y-8 text-neutral-700">
+    <section class="rounded-lg bg-neutral-100 p-6">
+      <h2 class="mb-3 text-lg font-medium">Summary</h2>
+      <p class="mb-3">
+        We wrote this policy to help you understand what information we collect, how we use it and what choices you have about it.
+      </p>
+      <p>
+        Ollama runs locally. We don&rsquo;t see your prompts or data when you run locally. When using cloud-hosted models, we process your prompts and responses transiently to provide the service and never train on it. We collect basic account info and limited usage metadata that does not include prompt or response content. We don&rsquo;t sell your data. You can delete your account anytime.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">1. Introduction</h2>
+      <p>
+        Ollama Inc. (&ldquo;Ollama,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our website, software, and services (the &ldquo;Service&rdquo;). Disputes related to this Privacy Policy are subject to the dispute resolution and governing law provisions in our <a href="/terms" class="text-black underline hover:no-underline">Terms of Service</a>. If there are any terms in this Privacy Policy that you do not agree with, please discontinue use of our Service.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">2. How Ollama Works</h2>
+      <p class="mb-3">
+        Ollama runs on your local device. We do not collect, store, transmit, or have access to your prompts, responses, model interactions, or other content you process locally. Your data stays on your machine.
+      </p>
+      <p>
+        We limit what we collect where we can, but we do collect certain information to provide you the Service. We may collect limited device and usage metadata (such as app version and request counts) that does not include your prompt or response content. When using cloud-hosted models, we process this content transiently to provide the Service and this content is not stored beyond the time required to fulfill the request. We implement technical measures designed to minimize retention of prompt and response content. We do not use your inputs or outputs to train any AI models or request prompt or response content in support requests. If you voluntarily include such content in support requests, it will be handled solely to resolve your issue and not used for training.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">3. Information We Collect</h2>
+      <p class="mb-3"><strong>Information you provide to us:</strong></p>
+      <p class="mb-3">
+        We collect personal information you voluntarily provide to us when registering for the Service, express an interest in obtaining information about us or our products and services, when using the Service or otherwise contacting us. The information we may collect can include:
+      </p>
+      <ul class="mb-4 list-disc space-y-1 pl-6">
+        <li>Account information (names, email addresses, user ID, passwords and other similar data)</li>
+        <li>Payment information (processed by Stripe)</li>
+        <li>Communications with us (support requests, feedback)</li>
+      </ul>
+      <p class="mb-3">
+        All personal information that you provide to us must be true, complete and accurate, and you must notify us of any changes to such personal information.
+      </p>
+      <p class="mb-3"><strong>Information collected automatically:</strong></p>
+      <p class="mb-3">
+        We automatically collect certain information when you visit, use or navigate the Service. This information does not reveal your specific identity (like your name or contact information) but may include device and usage information, such as your IP address, browser and device characteristics, operating system, language preferences, referring URLs, device name, country, location, information about how and when you use our Service and other technical information. This information is primarily needed to maintain the security and operation of our Service. The information we may collect can include:
+      </p>
+      <ul class="list-disc space-y-1 pl-6">
+        <li>Device and browser information</li>
+        <li>IP address and general location</li>
+        <li>Diagnostic metadata for troubleshooting (does not include prompt or response content)</li>
+        <li>Cookies and similar technologies</li>
+        <li>Model download metadata</li>
+      </ul>
+      <p class="mt-3">
+        We use cookies and similar technologies for essential site functionality and, where applicable, to understand usage. You can control cookies through your browser settings, and disabling cookies may affect site functionality.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">4. How We Use Your Information</h2>
+      <p class="mb-3">
+        We may use personal information collected via our Service to provide you our Service. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations.
+      </p>
+      <ul class="list-disc space-y-1 pl-6">
+        <li>Provide, operate, and maintain our services</li>
+        <li>Facilitate account creation and logon processes</li>
+        <li>Process transactions and manage subscriptions</li>
+        <li>Send service-related communications</li>
+        <li>Respond to inquiries and provide support</li>
+        <li>Improve and develop new features</li>
+        <li>Detect and prevent fraud or abuse</li>
+        <li>Enforce our Terms of Service and policies</li>
+        <li>Respond to legal requests and prevent harm</li>
+      </ul>
+      <p class="mt-3">
+        Our legal basis for processing (for GDPR purposes) includes contract performance, legitimate interests, and your consent where applicable.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">5. Information Sharing</h2>
+      <p class="mb-3">We do not sell your personal information. We may process or share information on the following bases:</p>
+      <ul class="list-disc space-y-1 pl-6">
+        <li><strong>Consent:</strong> We may process your data if you have given us specific consent to use your personal information in a specific purpose.</li>
+        <li><strong>To provide you the Service:</strong> Third parties who help us operate (e.g., Stripe for payments, cloud infrastructure providers, model inference providers).</li>
+        <li><strong>Legitimate interests:</strong> We may process your data when it is reasonably necessary to achieve our legitimate business interests to provide you the Service.</li>
+        <li><strong>Legal requirements:</strong> When required by law, a legal process, or to protect our rights.</li>
+        <li><strong>Vital interests:</strong> We may disclose your information where we believe it is necessary to investigate, prevent, or act regarding potential violations of our policies, suspected fraud, situations involving potential threats to the safety of any person and illegal activities, or as evidence in litigation in which we are involved.</li>
+      </ul>
+      <p class="mt-3">
+        Data may be transferred to and processed in the United States. Where required by law, we use appropriate safeguards for international transfers. If you are a resident in the European Economic Area, then these countries may not have data protection or other laws as comprehensive as those in your country. We will however take all necessary measures to protect your personal information in accordance with this privacy policy and applicable law.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">6. Data Retention</h2>
+      <p class="mb-3">
+        We retain your information for as long as your account is active or as needed to provide the Service. We may retain certain information as required by law or for legitimate business purposes. You can request deletion of your account and associated data at any time.
+      </p>
+      <p class="mb-3">
+        When we have no ongoing legitimate business need to process your personal information, we will either delete or anonymize it, or, if this is not possible, we will securely store your personal information and isolate it from any further processing until deletion is possible.
+      </p>
+      <p class="mb-3">Retention criteria by category:</p>
+      <ul class="list-disc space-y-1 pl-6">
+        <li><strong>Account information:</strong> retained while your account is active and deleted upon request, subject to legal obligations.</li>
+        <li><strong>Billing records:</strong> retained as required by tax, accounting, and other legal obligations.</li>
+        <li><strong>Support communications:</strong> retained until resolved and then archived or deleted.</li>
+        <li><strong>Metadata and analytics:</strong> retained as needed for service operations, security, and improvement, then deleted or de-identified.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">7. Data Security</h2>
+      <p>
+        We implement commercially appropriate technical and organizational measures to protect your information. However, no method of transmission over the Internet or electronic storage is completely secure. Although we will do our best to protect your personal information, transmission of personal information to and from our Service is at your own risk. You should only access the services within a secure environment.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">8. Your Rights</h2>
+      <p class="mb-3">Depending on your location, you may have the right to:</p>
+      <ul class="mb-4 list-disc space-y-1 pl-6">
+        <li>Access your personal information</li>
+        <li>Correct inaccurate data</li>
+        <li>Delete your personal information</li>
+        <li>Object to or restrict processing</li>
+        <li>Data portability</li>
+        <li>Withdraw consent</li>
+      </ul>
+      <p class="mb-3">
+        <strong>California residents:</strong> Under the CCPA/CPRA, you have the right to make a personal information request for the specific information collected on you during the 12-month period preceding the request, including the right to know, access, correct, and delete your personal information, and to opt out of the sale or sharing of personal information. We do not sell your personal information, and we do not share it for cross-context behavioral advertising. If you are a California resident and would like to make such a request, please submit your request in writing to us using the contact information provided below.
+      </p>
+      <p class="mb-3">
+        If you are under 18 years of age, reside in California, and have a registered account with the Service, you have the right to request removal of unwanted data that you publicly post on the Service. To request removal of such data, please contact us using the contact information provided below.
+      </p>
+      <p class="mb-3">
+        <strong>EU residents:</strong> Under the GDPR, you have additional rights including the right to lodge a complaint with a supervisory authority.
+      </p>
+      <p class="mb-3">
+        Residents of other jurisdictions may have additional rights under applicable state, regional, or national privacy laws.
+      </p>
+      <p class="mb-3">
+        To exercise your rights, contact us at the email address below. We may need to verify your identity and will respond within reasonable timeframes required by applicable law.
+      </p>
+      <p>
+        <strong>Deleting your account:</strong> You may, at any time, delete your account via <a href="https://ollama.com/settings/profile" class="text-black underline hover:no-underline">ollama.com</a> under your active profile.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">9. Children&rsquo;s Privacy</h2>
+      <p>
+        Our services are intended for users aged 18 and older. We do not knowingly collect personal information from anyone under 18. By using the Service, you represent that you are at least 13 or that you are the parent or guardian of such a minor and consent to such minor dependent&rsquo;s use of the Service. If we learn we have collected such information, we will delete it promptly.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">10. Data Breach</h2>
+      <p>
+        A privacy breach occurs when there is unauthorized access to or collection, use, disclosure or disposal of personal information. You will be notified about data breaches when Ollama believes you are likely to be at risk or serious harm. For example, a data breach may be likely to result in serious financial harm or harm to your mental or physical well-being. In the event that Ollama becomes aware of a security breach which has resulted or may result in unauthorized access, use or disclosure of personal information Ollama will promptly investigate the matter and notify the applicable supervisory authority not later than 72 hours after having become aware of it, unless the personal data breach is unlikely to result in a risk to the rights and freedoms of natural persons.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">11. Changes to This Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time. We will notify you of material changes by updating the &ldquo;Last updated&rdquo; date and, where appropriate, providing additional notice. Your use of our services constitutes your binding acceptance of such changes.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="mb-3 text-xl font-medium">12. Contact Us</h2>
+      <p>
+        Ollama Inc. is the data controller of this Privacy Policy. If you have questions about this Privacy Policy or wish to exercise your rights, contact us at <a href="mailto:hello@ollama.com" class="text-black underline hover:no-underline">hello@ollama.com</a>.
+      </p>
+    </section>
+  </div>
+</main>
+
+    
+      
+<footer class="mt-auto underline-offset-4">
+  <div class="flex flex-col items-center justify-center px-4 py-4 md:flex-row md:justify-between md:px-6 md:py-3.5 lg:px-gutter">
+    <div class="order-2 mt-2 text-sm text-neutral-500 md:order-1 md:mt-0 md:text-xs">&copy; 2026 Ollama</div>
+    <ul data-footer-links class="order-1 flex flex-wrap items-center justify-center text-sm text-neutral-500 md:order-2 md:gap-x-6 md:text-xs">
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="/blog" class="hover:underline">Blog</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="https://docs.ollama.com" class="hover:underline">Docs</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="https://github.com/ollama/ollama" class="hover:underline">GitHub</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="https://discord.com/invite/ollama" class="hover:underline">Discord</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="https://twitter.com/ollama" class="hover:underline">X (Twitter)</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="/support" class="hover:underline">Support</a>
+      </li>
+      <li class="mx-2 my-1 md:hidden">
+        <a href="https://lu.ma/ollama" class="hover:underline">Meetups</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="https://jobs.ashbyhq.com/ollama" class="hover:underline">Careers</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="/privacy" class="hover:underline">Privacy</a>
+      </li>
+      <li class="mx-2 my-1 md:mx-0 md:my-0">
+        <a href="/terms" class="hover:underline">Terms</a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+    
+
+    
+    <span class="hidden" id="end_of_template"></span>
+  </body>
+</html>
